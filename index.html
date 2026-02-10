@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VSNotes — Your All‑in‑One Productivity Hub</title>
-  <meta name="description" content="VSNotes is a powerful, tab‑based notes and productivity hub with auto‑save, navigation tree for files/links, built‑in screen recording, whiteboard, JSON editor, mini spreadsheet, enhanced notepad, favorites, screenshots manager, and Outlook meeting bar." />
-  <meta name="keywords" content="VSNotes, notes app, productivity, screen recording, whiteboard, JSON editor, spreadsheet, notepad, Outlook meetings, screenshots manager, navigation tree, compare like WinMerge" />
+  <meta name="description" content="VSNotes is a powerful, tab‑based notes and productivity hub with auto‑save, navigation tree for files/links, built‑in screen recording, whiteboard, JSON editor, mini spreadsheet, enhanced notepad, favorites, screenshots manager, Outlook meeting bar, and file compare (WinMerge-style)." />
+  <meta name="keywords" content="VSNotes, notes app, productivity, screen recording, whiteboard, JSON editor, spreadsheet, notepad, Outlook meetings, screenshots manager, navigation tree, file compare, WinMerge" />
   <meta property="og:title" content="VSNotes — Your All‑in‑One Productivity Hub" />
   <meta property="og:description" content="Work faster in one window: notes, files, links, screen recording, whiteboard, JSON editor, mini Excel, notepad, favorites, screenshots, meetings — all auto‑saved." />
   <meta property="og:type" content="website" />
@@ -13,10 +13,10 @@
   <meta property="og:url" content="https://vsnotes.github.io/vsnotes-site/" />
   <meta name="theme-color" content="#5b7cfa" />
 
-  <!-- Optional Google Font (safe to remove if you prefer system fonts) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Optional Google Font (remove these 3 lines if you prefer system fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
   <style>
     :root{
@@ -57,8 +57,7 @@
     .brand-name{font-weight:800; letter-spacing:.3px}
     nav a{
       color:var(--muted); text-decoration:none; font-weight:600; font-size:14.5px;
-      padding:10px 14px; border-radius:12px; transition:.25s ease;
-      margin-left:6px;
+      padding:10px 14px; border-radius:12px; transition:.25s ease; margin-left:6px;
     }
     nav a:hover{color:var(--text); background:rgba(108,139,255,.08)}
     .cta{
@@ -149,7 +148,7 @@
     .card h3{margin:0; font-size: 18px}
     .card p{margin: 8px 0 0; color: var(--muted); line-height:1.55}
 
-    /* Feature images */
+    /* Feature images (thumbnails) */
     .feature-img {
       width: 100%;
       border-radius: 12px;
@@ -158,6 +157,7 @@
       background: #0c1224;
       display: block;
       object-fit: cover;
+      cursor: zoom-in;
     }
 
     /* Showcase */
@@ -194,8 +194,39 @@
     .reveal.in{ opacity:1; transform: translateY(0)}
     .ring:hover{ box-shadow: var(--ring) }
 
-    /* Small badges */
-    .tag{font-size:12px; color:#b7c8ff; background:rgba(108,139,255,.15); padding:6px 10px; border-radius:999px; border:1px solid rgba(108,139,255,.28)}
+    /* ===== Lightbox Popup ===== */
+    .lightbox {
+      position: fixed; inset: 0;
+      background: rgba(6, 10, 22, 0.6);
+      backdrop-filter: blur(6px) saturate(120%);
+      display: none; align-items: center; justify-content: center;
+      z-index: 1000;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox__panel {
+      position: relative;
+      max-width: min(92vw, 1100px); max-height: 86vh;
+      background: linear-gradient(180deg, rgba(19,26,42,.95), rgba(12,18,34,.95));
+      border: 1px solid rgba(124,247,255,.22);
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.04);
+      overflow: hidden; animation: lb-pop .2s ease-out;
+    }
+    @keyframes lb-pop { from { opacity: 0; transform: translateY(6px) scale(.98);} to {opacity:1; transform: translateY(0) scale(1);} }
+    .lightbox__img-wrap { padding: 10px; display: grid; place-items: center;
+      background: radial-gradient(900px 600px at 80% -10%, rgba(108,139,255,.22), transparent 60%); }
+    .lightbox__img { max-width: 100%; max-height: 70vh; border-radius: 12px; border: 1px solid rgba(124,247,255,.18); background: #0c1224; display: block; }
+    .lightbox__caption { padding: 10px 14px 14px; color: #c7d6ff; font-size: 14px; border-top: 1px solid rgba(124,247,255,.12); }
+    .lightbox__close {
+      position: absolute; top: 8px; right: 8px;
+      background: rgba(12,18,36,.8); color: #cfe7ff;
+      border: 1px solid rgba(124,247,255,.25);
+      width: 36px; height: 36px; border-radius: 10px;
+      display: grid; place-items: center; cursor: pointer; font-weight: 800;
+      box-shadow: 0 6px 20px rgba(0,0,0,.35);
+      transition: transform .12s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .lightbox__close:hover { transform: translateY(-1px); box-shadow: 0 10px 26px rgba(0,0,0,.45); background: rgba(18,28,58,.9); }
   </style>
 </head>
 <body>
@@ -203,7 +234,7 @@
   <header class="site-header">
     <div class="container">
       <div class="row">
-        <a href="#top" class="brand" aria-label="VSNotes home">
+        <a href="#top" class="brand" aria-label="VSNotes Home">
           <span class="logo" aria-hidden="true">
             <!-- Minimal notebook icon -->
             <svg viewBox="0 0 24 24" fill="none" stroke="#061128" stroke-width="2">
@@ -258,7 +289,7 @@
       <div>
         <div class="hero-slab float">
           <div class="hero-preview">
-            <!-- Replace this placeholder with your product screenshot or promo image -->
+            <!-- Replace this placeholder with your product screenshot -->
             <div style="text-align:center; padding:14px">
               <div class="tag">Live Preview Placeholder</div>
               <h3 style="margin:10px 0 6px; color:#dbe6ff">VSNotes Unified Workspace</h3>
@@ -297,7 +328,11 @@
             <h3>Tab‑Wise Notes (Auto‑Save)</h3>
           </div>
           <p>Create unlimited tabs with formatted text, images, and tables. Your content is saved automatically — no manual save required.</p>
-          <img class="feature-img" src="assets/features/notes-tabs.png" alt="VSNotes tabs and rich formatting with auto‑save" loading="lazy" />
+          <img class="feature-img"
+               src="assets/features/notes-tabs.png"
+               alt="VSNotes tab-wise notes with auto-save"
+               loading="lazy"
+               data-caption="Organize ideas in multiple tabs with rich formatting.">
         </div>
 
         <!-- Navigation Tree -->
@@ -311,7 +346,11 @@
             <h3>MyNotes Navigation Tree</h3>
           </div>
           <p>Add/paste files and links; VSNotes creates nodes in a familiar tree. Click to open in the center — no more window juggling.</p>
-          <img class="feature-img" src="assets/features/navigation-tree.png" alt="Left navigation tree with files and links in VSNotes" loading="lazy" />
+          <img class="feature-img"
+               src="assets/features/navigation-tree.png"
+               alt="MyNotes left navigation tree with files and links"
+               loading="lazy"
+               data-caption="Tree-style navigation to open anything in the middle area.">
         </div>
 
         <!-- Open Links Inside -->
@@ -326,7 +365,11 @@
             <h3>Open Links Right Here</h3>
           </div>
           <p>Open Jira, Google, YouTube, banking, and Office online directly in VSNotes — no external browser needed.</p>
-          <img class="feature-img" src="assets/features/open-links-inside.png" alt="Web links like Jira, Google, YouTube opened inside VSNotes" loading="lazy" />
+          <img class="feature-img"
+               src="assets/features/open-links-inside.png"
+               alt="Open Jira, Google, YouTube, and more inside VSNotes"
+               loading="lazy"
+               data-caption="Built-in browser experience — stay in one window.">
         </div>
 
         <!-- Recorder -->
@@ -341,7 +384,11 @@
             <h3>Screen Recorder (Cam Optional)</h3>
           </div>
           <p>Start recording anytime with or without camera, pause/resume, and auto‑save to the <em>Recorder</em> folder.</p>
-          <img class="feature-img" src="assets/features/screen-recorder.png" alt="VSNotes screen recording controls with camera on/off and pause/resume" loading="lazy" />
+          <img class="feature-img"
+               src="assets/features/screen-recorder.png"
+               alt="Screen recorder controls with camera toggle"
+               loading="lazy"
+               data-caption="One-click recording with pause/resume — auto-saved.">
         </div>
 
         <!-- Whiteboard -->
@@ -355,7 +402,11 @@
             <h3>Whiteboard & Diagrams</h3>
           </div>
           <p>Sketch flow diagrams anytime. Export to PNG or PDF — no third‑party tools required.</p>
-          <img class="feature-img" src="assets/features/whiteboard.png" alt="Whiteboard canvas for diagrams and flows in VSNotes" loading="lazy" />
+          <img class="feature-img"
+               src="assets/features/whiteboard.png"
+               alt="Whiteboard canvas for quick flow diagrams"
+               loading="lazy"
+               data-caption="Draw flows and export to PNG/PDF.">
         </div>
 
         <!-- JSON Editor -->
@@ -370,7 +421,11 @@
             <h3>JSON Editor (Pretty + Tree)</h3>
           </div>
           <p>Open, paste, or load JSON files — pretty‑printed with a hierarchical tree view for navigation and editing.</p>
-          <img class="feature-img" src="assets/features/json-editor.png" alt="JSON pretty print with tree navigation view in VSNotes" loading="lazy" />
+          <img class="feature-img"
+               src="assets/features/json-editor.png"
+               alt="JSON editor pretty-printed with a tree view"
+               loading="lazy"
+               data-caption="Format, explore, and edit JSON comfortably.">
         </div>
 
         <!-- Notepad -->
@@ -384,7 +439,11 @@
             <h3>Enhanced Notepad</h3>
           </div>
           <p>Load or create text files, change font size and color, and work directly from the tool.</p>
-          <img class="feature-img" src="assets/features/notepad.png" alt="Enhanced notepad with font and color options in VSNotes" loading="lazy" />
+          <img class="feature-img"
+               src="assets/features/notepad.png"
+               alt="Enhanced notepad with font and color options"
+               loading="lazy"
+               data-caption="A better notepad for everyday text work.">
         </div>
 
         <!-- Outlook Bar -->
@@ -399,7 +458,11 @@
             <h3>Incoming Meetings Bar</h3>
           </div>
           <p>If Outlook is available, see upcoming meetings at the bottom — gentle reminders so you don’t miss anything.</p>
-          <img class="feature-img" src="assets/features/meetings-bar.png" alt="Bottom meeting bar showing upcoming Outlook meetings in VSNotes" loading="lazy" />
+          <img class="feature-img"
+               src="assets/features/meetings-bar.png"
+               alt="Incoming meetings bar integrated with Outlook"
+               loading="lazy"
+               data-caption="Meetings always in sight — never miss one.">
         </div>
 
         <!-- Mini Excel -->
@@ -414,7 +477,11 @@
             <h3>Mini Excel (Spreadsheet)</h3>
           </div>
           <p>Create colorful sheets with rows, cells, merges, and quick editing. Double‑click long cells to edit in a separate view.</p>
-          <img class="feature-img" src="assets/features/mini-excel.png" alt="Spreadsheet-like mini Excel with rows, cells, and merge in VSNotes" loading="lazy" />
+          <img class="feature-img"
+               src="assets/features/mini-excel.png"
+               alt="Mini spreadsheet with cells, merge, and styling"
+               loading="lazy"
+               data-caption="Spreadsheet power for quick work — no Excel required.">
         </div>
 
         <!-- Favorites -->
@@ -428,7 +495,11 @@
             <h3>Favorites by Category</h3>
           </div>
           <p>Pin your go‑to Apps, Files, Links, and Documents for one‑click access — open right inside VSNotes for speed and safety.</p>
-          <img class="feature-img" src="assets/features/favorites.png" alt="Categorized favorites for apps, files, links, and documents in VSNotes" loading="lazy" />
+          <img class="feature-img"
+               src="assets/features/favorites.png"
+               alt="Favorites grouped as Apps, Files, Links, Documents"
+               loading="lazy"
+               data-caption="One-click access to your most-used items.">
         </div>
 
         <!-- Screenshots Manager -->
@@ -443,7 +514,11 @@
             <h3>Screenshots, Auto‑Saved</h3>
           </div>
           <p>Press PrintScreen — VSNotes captures and saves under <em>Screens</em>. Double‑click to open in MS Paint, edit, and save.</p>
-          <img class="feature-img" src="assets/features/screenshots-manager.png" alt="Screenshots tab that stores captured images automatically in VSNotes" loading="lazy" />
+          <img class="feature-img"
+               src="assets/features/screenshots-manager.png"
+               alt="Screenshots tab with auto-saved captures"
+               loading="lazy"
+               data-caption="Instantly capture and manage screenshots.">
         </div>
 
         <!-- NEW: Compare (WinMerge-style) -->
@@ -458,7 +533,12 @@
             <h3>Compare (WinMerge‑Style)</h3>
           </div>
           <p>Side‑by‑side file comparison to spot differences quickly — copy left/right like WinMerge. Perfect for reviews and merges.</p>
-          <img class="feature-img" src="assets/features/compare.png" alt="Side-by-side file comparison like WinMerge inside VSNotes" loading="lazy" onerror="this.style.display='none';" />
+          <img class="feature-img"
+               src="assets/features/compare.png"
+               alt="Side-by-side file comparison like WinMerge"
+               loading="lazy"
+               data-caption="Clear diffs with copy left/right."
+               onerror="this.style.display='none'">
         </div>
       </div>
     </div>
@@ -594,7 +674,7 @@
   <footer>
     <div class="container foot-grid">
       <div class="foot">
-        <a href="#top" class="brand" aria-label="VSNotes footer home">
+        <a href="#top" class="brand" aria-label="VSNotes Home">
           <span class="logo" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="#061128" stroke-width="2">
               <rect x="5" y="3" width="14" height="18" rx="3" fill="#e9f3ff"/>
@@ -614,13 +694,24 @@
       </div>
       <div class="foot">
         <h4>Get</h4>
-        <div><a href="#" onclick="alert('Attach your download link!')">Download</a></div>
+        <div><a href="#top">Download</a></div>
         <div><a href="#contact">Contact</a></div>
-        <div><a href="#" onclick="alert('Attach your docs link!')">Documentation</a></div>
+        <div><a href="#top">Documentation</a></div>
       </div>
     </div>
     <div class="container" style="opacity:.7; margin-top:16px">© <span id="yr"></span> VSNotes. All rights reserved.</div>
   </footer>
+
+  <!-- Lightbox Root -->
+  <div class="lightbox" id="vsn-lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+    <div class="lightbox__panel" role="document">
+      <button class="lightbox__close" id="vsn-lightbox-close" aria-label="Close (Esc)">✕</button>
+      <div class="lightbox__img-wrap">
+        <img id="vsn-lightbox-img" class="lightbox__img" alt="">
+      </div>
+      <div id="vsn-lightbox-caption" class="lightbox__caption"></div>
+    </div>
+  </div>
 
   <script>
     // Year
@@ -632,6 +723,60 @@
       entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
     }, {threshold:.12});
     document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
+
+    // ===== Lightbox logic =====
+    (function(){
+      const lb      = document.getElementById('vsn-lightbox');
+      const lbImg   = document.getElementById('vsn-lightbox-img');
+      const lbCap   = document.getElementById('vsn-lightbox-caption');
+      const lbClose = document.getElementById('vsn-lightbox-close');
+
+      function openLightbox(src, caption, altText){
+        if (!src) return;
+        lbImg.src = src;
+        lbImg.alt = altText || caption || 'Preview';
+        lbCap.textContent = caption || altText || '';
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+        lbClose.focus();
+        document.addEventListener('keydown', onEsc);
+      }
+
+      function closeLightbox(){
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden', 'true');
+        lbImg.src = '';
+        document.removeEventListener('keydown', onEsc);
+      }
+
+      function onEsc(e){ if (e.key === 'Escape') closeLightbox(); }
+
+      // Close on outside click (clicking the backdrop)
+      lb.addEventListener('click', (e)=>{
+        const panel = e.target.closest('.lightbox__panel');
+        if (!panel) closeLightbox();
+      });
+
+      lbClose.addEventListener('click', closeLightbox);
+
+      // Attach to all feature thumbnails
+      document.querySelectorAll('.feature-img').forEach(img=>{
+        img.setAttribute('tabindex', '0');
+        img.setAttribute('aria-label', 'Open preview');
+        const openFromImg = ()=>{
+          const src = img.getAttribute('data-full') || img.src;
+          const caption = img.getAttribute('data-caption') || img.alt || '';
+          openLightbox(src, caption, img.alt);
+        };
+        img.addEventListener('click', openFromImg);
+        img.addEventListener('keydown', (e)=>{
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openFromImg();
+          }
+        });
+      });
+    })();
   </script>
 </body>
 </html>
