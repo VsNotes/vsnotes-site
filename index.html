@@ -5,42 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VSNotes — Your All‑in‑One Productivity Hub</title>
   <meta name="description" content="VSNotes is a powerful, tab‑based notes and productivity hub with auto‑save, navigation tree for files/links, built‑in screen recording, whiteboard, JSON editor, mini spreadsheet, enhanced notepad, favorites, screenshots manager, and Outlook meeting bar." />
-  <meta name="keywords" content="VSNotes, notes app, productivity, screen recording, whiteboard, JSON editor, spreadsheet, notepad, Outlook meetings, screenshots manager, navigation tree" />
+  <meta name="keywords" content="VSNotes, notes app, productivity, screen recording, whiteboard, JSON editor, spreadsheet, notepad, Outlook meetings, screenshots manager, navigation tree, compare like WinMerge" />
   <meta property="og:title" content="VSNotes — Your All‑in‑One Productivity Hub" />
-  <meta property="og:description" content="Take notes, manage files and links, record meetings, draw whiteboards, format JSON, edit text, and work in a mini spreadsheet — all in one window. Auto‑save included." />
+  <meta property="og:description" content="Work faster in one window: notes, files, links, screen recording, whiteboard, JSON editor, mini Excel, notepad, favorites, screenshots, meetings — all auto‑saved." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/og-image.png" />
-  <meta property="og:url" content="https://example.com" />
+  <meta property="og:url" content="https://vsnotes.github.io/vsnotes-site/" />
   <meta name="theme-color" content="#5b7cfa" />
 
-  <!-- Optional: Google Fonts (remove if you prefer system fonts only) -->
+  <!-- Optional Google Font (safe to remove if you prefer system fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --bg: #0a0c12;
-      --bg2:#0e1220;
-      --glass:#101626cc;
-      --card:#0f172a;
-      --accent:#6C8BFF;
-      --accent2:#7CF7FF;
-      --text:#eef2ff;
-      --muted:#91A0C5;
-      --success:#2ED573;
-      --warning:#FFD166;
-      --danger:#FF6B6B;
-      --shadow: 0 10px 30px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.03);
-      --radius: 16px;
-      --radius-lg: 22px;
-      --ring: 0 0 0 2px rgba(124,247,255,.25), 0 0 0 8px rgba(124,247,255,.06);
+      --bg:#0a0c12; --bg2:#0e1220; --glass:#101626cc; --card:#0f172a;
+      --accent:#6C8BFF; --accent2:#7CF7FF; --text:#eef2ff; --muted:#91A0C5;
+      --success:#2ED573; --warning:#FFD166; --danger:#FF6B6B;
+      --shadow:0 10px 30px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.03);
+      --radius:16px; --radius-lg:22px; --ring:0 0 0 2px rgba(124,247,255,.25), 0 0 0 8px rgba(124,247,255,.06);
     }
     *{box-sizing:border-box}
     html,body{height:100%}
+    html{scroll-behavior:smooth}
     body{
-      margin:0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
-      color:var(--text);
+      margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif; color:var(--text);
       background: radial-gradient(1200px 1200px at 80% 10%, #18204b33 0%, transparent 60%),
                   radial-gradient(900px 900px at 10% 20%, #1d2e6b2b 0%, transparent 60%),
                   linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
@@ -68,6 +58,7 @@
     nav a{
       color:var(--muted); text-decoration:none; font-weight:600; font-size:14.5px;
       padding:10px 14px; border-radius:12px; transition:.25s ease;
+      margin-left:6px;
     }
     nav a:hover{color:var(--text); background:rgba(108,139,255,.08)}
     .cta{
@@ -81,13 +72,8 @@
     .cta.secondary{ background: transparent; color:var(--text); border:1px solid rgba(124,247,255,.25)}
 
     /* Hero */
-    .hero{
-      padding: 72px 20px 36px;
-      position:relative; overflow:hidden;
-    }
-    .hero-grid{
-      display:grid; grid-template-columns: 1.1fr .9fr; gap:28px; align-items:center;
-    }
+    .hero{ padding: 72px 20px 36px; position:relative; overflow:hidden; }
+    .hero-grid{ display:grid; grid-template-columns: 1.1fr .9fr; gap:28px; align-items:center; }
     .badge{
       display:inline-flex; gap:10px; align-items:center; color:var(--accent2);
       background: linear-gradient(180deg, rgba(124,247,255,.12), rgba(124,247,255,.04));
@@ -133,10 +119,7 @@
       background: linear-gradient(180deg, #f2f6ff 0%, #b9c8ff 100%); -webkit-background-clip:text; color:transparent;
     }
     .section-sub{color:var(--muted); margin-bottom:24px}
-    .grid{
-      display:grid; gap:18px;
-      grid-template-columns: repeat(12, 1fr);
-    }
+    .grid{display:grid; gap:18px; grid-template-columns: repeat(12, 1fr);}
     .col-4{grid-column: span 4}
     .col-6{grid-column: span 6}
     .col-8{grid-column: span 8}
@@ -166,13 +149,15 @@
     .card h3{margin:0; font-size: 18px}
     .card p{margin: 8px 0 0; color: var(--muted); line-height:1.55}
 
-    /* Feature list bullets */
-    .bullets{display:grid; gap:10px; margin-top:10px}
-    .bullet{display:flex; gap:10px; align-items:flex-start}
-    .bullet .dot{
-      width:10px; height:10px; margin-top:6px; border-radius:50%;
-      background: linear-gradient(180deg, var(--accent2), var(--accent));
-      box-shadow: 0 0 0 3px rgba(124,247,255,.15);
+    /* Feature images */
+    .feature-img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 12px;
+      border: 1px solid rgba(124,247,255,0.18);
+      background: #0c1224;
+      display: block;
+      object-fit: cover;
     }
 
     /* Showcase */
@@ -196,9 +181,7 @@
     .cta-actions{display:flex; gap:10px; flex-wrap:wrap}
 
     /* Footer */
-    footer{
-      padding:32px 20px 60px; color:#9fb0e6;
-    }
+    footer{padding:32px 20px 60px; color:#9fb0e6;}
     .foot-grid{display:grid; gap:16px; grid-template-columns: 1.2fr 1fr 1fr}
     .foot h4{margin:0 0 8px}
     .foot a{color:#b8c6ff; text-decoration:none}
@@ -220,8 +203,8 @@
   <header class="site-header">
     <div class="container">
       <div class="row">
-        <a class="brand" href="#top" aria-label="VSNotes Home">
-          <span class="logo">
+        <a href="#top" class="brand" aria-label="VSNotes home">
+          <span class="logo" aria-hidden="true">
             <!-- Minimal notebook icon -->
             <svg viewBox="0 0 24 24" fill="none" stroke="#061128" stroke-width="2">
               <rect x="5" y="3" width="14" height="18" rx="3" fill="#e9f3ff"/>
@@ -295,7 +278,7 @@
     </div>
   </section>
 
-  <!-- Features -->
+  <!-- Features (images wired + Compare feature) -->
   <section id="features">
     <div class="container">
       <h2 class="section-title">Powerful features, seamless flow</h2>
@@ -306,7 +289,6 @@
         <div class="card col-4 reveal">
           <div class="hdr">
             <div class="icon">
-              <!-- notebook -->
               <svg viewBox="0 0 24 24" fill="none" stroke="#7CF7FF" stroke-width="1.8">
                 <rect x="4" y="3" width="14" height="18" rx="3"/>
                 <path d="M7 7h8M7 11h8M7 15h6"/>
@@ -315,27 +297,27 @@
             <h3>Tab‑Wise Notes (Auto‑Save)</h3>
           </div>
           <p>Create unlimited tabs with formatted text, images, and tables. Your content is saved automatically — no manual save required.</p>
+          <img class="feature-img" src="assets/features/notes-tabs.png" alt="VSNotes tabs and rich formatting with auto‑save" loading="lazy" />
         </div>
 
         <!-- Navigation Tree -->
         <div class="card col-4 reveal">
           <div class="hdr">
             <div class="icon">
-              <!-- tree -->
               <svg viewBox="0 0 24 24" fill="none" stroke="#7CF7FF" stroke-width="1.8">
                 <path d="M6 20V6h12v14M6 10h12M10 10v10M14 10v10"/>
               </svg>
             </div>
             <h3>MyNotes Navigation Tree</h3>
           </div>
-          <p>Add/paste files and links; VSNotes creates nodes in a familiar tree. Click to open in the center — like a native browser inside your workspace.</p>
+          <p>Add/paste files and links; VSNotes creates nodes in a familiar tree. Click to open in the center — no more window juggling.</p>
+          <img class="feature-img" src="assets/features/navigation-tree.png" alt="Left navigation tree with files and links in VSNotes" loading="lazy" />
         </div>
 
         <!-- Open Links Inside -->
         <div class="card col-4 reveal">
           <div class="hdr">
             <div class="icon">
-              <!-- link -->
               <svg viewBox="0 0 24 24" fill="none" stroke="#7CF7FF" stroke-width="1.8">
                 <path d="M10 13a5 5 0 0 1 0-7l2-2a5 5 0 0 1 7 7l-2 2"/>
                 <path d="M14 11a5 5 0 0 1 0 7l-2 2a5 5 0 0 1-7-7l2-2"/>
@@ -343,14 +325,14 @@
             </div>
             <h3>Open Links Right Here</h3>
           </div>
-          <p>Jira, Google, YouTube, banking, Office online — open them in VSNotes without switching to your browser or managing multiple windows.</p>
+          <p>Open Jira, Google, YouTube, banking, and Office online directly in VSNotes — no external browser needed.</p>
+          <img class="feature-img" src="assets/features/open-links-inside.png" alt="Web links like Jira, Google, YouTube opened inside VSNotes" loading="lazy" />
         </div>
 
         <!-- Recorder -->
         <div class="card col-4 reveal">
           <div class="hdr">
             <div class="icon">
-              <!-- record -->
               <svg viewBox="0 0 24 24" fill="none" stroke="#7CF7FF" stroke-width="1.8">
                 <circle cx="12" cy="12" r="8"/>
                 <circle cx="12" cy="12" r="4" fill="#7CF7FF"/>
@@ -358,28 +340,28 @@
             </div>
             <h3>Screen Recorder (Cam Optional)</h3>
           </div>
-          <p>Start recording anytime with or without camera, pause/resume, and auto‑save to the <em>Recorder</em> folder. Perfect for demos, meetings, or online classes.</p>
+          <p>Start recording anytime with or without camera, pause/resume, and auto‑save to the <em>Recorder</em> folder.</p>
+          <img class="feature-img" src="assets/features/screen-recorder.png" alt="VSNotes screen recording controls with camera on/off and pause/resume" loading="lazy" />
         </div>
 
         <!-- Whiteboard -->
         <div class="card col-4 reveal">
           <div class="hdr">
             <div class="icon">
-              <!-- pen -->
               <svg viewBox="0 0 24 24" fill="none" stroke="#7CF7FF" stroke-width="1.8">
                 <path d="M12 19l7-7-5-5-7 7-2 5 5-2z"/>
               </svg>
             </div>
             <h3>Whiteboard & Diagrams</h3>
           </div>
-          <p>Sketch flows anytime. Export to PNG or PDF — no third‑party tools or links needed.</p>
+          <p>Sketch flow diagrams anytime. Export to PNG or PDF — no third‑party tools required.</p>
+          <img class="feature-img" src="assets/features/whiteboard.png" alt="Whiteboard canvas for diagrams and flows in VSNotes" loading="lazy" />
         </div>
 
         <!-- JSON Editor -->
         <div class="card col-4 reveal">
           <div class="hdr">
             <div class="icon">
-              <!-- braces -->
               <svg viewBox="0 0 24 24" fill="none" stroke="#7CF7FF" stroke-width="1.8">
                 <path d="M8 4c-2 0-3 1-3 3v2c0 1-1 2-2 2 1 0 2 1 2 2v2c0 2 1 3 3 3"/>
                 <path d="M16 4c2 0 3 1 3 3v2c0 1 1 2 2 2-1 0-2 1-2 2v2c0 2-1 3-3 3"/>
@@ -387,28 +369,28 @@
             </div>
             <h3>JSON Editor (Pretty + Tree)</h3>
           </div>
-          <p>Open, load, or paste JSON. VSNotes formats it professionally and shows a hierarchical view for easy navigation and editing.</p>
+          <p>Open, paste, or load JSON files — pretty‑printed with a hierarchical tree view for navigation and editing.</p>
+          <img class="feature-img" src="assets/features/json-editor.png" alt="JSON pretty print with tree navigation view in VSNotes" loading="lazy" />
         </div>
 
         <!-- Notepad -->
         <div class="card col-4 reveal">
           <div class="hdr">
             <div class="icon">
-              <!-- text -->
               <svg viewBox="0 0 24 24" fill="none" stroke="#7CF7FF" stroke-width="1.8">
                 <path d="M4 6h16M6 10h12M8 14h8M10 18h4"/>
               </svg>
             </div>
             <h3>Enhanced Notepad</h3>
           </div>
-          <p>More capable than a basic notepad: load or create text files, change font size and color, and work directly from the tool.</p>
+          <p>Load or create text files, change font size and color, and work directly from the tool.</p>
+          <img class="feature-img" src="assets/features/notepad.png" alt="Enhanced notepad with font and color options in VSNotes" loading="lazy" />
         </div>
 
         <!-- Outlook Bar -->
         <div class="card col-4 reveal">
           <div class="hdr">
             <div class="icon">
-              <!-- calendar -->
               <svg viewBox="0 0 24 24" fill="none" stroke="#7CF7FF" stroke-width="1.8">
                 <rect x="3" y="5" width="18" height="16" rx="3"/>
                 <path d="M16 3v4M8 3v4M3 11h18"/>
@@ -416,14 +398,14 @@
             </div>
             <h3>Incoming Meetings Bar</h3>
           </div>
-          <p>If Outlook is available, see upcoming meetings at the bottom — gentle reminders to avoid missing anything important.</p>
+          <p>If Outlook is available, see upcoming meetings at the bottom — gentle reminders so you don’t miss anything.</p>
+          <img class="feature-img" src="assets/features/meetings-bar.png" alt="Bottom meeting bar showing upcoming Outlook meetings in VSNotes" loading="lazy" />
         </div>
 
         <!-- Mini Excel -->
         <div class="card col-4 reveal">
           <div class="hdr">
             <div class="icon">
-              <!-- grid -->
               <svg viewBox="0 0 24 24" fill="none" stroke="#7CF7FF" stroke-width="1.8">
                 <rect x="4" y="4" width="16" height="16" rx="2"/>
                 <path d="M4 10h16M4 16h16M10 4v16M16 4v16"/>
@@ -431,14 +413,14 @@
             </div>
             <h3>Mini Excel (Spreadsheet)</h3>
           </div>
-          <p>Create colorful sheets with rows, cells, merges, and quick editing. Double‑click a large cell to edit in a separate view for long content.</p>
+          <p>Create colorful sheets with rows, cells, merges, and quick editing. Double‑click long cells to edit in a separate view.</p>
+          <img class="feature-img" src="assets/features/mini-excel.png" alt="Spreadsheet-like mini Excel with rows, cells, and merge in VSNotes" loading="lazy" />
         </div>
 
         <!-- Favorites -->
         <div class="card col-4 reveal">
           <div class="hdr">
             <div class="icon">
-              <!-- star -->
               <svg viewBox="0 0 24 24" fill="none" stroke="#7CF7FF" stroke-width="1.8">
                 <path d="M12 3l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z"/>
               </svg>
@@ -446,13 +428,13 @@
             <h3>Favorites by Category</h3>
           </div>
           <p>Pin your go‑to Apps, Files, Links, and Documents for one‑click access — open right inside VSNotes for speed and safety.</p>
+          <img class="feature-img" src="assets/features/favorites.png" alt="Categorized favorites for apps, files, links, and documents in VSNotes" loading="lazy" />
         </div>
 
         <!-- Screenshots Manager -->
         <div class="card col-4 reveal">
           <div class="hdr">
             <div class="icon">
-              <!-- camera -->
               <svg viewBox="0 0 24 24" fill="none" stroke="#7CF7FF" stroke-width="1.8">
                 <path d="M5 7h3l2-2h4l2 2h3a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-7a3 3 0 0 1 3-3z"/>
                 <circle cx="12" cy="14" r="4"/>
@@ -460,7 +442,23 @@
             </div>
             <h3>Screenshots, Auto‑Saved</h3>
           </div>
-          <p>Press PrintScreen — VSNotes captures and saves it under <em>Screens</em>. Double‑click to open in MS Paint, edit, save, and it updates automatically.</p>
+          <p>Press PrintScreen — VSNotes captures and saves under <em>Screens</em>. Double‑click to open in MS Paint, edit, and save.</p>
+          <img class="feature-img" src="assets/features/screenshots-manager.png" alt="Screenshots tab that stores captured images automatically in VSNotes" loading="lazy" />
+        </div>
+
+        <!-- NEW: Compare (WinMerge-style) -->
+        <div class="card col-4 reveal">
+          <div class="hdr">
+            <div class="icon">
+              <!-- simple diff icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="#7CF7FF" stroke-width="1.8">
+                <path d="M7 4h10M7 20h10M8 8h4M8 12h8M8 16h6"/>
+              </svg>
+            </div>
+            <h3>Compare (WinMerge‑Style)</h3>
+          </div>
+          <p>Side‑by‑side file comparison to spot differences quickly — copy left/right like WinMerge. Perfect for reviews and merges.</p>
+          <img class="feature-img" src="assets/features/compare.png" alt="Side-by-side file comparison like WinMerge inside VSNotes" loading="lazy" onerror="this.style.display='none';" />
         </div>
       </div>
     </div>
@@ -520,7 +518,7 @@
         </div>
         <div class="cta-actions">
           <button class="cta">Download for Windows</button>
-          <button class="cta secondary">Contact Sales</button>
+          <button class="cta secondary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Sales</button>
         </div>
       </div>
     </div>
@@ -559,7 +557,7 @@
     </div>
   </section>
 
-  <!-- Contact / Footer -->
+  <!-- Contact -->
   <section id="contact">
     <div class="container">
       <div class="cta-band reveal">
@@ -592,19 +590,20 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <div class="container foot-grid">
       <div class="foot">
-        <div class="brand" style="pointer-events:none">
-          <span class="logo">
+        <a href="#top" class="brand" aria-label="VSNotes footer home">
+          <span class="logo" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="#061128" stroke-width="2">
               <rect x="5" y="3" width="14" height="18" rx="3" fill="#e9f3ff"/>
               <path d="M8 7h8M8 11h8M8 15h6" stroke="#5b7cfa"/>
             </svg>
           </span>
           <span class="brand-name">VSNotes</span>
-        </div>
-        <p style="max-width:520px">The unified workspace for notes, files, links, recordings, diagrams, JSON, spreadsheets, and more — all auto‑saved.</p>
+        </a>
+        <p style="max-width:520px">The unified workspace for notes, files, links, recordings, diagrams, JSON, spreadsheets, compare, and more — all auto‑saved.</p>
       </div>
       <div class="foot">
         <h4>Explore</h4>
@@ -615,9 +614,9 @@
       </div>
       <div class="foot">
         <h4>Get</h4>
-        <div><a href="#" onclick="alert('Attach your installer link')">Download</a></div>
+        <div><a href="#" onclick="alert('Attach your download link!')">Download</a></div>
         <div><a href="#contact">Contact</a></div>
-        <div><a href="#" onclick="alert('Attach docs link')">Documentation</a></div>
+        <div><a href="#" onclick="alert('Attach your docs link!')">Documentation</a></div>
       </div>
     </div>
     <div class="container" style="opacity:.7; margin-top:16px">© <span id="yr"></span> VSNotes. All rights reserved.</div>
@@ -625,7 +624,8 @@
 
   <script>
     // Year
-    document.getElementById('yr').textContent = new Date().getFullYear();
+    const yr = document.getElementById('yr');
+    if (yr) yr.textContent = new Date().getFullYear();
 
     // Reveal on scroll
     const io = new IntersectionObserver(entries=>{
