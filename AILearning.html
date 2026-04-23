@@ -58,6 +58,26 @@
   .child { color: #c7d2fe; }
   .desc  { color: #94a3b8; }
   .ex    { color: #a5b4fc; }
+  
+  .author-image {
+  margin: 1rem 0 2rem 0;
+}
+
+.author-image img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #6366f1;
+  
+
+
+.author-block img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #6366f1;
+  object-fit: cover;
+}
 </style>
 </head>
 
@@ -66,7 +86,18 @@
 
 <header>
   <h1>Artificial Intelligence – Complete Hierarchy</h1>
-  <div class="author">Author: Ashish Sinha · AI Developer</div>
+
+  <div class="author-block">
+    <img 
+      src="Author.jpg"
+      alt="Author profile image"
+      class="author-image"
+    />
+
+    <div class="author">
+      Author: Ashish Sinha · AI Developer
+    </div>
+  </div>
 </header>
 
 <pre>
