@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AI Hierarchy – Complete & Professional</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    background: #020617;
+    color: #e5e7eb;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  .container {
+    max-width: 1350px;
+    margin: auto;
+    padding: 3rem 2rem 4rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+    margin: 0;
+    color: #f8fafc;
+  }
+
+  .author {
+    font-size: 0.85rem;
+    color: #94a3b8;
+  }
+
+  pre {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1rem;
+    line-height: 1.75;
+    border-left: 4px solid #6366f1;
+    padding: 2rem;
+    white-space: pre;
+    overflow-x: auto;
+  }
+
+  .parent { color: #f8fafc; font-weight: 700; font-size: 1.15rem; }
+  .year { color: #22d3ee; }
+  .child { color: #c7d2fe; }
+  .desc  { color: #94a3b8; }
+  .ex    { color: #a5b4fc; }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+  <h1>Artificial Intelligence – Complete Hierarchy</h1>
+  <div class="author">Author: Ashish Sinha · AI Developer</div>
+</header>
+
+<pre>
+<span class="parent">◆ Artificial Intelligence (AI)</span> <span class="year">[1956]</span>
+│
+│  AI is the grand goal of making machines behave intelligently like humans.
+│
+│  Major AI Domains (Beginner Friendly):
+│   ◇ NLP  – Natural Language Processing (text, chat, search)
+│   ◇ Vision – Image & video understanding
+│   ◇ Speech – Voice recognition, TTS
+│   ◇ Robotics – Physical intelligent systems
+│   ◇ Recommender Systems – Netflix, YouTube
+│
+│  Examples:
+│   ▸ Chatbots
+│   ▸ Google Maps
+│   ▸ Face recognition
+│
+├── <span class="parent">◆ Rule‑Based / Symbolic AI</span>
+│   │
+│   │  Humans explicitly write IF–ELSE rules.
+│   │  No learning, no improvement.
+│   │
+│   │  Failed because:
+│   │   • Rules explode in real life
+│   │   • Cannot handle uncertainty
+│
+└── <span class="parent">◆ Machine Learning (ML)</span> <span class="year">[1990s]</span>
+    │
+    │  ML lets machines learn patterns from data.
+    │
+    │  Learning loop:
+    │   Data → Prediction → Loss → Backpropagation → Better Model
+    │
+    ├── <span class="child">◇ Learning Types</span>
+    │   ├─ Supervised Learning
+    │   │   • Labeled data
+    │   │   • Example: Spam vs Not‑Spam
+    │   │
+    │   └─ Unsupervised Learning
+    │       • No labels
+    │       • Example: Customer clustering
+    │
+    └── <span class="parent">◆ Deep Learning (DL)</span> <span class="year">[2012]</span>
+        │
+        │  ML failed on raw images, speech and text → DL started.
+        │
+        │  Uses Neural Networks inspired by human brain.
+        │
+        ├── <span class="child">◇ Neural Network Layers</span>
+        │   ├─ Input Layer   → receives raw data
+        │   ├─ Hidden Layers → learn patterns
+        │   └─ Output Layer  → prediction
+        │
+        ├── <span class="parent">◆ CNN (Vision Models)</span>
+        │   │
+        │   │  Example: Cat vs Dog
+        │   │   Layer‑1 → edges
+        │   │   Layer‑2 → textures
+        │   │   Layer‑3 → parts (ears, eyes)
+        │   │   Output  → Cat / Dog
+        │
+        └── <span class="parent">◆ Transformer</span> <span class="year">[2017]</span>
+            │
+            │  Uses Attention instead of memory loops.
+            │  Handles long context efficiently.
+            │
+            └── <span class="parent">◆ Large Language Models (LLMs)</span> <span class="year">[2018+]</span>
+                │
+                │  Examples:
+                │   ▸ ChatGPT
+                │   ▸ Microsoft Copilot
+                │   ▸ Google Gemini
+                │
+                │  Example Input: "I love you"
+                │
+                ├── <span class="child">◇ Tokenization</span>
+                │
+                │   Word Tokens:
+                │    ["I", "love", "you"]
+                │
+                │   Sub‑word (BPE) Tokens:
+                │    ["I", "lo", "ve", "you"]
+                │
+                │   Why BPE?
+                │    • Handles unknown words
+                │    • Reduces vocabulary size
+                │
+                ├── <span class="child">◇ Vocabulary</span>
+                │   Fixed dictionary mapping token → ID
+                │   Example:
+                │     "I"    → 101
+                │     "love" → 458
+                │     "you"  → 932
+                │
+                ├── <span class="child">◇ Embedding Layer (Vector Creation)</span>
+                │
+                │   Token IDs → dense vectors
+                │
+                │   Example Embedding Matrix:
+                │
+                │    Token     d1    d2    d3    d4
+                │    --------------------------------
+                │    "I"      0.12  0.88 -0.31  0.05
+                │    "love"   0.45 -0.72  0.61 -0.18
+                │    "you"    0.09  0.33  0.77  0.22
+                │
+                │   Vectors capture meaning & similarity.
+                │
+                ├── <span class="child">◇ Transformer Layers</span>
+                │
+                │   Self‑Attention:
+                │    "love" focuses on "I" and "you"
+                │
+                │   Feed‑Forward:
+                │    Refines contextual meaning
+                │
+                ├── <span class="child">◇ Vocabulary Projection</span>
+                │   Converts vectors → word probabilities
+                │
+                └── <span class="child">◇ Generated Text</span>
+                    Highest probability token selected
+                │
+                └── <span class="parent">◆ RAG (Retrieval‑Augmented Generation)</span>
+                    │
+                    │  Adds external knowledge to LLM.
+                    │
+                    ├─ Data Collection → Docs / PDFs
+                    ├─ Data Cleaning
+                    ├─ Chunking
+                    ├─ Vector Embedding
+                    ├─ Vector Database (Azure AI Search / FAISS)
+                    ├─ User Prompt → Vector
+                    ├─ Similarity Search
+                    ├─ Prompt + Context
+                    └─ Grounded LLM Answer
+
+<span class="parent">◆ AI Career Paths</span>
+│
+├─ Prompt Engineer
+├─ ML Engineer (Python)
+├─ AI Engineer (LLMs, RAG)
+├─ Data Scientist
+└─ MLOps Engineer
+
+<span class="parent">◆ Tech Stack Usage</span>
+│
+├─ Python
+│   ▸ ML, DL, LLMs, RAG pipelines
+└─ Azure AI
+    ▸ GPT models
+    ▸ Vector databases
+    ▸ Enterprise AI solutions
+</pre>
+
+</div>
+</body>
+</html>
