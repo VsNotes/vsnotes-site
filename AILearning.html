@@ -156,7 +156,7 @@ b { color: var(--ai-blue); }
 
 <div class="comic-canvas">
     <header>
-        <h1>Artificial Intelligence</h1>
+        <h1>Thinking Machines of Today</h1>
         <div class="author-tag">Author: Ashish Sinha · AI Developer</div>
     </header>
 
@@ -178,8 +178,71 @@ It combines mathematics, data, and algorithms to simulate human thinking.
 <span style="color:var(--ai-blue)">◇ NLP – Natural Language Processing (text, chat, search)</span>
 NLP enables machines to work with human language (text and speech).  
 Modern LLMs like ChatGPT are advanced NLP systems trained on large-scale data to understand context and generate responses.
-<div style="margin-top:10px; font-size:18px;">
-📝 Text Input → ✂ Tokenization → 🧠 Embeddings → 🤖 Transformer / LLM → 💬 Output Response
+<div style="margin-top:10px; font-size:18px; display:flex; align-items:flex-start; gap:14px;">
+  
+ <div style="display:flex; align-items:flex-start; gap:8px; font-size:14px; text-align:center; white-space:nowrap;">
+
+  <div>
+    📝 Input (Prompt)<br>
+    <span style="font-size:12px; color:#555;">"I love you"</span>
+  </div>
+
+  <div style="margin-top:12px;">→</div>
+
+  <div>
+    ✂ Tokenization<br>
+    <span style="font-size:12px; color:#555;">["I","love","you"]</span>
+    <div>
+  ✂ Tokenization<br>
+  <span style="font-size:11px; color:#555; line-height:1.4;">
+    "I love you"<br>
+    ↓<br>
+    ["I", "love", "you"]<br>
+    ↓<br>
+    Vocabulary Lookup<br>
+    ↓<br>
+    Token IDs → [123, 456, 789]
+  </span>
+</div>
+
+  </div>
+
+  <div style="margin-top:12px;">→</div>
+
+  <div>
+    🧠 Embeddings<br>
+    <span style="font-size:11px; color:#555;">
+      [0.12, 0.45]<br>
+      ...
+    </span>
+  </div>
+
+  <div style="margin-top:12px;">→</div>
+
+  <div>
+    🤖 Transformer / LLM (ChatGPT)<br>
+    <div>
+  🤖 Transformer / LLM (ChatGPT)<br>
+  <span style="font-size:11px; color:#555; line-height:1.4;">
+    Attention & Context<br>
+    ↓<br>
+    Next Token Prediction<br>
+    ↓<br>
+    Text Generation
+  </span>
+</div>
+
+  </div>
+
+  <div style="margin-top:12px;">→</div>
+
+  <div>
+    💬 Output Response<br>
+    <span style="font-size:12px; color:#555;">"I love you too ❤️"</span>
+  </div>
+
+</div>
+
 </div>
 <b>Simple idea:</b>  
 Text → Tokenization → Understanding → Response Generation (LLM)
@@ -271,7 +334,7 @@ Text → Tokenization → Understanding → Response Generation (LLM)
    user behavior → pattern learning → ranking → recommendation
     </div>
     <div class="tree-line">
-        <div class="branch-title">◆ Rule‑Based / Symbolic AI</div>
+        <div class="branch-title">◆  Rule‑Based / Symbolic AI (1950s → early 2000s)</div>
         <div class="content-block">
 Humans explicitly write IF–ELSE rules.
 These systems follow fixed logical conditions created by experts.
