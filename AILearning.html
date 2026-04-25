@@ -140,6 +140,110 @@ b { color: var(--ai-blue); }
 ::-webkit-scrollbar { width: 12px; }
 ::-webkit-scrollbar-track { background: #111; }
 ::-webkit-scrollbar-thumb { background: #555; }
+
+/* ===============================
+   ✅ MOBILE RESPONSIVE FIXES
+   (NO content/data/style altered)
+   =============================== */
+
+/* Tablets + Mobile */
+@media (max-width: 900px) {
+    body {
+        padding: 20px 10px;
+        font-size: 16px;
+    }
+
+    .comic-canvas {
+        padding: 20px;
+        box-shadow: 8px 8px 0px #444;
+    }
+
+    h1 {
+        font-size: 44px;
+        text-align: center;
+    }
+
+    .author-tag {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .parent-node-title {
+        font-size: 36px;
+    }
+
+    .branch-title {
+        font-size: 28px;
+    }
+
+    .parent-node-content {
+        font-size: 18px;
+    }
+
+    .content-block {
+        font-size: 16px;
+    }
+
+    .tree-line {
+        margin-left: 10px;
+        padding-left: 20px;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Small Mobile Phones */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .parent-node-title {
+        font-size: 30px;
+    }
+
+    .branch-title {
+        font-size: 24px;
+        padding: 4px 14px;
+    }
+
+    .comic-canvas {
+        padding: 15px;
+    }
+
+    .tree-line {
+        border-left-width: 3px;
+        padding-left: 16px;
+    }
+
+    /* ✅ Prevent horizontal overflow */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* ✅ NLP flow diagram wraps instead of breaking */
+    div[style*="display:flex"] {
+        flex-wrap: wrap;
+        row-gap: 12px;
+    }
+
+    div[style*="white-space:nowrap"] {
+        white-space: normal;
+        text-align: left;
+    }
+
+    /* ✅ Reduce padding for content blocks */
+    .content-block,
+    .parent-node-content {
+        padding: 14px;
+    }
+}
+
+
+
 </style>
 </head>
 
