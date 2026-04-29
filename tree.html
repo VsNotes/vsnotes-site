@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,6 +50,37 @@ body{
 /* TEXT */
 .desc{color:#888;font-size:13px;margin-top:2px;}
 .meta{color:#666;font-size:12px;}
+
+/* ========== COMIC BULLETS (NO BORDER AT ALL) ========== *//* ========== COMIC BULLETS (NOic-bullet {
+  background: #141414;      /* comic panel feel */
+  border: none;             /* ✅ NO BORDER */
+  outline: none;            /* ✅ NO OUTLINE */
+  border-radius: 8px;
+  padding: 6px 10px;
+  margin: 6px 0;
+  font-size: 13px;
+  color: #e0e0e0;
+  box-shadow: 2px 2px 0 #000; /* shadow only, no border */
+  font-family: "Comic Sans MS", cursive;
+}
+
+/* Slight comic wobble (optional, still safe) */
+.comic-bullet:nth-child(odd) {
+  transform: rotate(-0.3deg);
+}
+.comic-bullet:nth-child(even) {
+  transform: rotate(0.3deg);
+}
+
+
+.comic-flow {
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-left: 10px;
+}
+
+
+
 </style>
 </head>
 
@@ -126,6 +158,39 @@ body{
 <li class="nn">
 <span>👁️ CNN</span>
 <div class="desc">Image understanding (edges → objects)</div>
+<div class="comic-flow">
+
+  <strong>Input Image</strong><br>  <div class="comic-bullet">
+    Photo of a cat (ears, eyes, fur pixels)
+  </div>
+
+  <div class="comic-bullet">
+    🔍 <strong>Convolution</strong><br>
+    Finds edges → whiskers → ear shapes
+  </div>
+
+  <div class="comic-bullet">
+    ⚡ <strong>ReLU</strong><br>
+    Keeps strong signals, removes noise
+  </div>
+
+  <div class="comic-bullet">
+    📉 <strong>Pooling</strong><br>
+    Shrinks image, keeps cat shape
+  </div>
+
+  <div class="comic-bullet">
+    🧠 <strong>Deep Layers</strong><br>
+    Combines parts → full cat
+  </div>
+
+  <div class="comic-bullet">
+    ✅ <strong>Output</strong><br>
+    Cat detected ✔️
+  </div>
+
+</div>
+
 </li>
 
 <li class="nn">
@@ -169,7 +234,47 @@ body{
 <ul>
 <li class="app"><span>🗣️ NLP</span><div class="desc">Language understanding</div></li>
 <li class="app"><span>👀 Computer Vision</span><div class="desc">Image & video analysis</div></li>
-<li class="app"><span>🧩 RAG</span><div class="desc">LLM + external knowledge</div></li>
+<li class="app">
+  <span>🧩 RAG</span>
+  <div class="desc">LLM + external knowledge (fact‑grounded answers)</div>
+
+  <ul>
+    <li class="inner">
+      <span>User Query</span>
+      <div class="desc">Question from user</div>
+    </li>
+
+    <li class="inner">
+      <span>Query Embedding</span>
+      <div class="desc">Convert question into vector</div>
+    </li>
+
+    <li class="inner">
+      <span>Vector Database Search</span>
+      <div class="desc">Find relevant documents (similarity search)</div>
+    </li>
+
+    <li class="inner">
+      <span>Context Selection</span>
+      <div class="desc">Pick best knowledge chunks</div>
+    </li>
+
+    <li class="inner">
+      <span>Prompt Augmentation</span>
+      <div class="desc">Question + retrieved context</div>
+    </li>
+
+    <li class="inner">
+      <span>LLM Generation</span>
+      <div class="desc">Answer generated using context</div>
+    </li>
+
+    <li class="inner">
+      <span>Grounded Response ✅</span>
+      <div class="desc">Accurate, traceable output</div>
+    </li>
+  </ul>
+</li>
 </ul>
 
 </li>
