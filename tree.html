@@ -2,112 +2,160 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>AI → ML → DL → LLM Hierarchy (Colored)</title>
+<title>AI Evolution Tree (Visual)</title>
 
 <style>
-body{
-  background:#000;
-  color:#ddd;
-  font-family: Consolas, 'Roboto Mono', monospace;
-  padding:30px;
-  font-size:15px;
-  line-height:1.4;
+body {
+  background: #000;
+  color: #ddd;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  padding: 20px;
 }
 
-/* ROOT */
-.ai { color:#ff4d4d; font-weight:bold; }
-.ai-line { color:#ff4d4d; }
+pre {
+  line-height: 1.5;
+  white-space: pre;
+}
 
-/* ML */
-.ml { color:#ffd166; font-weight:bold; }
-.ml-line { color:#ffd166; }
+/* Colors */
+.ai    { color: #ff6b6b; }
+.non   { color: #ff5252; }
+.ml    { color: #4da3ff; }
+.cla   { color: #8bc34a; }
+.dl    { color: #bb86fc; }
+.nn    { color: #4caf50; }
+.nlp   { color: #26c6da; }
+.llm   { color: #ffa726; }
+.cv    { color: #29b6f6; }
+.rag   { color: #ce93d8; }
 
-/* DL */
-.dl { color:#6bcf63; font-weight:bold; }
-.dl-line { color:#6bcf63; }
-
-/* NN / Architectures */
-.nn { color:#9b5de5; }
-
-/* NLP */
-.nlp { color:#ef476f; }
-
-/* LLM */
-.llm { color:#4d96ff; font-weight:bold; }
-
-/* Internal concepts */
-.inner { color:#bbbbbb; }
-
-/* CV */
-.cv { color:#14c7e0; }
-
-/* Classical / Non-learning */
-.rule { color:#9fa4a9; }
+.note  { color: #aaaaaa; }
+.bad   { color: #ff7676; }
+.good  { color: #7CFC98; }
+.arrow { color: #888; }
 </style>
 </head>
 
 <body>
 
 <pre>
-<span class="ai">Artificial Intelligence (AI)</span>
-<span class="ai-line">│</span>
-<span class="ai-line">├──</span> <span class="ml">Machine Learning (ML)</span>
-<span class="ml-line">│   │</span>
-<span class="ml-line">│   ├──</span> <span class="rule">Classical Machine Learning</span>
-<span class="ml-line">│   │   ├──</span> <span class="rule">Rules + Features</span>
-<span class="ml-line">│   │   ├──</span> <span class="rule">Regression, Classification</span>
-<span class="ml-line">│   │   └──</span> <span class="rule">Decision Trees, SVM, etc.</span>
-<span class="ml-line">│   │</span>
-<span class="ml-line">│   └──</span> <span class="dl">Deep Learning (DL)</span>
-<span class="dl-line">│       │</span>
-<span class="dl-line">│       ├──</span> <span class="nn">Neural Networks (NN)</span>
-<span class="dl-line">│       │   │</span>
-<span class="dl-line">│       │   ├──</span> <span class="inner">Layers (Core Concept)</span>
-<span class="dl-line">│       │   │   ├──</span> <span class="inner">Input Layer</span>
-<span class="dl-line">│       │   │   ├──</span> <span class="inner">Hidden Layers</span>
-<span class="dl-line">│       │   │   └──</span> <span class="inner">Output Layer</span>
-<span class="dl-line">│       │   │</span>
-<span class="dl-line">│       │   ├──</span> <span class="nn">CNN (Convolutional Neural Network)</span>
-<span class="dl-line">│       │   │   ├──</span> <span class="inner">Used for Images / Video</span>
-<span class="dl-line">│       │   │   ├──</span> <span class="inner">Convolution Layers</span>
-<span class="dl-line">│       │   │   ├──</span> <span class="inner">Pooling Layers</span>
-<span class="dl-line">│       │   │   └──</span> <span class="inner">Fully Connected Layers</span>
-<span class="dl-line">│       │   │</span>
-<span class="dl-line">│       │   ├──</span> <span class="nn">RNN / LSTM</span>
-<span class="dl-line">│       │   │   └──</span> <span class="inner">Used for sequences</span>
-<span class="dl-line">│       │   │</span>
-<span class="dl-line">│       │   └──</span> <span class="nn">Transformer Networks</span>
-<span class="dl-line">│       │       │</span>
-<span class="dl-line">│       │       ├──</span> <span class="inner">Attention Mechanism</span>
-<span class="dl-line">│       │       ├──</span> <span class="inner">Self‑Attention</span>
-<span class="dl-line">│       │       └──</span> <span class="inner">Multi‑Head Attention</span>
-<span class="dl-line">│</span>
-<span class="dl-line">│       ├──</span> <span class="nlp">Natural Language Processing (NLP)</span>
-<span class="dl-line">│       │   ├──</span> <span class="inner">Text Processing</span>
-<span class="dl-line">│       │   ├──</span> <span class="inner">Speech Processing</span>
-<span class="dl-line">│       │   └──</span> <span class="inner">Language Understanding</span>
-<span class="dl-line">│</span>
-<span class="dl-line">│       └──</span> <span class="llm">Large Language Models (LLMs)</span>
-<span class="dl-line">│           │</span>
-<span class="dl-line">│           ├──</span> <span class="inner">Tokenizer</span>
-<span class="dl-line">│           │   ├──</span> <span class="inner">Tokens</span>
-<span class="dl-line">│           │   └──</span> <span class="inner">Vocabulary</span>
-<span class="dl-line">│           │</span>
-<span class="dl-line">│           ├──</span> <span class="inner">Embeddings</span>
-<span class="dl-line">│           ├──</span> <span class="inner">Transformer Layers</span>
-<span class="dl-line">│           ├──</span> <span class="inner">Prompt (Instruction + Context)</span>
-<span class="dl-line">│           └──</span> <span class="inner">Chatbots / AI Assistants</span>
 
-<span class="ai-line">│</span>
-<span class="ai-line">├──</span> <span class="cv">Computer Vision (CV)</span>
-<span class="ai-line">│   ├──</span> <span class="inner">Uses CNN heavily</span>
-<span class="ai-line">│   ├──</span> <span class="inner">Image Recognition</span>
-<span class="ai-line">│   └──</span> <span class="inner">Video Analysis</span>
-<span class="ai-line">│</span>
-<span class="ai-line">└──</span> <span class="rule">Non‑Learning AI</span>
-    <span class="rule">├── Rule‑Based Systems</span>
-    <span class="rule">├── Logic Engines</span>
-    <span class="rule">└── Automation Scripts</span>
+<span class="ai">🌟 Artificial Intelligence (AI)</span>
+<span class="note">(Goal: Make machines act smart like humans)</span>
+|
+|-- <span class="note">Starting point: "Give instructions to machines"</span>
+|
+├── <span class="non">🤔 Non‑Learning AI (Old‑School Brain)</span>
+│   <span class="note">(Machines follow rules, but never improve)</span>
+│   |
+│   ├── <span class="non">Rule‑Based Systems</span>
+│   │   <span class="arrow">→</span> “IF this happens, DO that”
+│   │   <span class="arrow">→</span> Human writes every possible rule
+│   |
+│   ├── <span class="non">Logic Engines</span>
+│   │   <span class="arrow">→</span> Formal reasoning & constraints
+│   │   <span class="arrow">→</span> Logic works, but learning does not happen
+│   |
+│   └── <span class="non">Automation Scripts</span>
+│       <span class="arrow">→</span> Fast, dumb, predictable helpers
+│       <span class="arrow">→</span> Good for repetition, bad for intelligence
+│
+│   <span class="bad">❌ Problem:</span>
+│   • Same mistakes repeat
+│   • No learning from experience
+│   • No adaptation to new situations
+│
+│   <span class="good">✅ This limitation CREATED the need for learning systems</span>
+│
+├── <span class="ml">📈 Machine Learning (ML)</span>
+│   <span class="note">(Machines learn from experience instead of fixed rules)</span>
+│   |
+│   |-- <span class="note">Key shift:</span>
+│   |   Rules <span class="arrow">→</span> Data
+│   |   Instructions <span class="arrow">→</span> Examples
+│
+│   ├── <span class="cla">🧩 Classical Machine Learning</span>
+│   │   <span class="note">(Humans still guide what to learn)</span>
+│   │   |
+│   │   ├── <span class="cla">Human‑made Features</span>
+│   │   │   <span class="arrow">→</span> “Tell the machine what to look for”
+│   │   │   <span class="arrow">→</span> Human intelligence still dominant
+│   │   |
+│   │   ├── <span class="cla">Core Tasks</span>
+│   │   │   <span class="arrow">→</span> Regression (predict numbers)
+│   │   │   <span class="arrow">→</span> Classification (predict labels)
+│   │   |
+│   │   └── <span class="cla">Common Models</span>
+│   │       <span class="arrow">→</span> Decision Trees
+│   │       <span class="arrow">→</span> SVM
+│   │       <span class="arrow">→</span> k‑NN
+│   │
+│   │   <span class="bad">❌ Limitation:</span>
+│   │   • Humans still design features
+│   │   • Complex data (images, speech) breaks system
+│   │
+│   │   <span class="good">✅ This limitation CREATED the need for deeper learning</span>
+│
+│   └── <span class="dl">🧠 Deep Learning (DL)</span>
+│       <span class="note">(Machines learn features by themselves)</span>
+│       |
+│       |-- <span class="note">Big shift:</span>
+│       |   Human features <span class="arrow">→</span> Machine‑learned features
+│
+│       ├── <span class="nn">🔗 Neural Networks (The Brain Core)</span>
+│       │   |
+│       │   ├── Input Layer
+│       │   │   <span class="arrow">→</span> Receives raw data
+│       │   |
+│       │   ├── Hidden Layers
+│       │   │   <span class="arrow">→</span> Learn patterns step‑by‑step
+│       │   |
+│       │   └── Output Layer
+│       │       <span class="arrow">→</span> Final prediction
+│       |
+│       ├── <span class="nn">👁️ CNN – Convolutional Neural Networks</span>
+│       │   |
+│       │   ├── Sees edges <span class="arrow">→</span> shapes <span class="arrow">→</span> objects
+│       │   ├── Convolution Layers
+│       │   ├── Pooling Layers
+│       │   └── Fully Connected Layers
+│       │
+│       │   <span class="good">✅ Perfect for images & video</span>
+│       |
+│       ├── <span class="nn">🔁 RNN / LSTM</span>
+│       │   |
+│       │   └── Handles sequences
+│       │       <span class="arrow">→</span> time, speech, text order
+│       |
+│       └── <span class="nn">⚡ Transformers</span>
+│           |
+│           ├── Attention
+│           │   <span class="arrow">→</span> What matters most?
+│           |
+│           ├── Self‑Attention
+│           │   <span class="arrow">→</span> Words talk to words
+│           |
+│           └── Multi‑Head Attention
+│               <span class="arrow">→</span> Many views at same time
+│
+├── <span class="nlp">🗣️ Natural Language Processing (NLP)</span>
+│   <span class="note">(Teaching machines human language)</span>
+│   |
+│   |-- Built on top of:
+│   |   Deep Learning + Transformers
+│
+│   ├── Text Understanding
+│   ├── Speech Understanding
+│   └── Meaning & Intent Detection
+│
+├── <span class="llm">🧠 Large Language Models (LLMs)</span>
+│   <span class="note">(Language intelligence at massive scale)</span>
+│
+├── <span class="cv">👀 Computer Vision (CV)</span>
+│
+└── <span class="rag">🧩 RAG (Retrieval‑Augmented Generation)</span>
+
 </pre>
 
 </body>
