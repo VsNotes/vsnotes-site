@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Cycle Explained – Ashish Sinha</title>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --panel-bg: #fffef5;
+    --accent1: #ff6b35;
+    --accent2: #4ecdc4;
+    --accent3: #ffe66d;
+    --accent4: #a855f7;
+    --border: 3px solid #1a1a2e;
+    --shadow: 5px 5px 0 #1a1a2e;
+    --font-comic: 'Comic Neue', cursive;
+    --font-title: 'Bangers', cursive;
+    --font-body: 'Space Grotesk', sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #fef9e7;
+    background-image: repeating-linear-gradient(0deg, transparent, transparent 39px, #e8e0c0 39px, #e8e0c0 40px),
+                      repeating-linear-gradient(90deg, transparent, transparent 39px, #e8e0c0 39px, #e8e0c0 40px);
+    font-family: var(--font-body);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  /* NAV */
+  nav {
+    background: var(--ink);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--accent3);
+  }
+  .nav-logo {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    color: var(--accent3);
+    letter-spacing: 2px;
+    padding: 0.5rem 0;
+  }
+  .nav-logo span { color: var(--accent2); }
+  .nav-links { display: flex; gap: 0.25rem; flex-wrap: wrap; padding: 0.5rem 0; }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .nav-links a:hover, .nav-links a.active {
+    background: var(--accent3);
+    color: var(--ink);
+    border-color: var(--accent3);
+  }
+  .nav-links a.new-badge::after {
+    content: 'NEW';
+    background: var(--accent1);
+    color: #fff;
+    font-size: 0.55rem;
+    padding: 1px 4px;
+    border-radius: 3px;
+    margin-left: 4px;
+    vertical-align: top;
+  }
+
+  /* HERO */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 2rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .hero-text h1 {
+    font-family: var(--font-title);
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+  .hero-text h1 .line1 { color: var(--ink); }
+  .hero-text h1 .line2 { color: var(--accent1); -webkit-text-stroke: 2px var(--ink); }
+  .hero-text h1 .line3 { color: var(--accent4); -webkit-text-stroke: 2px var(--ink); }
+  .hero-sub {
+    font-size: 1rem;
+    line-height: 1.6;
+    background: var(--accent3);
+    border: var(--border);
+    padding: 0.8rem 1rem;
+    box-shadow: var(--shadow);
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+  }
+  .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border: var(--border);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+  }
+  .btn:hover { transform: translate(-2px,-2px); box-shadow: 7px 7px 0 var(--ink); }
+  .btn-primary { background: var(--accent1); color: #fff; }
+  .btn-secondary { background: var(--accent2); color: var(--ink); }
+
+  /* COMIC PANEL HERO ART */
+  .hero-art {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  .comic-panel {
+    background: var(--panel-bg);
+    border: var(--border);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .comic-panel .panel-icon { font-size: 2.5rem; margin-bottom: 0.3rem; }
+  .comic-panel .panel-title {
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: var(--accent1);
+  }
+  .comic-panel .panel-text { font-size: 0.72rem; color: #555; margin-top: 0.2rem; }
+  .comic-panel.tall { grid-row: span 2; }
+  .panel-badge {
+    position: absolute;
+    top: 6px; right: 6px;
+    background: var(--accent4);
+    color: #fff;
+    font-size: 0.55rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 2px;
+    border: 1.5px solid var(--ink);
+    text-transform: uppercase;
+  }
+
+  /* THOUGHT BUBBLE */
+  .thought-bubble {
+    background: #fff;
+    border: 2.5px solid var(--ink);
+    border-radius: 50px;
+    padding: 0.6rem 1.2rem;
+    font-family: var(--font-comic);
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: inline-block;
+    box-shadow: 3px 3px 0 var(--ink);
+    margin: 0.5rem 0;
+    position: relative;
+  }
+  .thought-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -18px; left: 20px;
+    width: 10px; height: 10px;
+    background: #fff;
+    border: 2.5px solid var(--ink);
+    border-radius: 50%;
+  }
+
+  /* AD BANNER */
+  .ad-banner {
+    background: #fff8e1;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    text-align: center;
+    padding: 1rem;
+    color: #999;
+    font-size: 0.8rem;
+    margin: 1.5rem 0;
+    position: relative;
+  }
+  .ad-banner::before {
+    content: 'Advertisement';
+    position: absolute;
+    top: -10px; left: 50%;
+    transform: translateX(-50%);
+    background: #fff8e1;
+    padding: 0 6px;
+    font-size: 0.7rem;
+    color: #bbb;
+  }
+  .ad-banner .ad-inner {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .ad-banner .ad-label { font-size: 1rem; color: #ccc; }
+
+  /* AD SIDEBAR */
+  .ad-sidebar {
+    background: #fff8e1;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    color: #999;
+    font-size: 0.75rem;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+  }
+  .ad-sidebar::before {
+    content: 'Ad';
+    position: absolute;
+    top: 6px; right: 8px;
+    font-size: 0.6rem;
+    color: #ccc;
+  }
+
+  /* MAIN CONTENT AREA */
+  .content-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 2rem;
+    align-items: start;
+  }
+  .main-col { display: flex; flex-direction: column; gap: 2rem; }
+  .sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+
+  /* SECTION HEADERS */
+  .section-title {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding: 0.5rem 1rem;
+    border: var(--border);
+    display: inline-block;
+    box-shadow: var(--shadow);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+
+  /* CARD GRID */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+  .topic-card {
+    background: var(--panel-bg);
+    border: var(--border);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    padding: 1.2rem;
+    text-decoration: none;
+    color: var(--ink);
+    transition: transform 0.15s, box-shadow 0.15s;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  .topic-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 5px;
+  }
+  .topic-card.c1::before { background: var(--accent1); }
+  .topic-card.c2::before { background: var(--accent2); }
+  .topic-card.c3::before { background: var(--accent3); }
+  .topic-card.c4::before { background: var(--accent4); }
+  .topic-card.c5::before { background: #06d6a0; }
+  .topic-card.c6::before { background: #f72585; }
+  .topic-card.c7::before { background: #3a86ff; }
+  .topic-card.c8::before { background: #fb8500; }
+  .topic-card:hover { transform: translate(-3px,-3px); box-shadow: 8px 8px 0 var(--ink); }
+  .topic-card .card-emoji { font-size: 2rem; margin-bottom: 0.5rem; }
+  .topic-card .card-title { font-family: var(--font-title); font-size: 1.3rem; letter-spacing: 1px; margin-bottom: 0.3rem; }
+  .topic-card .card-desc { font-size: 0.78rem; color: #555; line-height: 1.5; }
+  .topic-card .card-tag {
+    display: inline-block;
+    margin-top: 0.7rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 20px;
+    border: 1.5px solid var(--ink);
+    text-transform: uppercase;
+  }
+
+  /* ZIGZAG DIVIDER */
+  .zigzag {
+    height: 20px;
+    background: linear-gradient(135deg, var(--ink) 25%, transparent 25%) -10px 0,
+                linear-gradient(225deg, var(--ink) 25%, transparent 25%) -10px 0,
+                linear-gradient(315deg, var(--ink) 25%, transparent 25%),
+                linear-gradient(45deg, var(--ink) 25%, transparent 25%);
+    background-size: 20px 20px;
+    background-color: var(--accent3);
+    margin: 1rem 0;
+  }
+
+  /* HALFTONE BOX */
+  .halftone-box {
+    background: var(--ink);
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+  .halftone-box::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+    background-size: 8px 8px;
+    pointer-events: none;
+  }
+  .halftone-box .hb-title {
+    font-family: var(--font-title);
+    font-size: 1.4rem;
+    color: var(--accent3);
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+  }
+  .halftone-box p { font-size: 0.85rem; line-height: 1.6; color: #ddd; }
+
+  /* AUTHOR CARD */
+  .author-card {
+    background: var(--panel-bg);
+    border: var(--border);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    padding: 1.2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .author-avatar {
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--ink);
+    background: var(--accent4);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .author-name { font-family: var(--font-title); font-size: 1.3rem; letter-spacing: 1px; }
+  .author-bio { font-size: 0.78rem; color: #555; margin-top: 0.2rem; }
+
+  /* PROGRESS ROADMAP */
+  .roadmap {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .roadmap-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+    position: relative;
+  }
+  .roadmap-item::before {
+    content: '';
+    position: absolute;
+    left: 19px; top: 40px;
+    width: 2px;
+    height: calc(100% - 10px);
+    background: var(--ink);
+  }
+  .roadmap-item:last-child::before { display: none; }
+  .roadmap-dot {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    border: var(--border);
+    background: var(--accent3);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    box-shadow: 3px 3px 0 var(--ink);
+  }
+  .roadmap-content { flex: 1; }
+  .roadmap-content h4 { font-family: var(--font-title); font-size: 1rem; letter-spacing: 1px; }
+  .roadmap-content p { font-size: 0.75rem; color: #555; }
+
+  /* FOOTER */
+  footer {
+    background: var(--ink);
+    color: #ccc;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+    margin-top: 3rem;
+  }
+  footer span { color: var(--accent3); font-family: var(--font-title); font-size: 1rem; letter-spacing: 1px; }
+
+  @media(max-width:768px) {
+    .hero { grid-template-columns: 1fr; }
+    .content-grid { grid-template-columns: 1fr; }
+    .hero-text h1 { font-size: 2.5rem; }
+    .hero-art { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">AI<span>Cycle</span></div>
+  <div style="font-size:0.62rem;color:#aaa;font-family:var(--font-body);letter-spacing:0.3px;line-height:1.4;">
+      Built with 🧠 by <strong style="color:#ddd;">Ashish Sinha</strong> · AI Developer<br>
+      <a href="mailto:startvsnotes@gmail.com" style="color:var(--accent3);text-decoration:none;">✉️ startvsnotes@gmail.com</a><br>
+      <span style="color:#777;">Educational content · All rights reserved · 2025-30</span>
+    </div>
+
+  <div class="nav-links">
+    <a href="index.html" class="active">🏠 Home</a>
+    <a href="intro.html">Intro</a>
+    <a href="ml.html">ML</a>
+    <a href="deeplearning.html">Deep Learning</a>
+    <a href="llms.html">LLMs</a>
+    <a href="rag.html">RAG</a>
+    <a href="agentic.html" class="new-badge">Agentic AI</a>
+    <a href="python-rag.html" class="new-badge">Python RAG</a>
+    <a href="dotnet-rag.html" class="new-badge">.NET RAG</a>
+    <a href="tools.html">AI Tools</a>
+    <a href="career.html">Career</a>
+  </div>
+</nav>
+
+<!-- TOP AD BANNER -->
+<div style="max-width:1100px;margin:1rem auto;padding:0 2rem;">
+  <div class="ad-banner">
+    <div class="ad-inner">
+      <!-- Google AdSense: Replace with actual ad code -->
+      <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+      <div class="ad-label">📢</div>
+      <div>Google Ad Banner (728×90) — Replace with AdSense code</div>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>
+      <div class="line1">THINKING</div>
+      <div class="line2">MACHINES</div>
+      <div class="line3">EXPLAINED!</div>
+    </h1>
+    <div class="thought-bubble">💡 From Zero to AI Hero</div>
+    <p class="hero-sub">
+      Your complete visual guide to <strong>AI · ML · Deep Learning · LLMs · RAG · Agentic AI</strong> — explained like a comic, built like a pro. By <strong>Ashish Sinha</strong>, AI Developer.
+    </p>
+    <div class="hero-btns">
+      <a href="intro.html" class="btn btn-primary">🚀 Start Learning</a>
+      <a href="agentic.html" class="btn btn-secondary">⚡ Agentic AI (New!)</a>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="comic-panel tall" style="background:#fff0f5;">
+      <div class="panel-badge">AI</div>
+      <div class="panel-icon">🤖</div>
+      <div class="panel-title">The AI Cycle</div>
+      <div class="panel-text">From rules to reasoning — the full evolution</div>
+      <div style="margin-top:0.8rem;font-size:0.7rem;color:#888;line-height:1.8;">
+        Non-Learning AI<br>↓<br>Machine Learning<br>↓<br>Deep Learning<br>↓<br>LLMs<br>↓<br>Agentic AI
+      </div>
+    </div>
+    <div class="comic-panel" style="background:#f0fff4;">
+      <div class="panel-icon">🧠</div>
+      <div class="panel-title">Neural Nets</div>
+      <div class="panel-text">CNNs · RNNs · Transformers</div>
+    </div>
+    <div class="comic-panel" style="background:#fffde7;">
+      <div class="panel-icon">🔗</div>
+      <div class="panel-title">RAG + Agents</div>
+      <div class="panel-text">Grounded & Autonomous AI</div>
+    </div>
+  </div>
+</section>
+
+<div class="zigzag"></div>
+
+<!-- MAIN CONTENT + SIDEBAR -->
+<div class="content-grid">
+  <div class="main-col">
+
+    <!-- TOPIC CARDS -->
+    <div>
+      <div class="section-title" style="background:var(--accent3);">📚 All Topics</div>
+      <div class="card-grid">
+        <a href="intro.html" class="topic-card c1">
+          <div class="card-emoji">🌱</div>
+          <div class="card-title">Introduction</div>
+          <div class="card-desc">What is AI? History, types, and the big picture. Start here if you're new.</div>
+          <span class="card-tag" style="background:#ffe5d9;">Beginner</span>
+        </a>
+        <a href="ml.html" class="topic-card c2">
+          <div class="card-emoji">📊</div>
+          <div class="card-title">Machine Learning</div>
+          <div class="card-desc">Supervised, Unsupervised, Reinforcement — how machines learn from data.</div>
+          <span class="card-tag" style="background:#d0f4f0;">Beginner</span>
+        </a>
+        <a href="deeplearning.html" class="topic-card c3">
+          <div class="card-emoji">🕸️</div>
+          <div class="card-title">Deep Learning</div>
+          <div class="card-desc">Neural networks, CNNs for vision, RNNs for sequences, and Transformers.</div>
+          <span class="card-tag" style="background:#fffde0;">Intermediate</span>
+        </a>
+        <a href="llms.html" class="topic-card c4">
+          <div class="card-emoji">💬</div>
+          <div class="card-title">LLMs</div>
+          <div class="card-desc">Tokenization, embeddings, attention mechanism, prompt engineering.</div>
+          <span class="card-tag" style="background:#f3e8ff;">Intermediate</span>
+        </a>
+        <a href="rag.html" class="topic-card c5">
+          <div class="card-emoji">🔍</div>
+          <div class="card-title">RAG</div>
+          <div class="card-desc">Retrieval-Augmented Generation with vector databases for grounded answers.</div>
+          <span class="card-tag" style="background:#d4fdf2;">Advanced</span>
+        </a>
+        <a href="agentic.html" class="topic-card c6" style="border-color:#f72585;">
+          <div class="card-emoji">⚡</div>
+          <div class="card-title">Agentic AI</div>
+          <div class="card-desc">Autonomous agents, tool use, multi-agent systems, LangChain, AutoGen & more.</div>
+          <span class="card-tag" style="background:#ffe0ef;border-color:#f72585;">🆕 New!</span>
+        </a>
+        <a href="python-rag.html" class="topic-card c7" style="border-color:#3a86ff;">
+          <div class="card-emoji">🐍</div>
+          <div class="card-title">Python RAG Guide</div>
+          <div class="card-desc">Step-by-step: build RAG-based Agentic AI in Python with LangChain, FAISS & OpenAI.</div>
+          <span class="card-tag" style="background:#dceeff;border-color:#3a86ff;">🆕 Code</span>
+        </a>
+        <a href="dotnet-rag.html" class="topic-card c8" style="border-color:#fb8500;">
+          <div class="card-emoji">🟣</div>
+          <div class="card-title">.NET RAG Guide</div>
+          <div class="card-desc">RAG & Agentic AI in C# with Semantic Kernel, NuGet packages & Azure OpenAI.</div>
+          <span class="card-tag" style="background:#fff1de;border-color:#fb8500;">🆕 Code</span>
+        </a>
+        <a href="tools.html" class="topic-card c1">
+          <div class="card-emoji">🛠️</div>
+          <div class="card-title">AI Tools</div>
+          <div class="card-desc">ChatGPT, Copilot, Gemini, Midjourney — the best AI tools right now.</div>
+          <span class="card-tag" style="background:#ffe5d9;">All Levels</span>
+        </a>
+        <a href="career.html" class="topic-card c2">
+          <div class="card-emoji">🎯</div>
+          <div class="card-title">Career in AI</div>
+          <div class="card-desc">Roles, roadmap, skills, certifications, and how to land your first AI job.</div>
+          <span class="card-tag" style="background:#d0f4f0;">Career</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- MID AD -->
+    <div class="ad-banner">
+      <div class="ad-inner">
+        <!-- Google AdSense mid-content -->
+        <div class="ad-label">📢</div>
+        <div>Google Ad — 468×60 or Responsive — Replace with AdSense code</div>
+      </div>
+    </div>
+
+    <!-- LEARNING ROADMAP -->
+    <div>
+      <div class="section-title" style="background:var(--accent2);">🗺️ Learning Roadmap</div>
+      <div style="background:var(--panel-bg);border:var(--border);border-radius:4px;box-shadow:var(--shadow);padding:1.5rem;">
+        <div class="roadmap">
+          <div class="roadmap-item">
+            <div class="roadmap-dot">1</div>
+            <div class="roadmap-content">
+              <h4>Start with AI Fundamentals</h4>
+              <p>Understand what AI is, types of AI, and why it matters. → <a href="intro.html">Introduction tab</a></p>
+            </div>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-dot" style="background:var(--accent2);">2</div>
+            <div class="roadmap-content">
+              <h4>Learn Machine Learning</h4>
+              <p>Supervised & unsupervised learning, key algorithms. → <a href="ml.html">ML tab</a></p>
+            </div>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-dot" style="background:var(--accent1);">3</div>
+            <div class="roadmap-content">
+              <h4>Dive into Deep Learning</h4>
+              <p>Neural networks, CNNs, RNNs, and Transformers. → <a href="deeplearning.html">Deep Learning tab</a></p>
+            </div>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-dot" style="background:var(--accent4);">4</div>
+            <div class="roadmap-content">
+              <h4>Master LLMs &amp; RAG</h4>
+              <p>How modern AI understands and generates language. → <a href="llms.html">LLMs</a> &amp; <a href="rag.html">RAG</a></p>
+            </div>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-dot" style="background:#f72585;">5</div>
+            <div class="roadmap-content">
+              <h4>Build Agentic AI Systems</h4>
+              <p>Autonomous agents, tool-calling, multi-agent orchestration. → <a href="agentic.html">Agentic AI</a></p>
+            </div>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-dot" style="background:#3a86ff;">6</div>
+            <div class="roadmap-content">
+              <h4>Code It: Python or .NET</h4>
+              <p>Hands-on RAG + Agentic AI with real code. → <a href="python-rag.html">Python</a> or <a href="dotnet-rag.html">.NET</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AUTHOR -->
+    <div class="author-card">
+      <div class="author-avatar">AS</div>
+      <div>
+        <div class="author-name">Ashish Sinha</div>
+        <div class="author-bio">AI Developer · Building visual AI education for everyone. This site walks through the full AI Cycle from basics to production-ready Agentic AI systems.</div>
+      </div>
+    </div>
+
+    <!-- BOTTOM AD -->
+    <div class="ad-banner">
+      <div class="ad-inner">
+        <div class="ad-label">📢</div>
+        <div>Google Ad — 728×90 Leaderboard — Replace with AdSense code</div>
+      </div>
+    </div>
+
+  </div><!-- end main-col -->
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <!-- SIDEBAR AD TOP -->
+    <div class="ad-sidebar">
+      <!-- Google AdSense 300×250 -->
+      <div style="font-size:1.5rem;">📢</div>
+      <div>Google Ad<br>300×250<br>Replace with AdSense</div>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div style="background:var(--panel-bg);border:var(--border);border-radius:4px;box-shadow:var(--shadow);padding:1rem;">
+      <div style="font-family:var(--font-title);font-size:1.1rem;letter-spacing:1px;margin-bottom:0.8rem;color:var(--accent1);">⚡ Quick Jump</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.4rem;">
+        <li><a href="python-rag.html" style="font-size:0.8rem;color:var(--accent4);font-weight:700;">🐍 Python RAG Tutorial</a></li>
+        <li><a href="dotnet-rag.html" style="font-size:0.8rem;color:var(--accent1);font-weight:700;">🟣 .NET RAG Tutorial</a></li>
+        <li><a href="agentic.html" style="font-size:0.8rem;color:#f72585;font-weight:700;">⚡ Agentic AI</a></li>
+        <li><a href="rag.html" style="font-size:0.8rem;">🔍 RAG Explained</a></li>
+        <li><a href="llms.html" style="font-size:0.8rem;">💬 LLMs Explained</a></li>
+        <li><a href="career.html" style="font-size:0.8rem;">🎯 AI Career Guide</a></li>
+      </ul>
+    </div>
+
+    <!-- HALFTONE BOX -->
+    <div class="halftone-box">
+      <div class="hb-title">💡 Did You Know?</div>
+      <p>GPT-4 has an estimated <strong style="color:var(--accent3);">1.76 trillion</strong> parameters — each one a tiny knob tuned during training to encode world knowledge.</p>
+    </div>
+
+    <!-- SIDEBAR AD BOTTOM -->
+    <div class="ad-sidebar" style="min-height:600px;">
+      <div style="font-size:1.5rem;">📢</div>
+      <div>Google Ad<br>160×600<br>Wide Skyscraper<br>Replace with AdSense</div>
+    </div>
+
+  </div><!-- end sidebar -->
+</div><!-- end content-grid -->
+
+<div class="zigzag" style="background:var(--accent1);"></div>
+
+<footer>
+  <span>AI Cycle</span> · Built with ❤️ by Ashish Sinha · AI Developer<br>
+  <span style="font-size:0.7rem;color:#888;font-family:var(--font-body);">Educational content · All rights reserved · 2025</span>
+</footer>
+
+</body>
+</html>
