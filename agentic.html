@@ -34,7 +34,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 
 /* ── MAIN TAB BAR ── */
 .mtbar{background:var(--ink);border-bottom:5px solid var(--yellow);display:flex;align-items:flex-end;padding:.8rem 2rem 0;gap:.6rem;overflow-x:auto;}
-.mt{font-family:var(--ft);font-size:1.25rem;letter-spacing:2px;padding:.65rem 2rem .8rem;border:3px solid rgba(255,255,255,.15);border-bottom:none;border-radius:12px 12px 0 0;cursor:pointer;transition:all .2s cubic-bezier(.34,1.56,.64,1);color:#666;background:rgba(255,255,255,.05);position:relative;top:4px;white-space:nowrap;outline:none;}
+.mt{font-family:var(--ft);font-size:1.25rem;letter-spacing:2px;padding:.65rem 2rem .8rem;border:3px solid rgba(255,255,255,.15);border-bottom:none;border-radius:12px 12px 0 0;cursor:pointer;transition:all .2s cubic-bezier(.34,1.56,.64,1);color:#64748b;background:rgba(255,255,255,.05);position:relative;top:4px;white-space:nowrap;outline:none;}
 .mt:hover{background:rgba(255,255,255,.12);color:#ddd;top:2px;}
 .mt.ah{background:var(--yellow);color:var(--ink);top:0;border-color:var(--yellow);box-shadow:0 -3px 0 var(--yellow),3px 0 0 var(--yellow),-3px 0 0 var(--yellow),inset 0 2px 0 rgba(255,255,255,.4);transform:scale(1.05);}
 .mt.ap{background:var(--py);color:#fff;top:0;border-color:var(--py);box-shadow:0 -3px 0 var(--py),3px 0 0 var(--py),-3px 0 0 var(--py),inset 0 2px 0 rgba(255,255,255,.3);transform:scale(1.05);}
@@ -51,7 +51,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .cp{background:#fffef5;border:var(--border);border-radius:8px;box-shadow:var(--sh);padding:1.2rem;position:relative;}
 .cpn{position:absolute;top:-13px;left:10px;background:var(--hot);color:#fff;font-family:var(--ft);font-size:1.05rem;width:28px;height:28px;border-radius:50%;border:2.5px solid var(--ink);display:flex;align-items:center;justify-content:center;}
 .cp h3{font-family:var(--ft);font-size:1.15rem;letter-spacing:1px;margin-bottom:.4rem;margin-top:.5rem;}
-.cp p{font-size:.95rem;line-height:1.65;color:#333;}
+.cp p{font-size:.95rem;line-height:1.65;color:#1e293b;}
 .cpi{font-size:2.2rem;margin-bottom:.3rem;}
 .dbox{background:var(--ink);border:var(--border);border-radius:8px;box-shadow:var(--sh);padding:1.5rem;position:relative;overflow:hidden;}
 .dbox::after{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(76,201,240,.07) 1px,transparent 1px);background-size:10px 10px;pointer-events:none;}
@@ -66,7 +66,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .fc{background:#fffef5;border:var(--border);border-radius:8px;box-shadow:var(--sh);overflow:hidden;transition:transform .15s,box-shadow .15s;}
 .fc:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--ink);}
 .fch{padding:.9rem 1.1rem;font-family:var(--ft);font-size:1.2rem;letter-spacing:1px;display:flex;align-items:center;gap:.5rem;}
-.fcb{padding:0 1.1rem 1.1rem;font-size:.95rem;line-height:1.65;color:#333;}
+.fcb{padding:0 1.1rem 1.1rem;font-size:.95rem;line-height:1.65;color:#1e293b;}
 .ftags{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.6rem;}
 .ftag{font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:20px;border:2px solid var(--ink);text-transform:uppercase;}
 .cmp{width:100%;border-collapse:collapse;font-size:.95rem;background:#fffef5;border:var(--border);box-shadow:var(--sh);}
@@ -87,7 +87,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 /* ── CHAPTER TAB NAV ── */
 .chnav{background:linear-gradient(180deg,#0d0d1a,#1a1a2e);border-bottom:4px solid var(--yellow);display:flex;align-items:flex-end;padding:.7rem 1.5rem 0;gap:.4rem;overflow-x:auto;flex-shrink:0;scrollbar-width:thin;scrollbar-color:var(--hot) #111;}
 .chnav::-webkit-scrollbar{height:4px;}.chnav::-webkit-scrollbar-track{background:#111;}.chnav::-webkit-scrollbar-thumb{background:var(--hot);border-radius:2px;}
-.cnb{font-family:var(--ft);font-size:.95rem;letter-spacing:1.5px;padding:.55rem 1.05rem .7rem;border:2.5px solid rgba(255,255,255,.12);border-bottom:none;border-radius:10px 10px 0 0;cursor:pointer;color:#666;background:rgba(255,255,255,.04);transition:all .18s cubic-bezier(.34,1.56,.64,1);white-space:nowrap;position:relative;top:4px;outline:none;}
+.cnb{font-family:var(--ft);font-size:.95rem;letter-spacing:1.5px;padding:.55rem 1.05rem .7rem;border:2.5px solid rgba(255,255,255,.12);border-bottom:none;border-radius:10px 10px 0 0;cursor:pointer;color:#64748b;background:rgba(255,255,255,.04);transition:all .18s cubic-bezier(.34,1.56,.64,1);white-space:nowrap;position:relative;top:4px;outline:none;}
 .cnb:hover{background:rgba(255,255,255,.1);color:#bbb;top:2px;}
 .cnb.act-ch{background:var(--yellow);color:var(--ink);border-color:var(--yellow);top:0;font-size:1rem;box-shadow:0 -3px 0 var(--yellow),3px 0 0 var(--yellow),-3px 0 0 var(--yellow),inset 0 2px 0 rgba(255,255,255,.4);transform:scale(1.06);}
 
@@ -102,7 +102,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .spl::after{content:'⋮⋮';color:rgba(255,255,255,.3);font-size:1rem;letter-spacing:-4px;}
 
 /* ── LANG BADGE ── */
-.lbadge{display:flex;align-items:center;gap:.8rem;padding:.7rem 1.1rem;border-radius:10px;border:var(--border);box-shadow:var(--sh);position:sticky;top:0;z-index:10;margin-bottom:.4rem;}
+.lbadge{display:flex;align-items:center;gap:.8rem;padding:.7rem 1.1rem;border-radius:10px;border:var(--border);box-shadow:var(--sh);margin-bottom:.8rem;}
 .lbadge.pyb{background:linear-gradient(135deg,#1e40af,#2563eb);color:#fff;}
 .lbadge.netb{background:linear-gradient(135deg,#5b21b6,#7c3aed);color:#fff;}
 .lbadge .lbi{font-size:1.7rem;}.lbadge .lbt{font-family:var(--ft);font-size:1.25rem;letter-spacing:1px;}.lbadge .lbs{font-size:.83rem;opacity:.9;margin-top:.1rem;}
@@ -137,8 +137,8 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 /* ── COMIC CALLOUT BOXES ── */
 .con{background:#fff;border:var(--border);border-left:6px solid var(--hot);border-radius:8px;box-shadow:5px 5px 0 var(--ink);padding:1.2rem 1.3rem;}
 .con h4{font-family:var(--ft);font-size:1.15rem;letter-spacing:1px;margin-bottom:.55rem;color:var(--hot);}
-.con p{font-size:1rem;line-height:1.75;color:#2a2a2a;}
-.con ul{font-size:.97rem;line-height:1.85;padding-left:1.3rem;color:#2a2a2a;}
+.con p{font-size:1rem;line-height:1.75;color:#1e293b;}
+.con ul{font-size:.97rem;line-height:1.85;padding-left:1.3rem;color:#1e293b;}
 .con ul li{margin-bottom:.25rem;}
 
 /* ── COMIC SPEECH BUBBLE (fun explainer) ── */
@@ -163,7 +163,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .tip-box.warn .tip-title{color:#d97706;}
 .tip-box.info .tip-title{color:var(--py);}
 .tip-box.wow .tip-title{color:var(--net);}
-.tip-box p,.tip-box ul{font-size:.97rem;line-height:1.75;color:#2a2a2a;}
+.tip-box p,.tip-box ul{font-size:.97rem;line-height:1.75;color:#1e293b;}
 .tip-box ul{padding-left:1.2rem;}
 
 /* Persona connect strip */
@@ -171,7 +171,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .persona{flex:1;min-width:120px;background:#fff;border:var(--border);border-radius:10px;box-shadow:4px 4px 0 var(--ink);padding:.8rem;text-align:center;}
 .persona .p-icon{font-size:1.8rem;margin-bottom:.3rem;}
 .persona .p-role{font-family:var(--ft);font-size:.9rem;letter-spacing:1px;color:var(--ink);margin-bottom:.2rem;}
-.persona .p-say{font-size:.83rem;color:#555;line-height:1.5;font-style:italic;}
+.persona .p-say{font-size:.83rem;color:#475569;line-height:1.5;font-style:italic;}
 
 /* Steps */
 .steps{border:var(--border);border-radius:8px;box-shadow:4px 4px 0 var(--ink);overflow:hidden;}
@@ -182,7 +182,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .srow:last-child .scont{border-bottom:none;}
 .sl{font-family:var(--ft);font-size:1rem;letter-spacing:1px;}
 .sl.pyl2{color:var(--pyd);}.sl.netl2{color:var(--netd);}
-.sd{font-size:.95rem;color:#444;line-height:1.6;margin-top:.2rem;}
+.sd{font-size:.95rem;color:#334155;line-height:1.6;margin-top:.2rem;}
 
 /* ── VS CODE STYLE CODE BLOCKS ── */
 .cb{background:#1e1e2e;border:3px solid #1a1a2e;border-radius:10px;box-shadow:6px 6px 0 #1a1a2e;overflow:hidden;font-size:.93rem;line-height:1.8;}
@@ -245,7 +245,7 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
 .ps-card .ps-emoji{font-size:1.5rem;}
 .ps-card strong{font-size:.92rem;font-family:var(--ft);letter-spacing:.5px;}
 .ps-tag{font-size:.68rem;font-weight:800;padding:2px 8px;border-radius:20px;display:inline-block;width:fit-content;}
-.ps-card p{font-size:.82rem;line-height:1.5;color:#555;margin-top:.1rem;}
+.ps-card p{font-size:.82rem;line-height:1.5;color:#475569;margin-top:.1rem;}
 
 /* ── FRAMEWORK DETAIL GRID ──────────────────────── */
 .fw-detail-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:.8rem;margin:.2rem 0;}
@@ -258,14 +258,88 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
 .fwd-role{font-size:.68rem;font-weight:800;letter-spacing:1px;padding:2px 8px;border-radius:20px;width:fit-content;}
 .pycard .fwd-role{background:var(--pyl);color:var(--pyd);}
 .netcard .fwd-role{background:var(--netl);color:var(--netd);}
-.fwd-desc{font-size:.84rem;line-height:1.6;color:#333;}
-.fwd-use{font-size:.75rem;color:#888;font-style:italic;margin-top:.1rem;border-top:1px solid #eee;padding-top:.3rem;}
+.fwd-desc{font-size:.84rem;line-height:1.6;color:#1e293b;}
+.fwd-use{font-size:.75rem;color:#64748b;font-style:italic;margin-top:.1rem;border-top:1px solid #eee;padding-top:.3rem;}
 
 /* ── COMIC ANNOTATION (inline fun explainer within code flow) ── */
 .comic-note{display:flex;gap:.8rem;align-items:flex-start;background:#fffde7;border:2.5px solid var(--ink);border-radius:12px;padding:.9rem 1rem;box-shadow:3px 3px 0 var(--ink);}
 .cn-emoji{font-size:1.8rem;flex-shrink:0;margin-top:.1rem;}
 .cn-text{font-size:.95rem;line-height:1.7;color:#1a1a2e;}
 .cn-text strong{color:var(--hot);}
+
+/* ── TREE DIAGRAM ────────────────────────────────────────────────── */
+.tree-wrap{background:var(--ink);border:var(--border);border-radius:14px;box-shadow:var(--sh);padding:1.6rem 1rem 1.4rem;position:relative;overflow:hidden;}
+.tree-wrap::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.035) 1px,transparent 1px);background-size:14px 14px;pointer-events:none;}
+.tree-title{font-family:var(--ft);font-size:1.25rem;letter-spacing:2px;color:var(--yellow);text-align:center;margin-bottom:1.4rem;}
+/* root node */
+.tr-root{display:flex;justify-content:center;margin-bottom:0;}
+.tr-node{display:inline-flex;flex-direction:column;align-items:center;gap:.22rem;background:rgba(255,255,255,.07);border:2.5px solid rgba(255,255,255,.28);border-radius:12px;padding:.65rem 1rem;min-width:110px;text-align:center;position:relative;transition:transform .15s;}
+.tr-node:hover{transform:translateY(-2px);}
+.tr-node .tn-icon{font-size:1.55rem;}
+.tr-node .tn-label{font-family:var(--ft);font-size:.9rem;letter-spacing:1.5px;color:#fff;}
+.tr-node .tn-sub{font-size:.72rem;color:rgba(255,255,255,.55);line-height:1.3;}
+/* colour variants */
+.tn-root{background:rgba(251,191,36,.12);border-color:rgba(251,191,36,.6);}
+.tn-py{background:rgba(37,99,235,.2);border-color:rgba(96,165,250,.7);}
+.tn-net{background:rgba(124,58,237,.2);border-color:rgba(167,139,250,.7);}
+.tn-hot{background:rgba(247,37,133,.15);border-color:rgba(247,37,133,.6);}
+.tn-green{background:rgba(16,185,129,.15);border-color:rgba(52,211,153,.6);}
+.tn-cyan{background:rgba(6,182,212,.15);border-color:rgba(34,211,238,.6);}
+.tn-qa{background:rgba(13,148,136,.2);border-color:rgba(45,212,191,.7);}
+/* vertical connector from parent to children row */
+.tr-vline{width:2px;height:22px;background:rgba(255,255,255,.2);margin:0 auto;}
+/* horizontal bar spanning children */
+.tr-hbar-wrap{display:flex;flex-direction:column;align-items:center;}
+.tr-children{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;position:relative;}
+/* top horizontal line connecting siblings */
+.tr-children::before{content:'';position:absolute;top:0;left:10%;right:10%;height:2px;background:rgba(255,255,255,.18);}
+/* each child has a short vertical stub at top */
+.tr-child{display:flex;flex-direction:column;align-items:center;}
+.tr-child-stub{width:2px;height:14px;background:rgba(255,255,255,.18);}
+/* loop badge */
+.tr-loop{margin-top:1rem;border:2px dashed rgba(251,191,36,.35);border-radius:10px;padding:.5rem 1rem;text-align:center;font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.5;}
+/* chapter badge on node */
+.tn-ch{display:inline-block;font-size:.58rem;font-weight:800;font-family:var(--fb);background:rgba(251,191,36,.25);color:var(--yellow);padding:1px 6px;border-radius:20px;margin-top:2px;letter-spacing:.5px;}
+
+/* ── READABLE TEXT INSIDE LIGHT PANELS ──────────────────────── */
+/* con box */
+.con h4{color:#b91c6c !important;}
+.con p,.con ul,.con li{color:#1e293b !important;}
+/* tip boxes */
+.tip-box p,.tip-box ul,.tip-box li{color:#1e293b !important;}
+.tip-box.tip .tip-title{color:#065f46 !important;}
+.tip-box.warn .tip-title{color:#92400e !important;}
+.tip-box.info .tip-title{color:#1e40af !important;}
+.tip-box.wow .tip-title{color:#0f766e !important;}
+/* steps */
+.sd{color:#374151 !important;}
+/* persona strip */
+.ps-card p{color:#374151 !important;}
+.ps-card strong{color:#1e293b !important;}
+/* fw detail grid */
+.fwd-desc{color:#1e293b !important;}
+.fwd-use{color:#475569 !important;}
+/* comic note */
+.cn-text{color:#1e293b !important;}
+/* bubble */
+.bubble p{color:#1e293b !important;}
+/* package table */
+.pt td{color:#1e293b !important;}
+/* compare table */
+.cmp td{color:#1e293b !important;}
+/* framework cards */
+.fcb{color:#1e293b !important;}
+/* cp cards */
+.cp p{color:#1e293b !important;}
+/* summary list */
+.csum ul li{color:rgba(255,255,255,.95) !important;}
+/* sidebar */
+.sbox,.sbox *{color:inherit;}
+/* steps description */
+.scont .sd{color:#374151 !important;}
+/* step title */
+.sl.pyl2{color:#1e40af !important;}
+.sl.netl2{color:#5b21b6 !important;}
 </style>
 </head>
 <body>
@@ -273,7 +347,7 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
 <nav>
   <div class="nb">
     <div class="nl">AI<span>Cycle</span></div>
-    <div class="nm">Built with 🧠 by <strong>Ashish Sinha</strong> · AI Developer · <a href="mailto:startvsnotes@gmail.com">✉️ startvsnotes@gmail.com</a> · <span style="color:#666;">© 2025</span></div>
+    <div class="nm">Built with 🧠 by <strong>Ashish Sinha</strong> · AI Developer · <a href="mailto:startvsnotes@gmail.com">✉️ startvsnotes@gmail.com</a> · <span style="color:#64748b;">© 2025</span></div>
   </div>
   <div class="nls">
     <a href="index.html">🏠 Home</a><a href="intro.html">Intro</a><a href="ml.html">ML</a>
@@ -343,13 +417,13 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
 </div>
 <div class="rflow" style="flex-direction:column;align-items:stretch;gap:.8rem;padding:1.5rem;">
   <div style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;justify-content:center;">
-    <div class="rs" style="background:#fff3cd;min-width:110px;">💭 <strong>Think</strong><br><span style="font-size:.75rem;color:#666;">What should I do?</span></div>
+    <div class="rs" style="background:#fff3cd;min-width:110px;">💭 <strong>Think</strong><br><span style="font-size:.75rem;color:#64748b;">What should I do?</span></div>
     <div class="ra">→</div>
-    <div class="rs" style="background:#d1fae5;min-width:110px;">🔧 <strong>Act</strong><br><span style="font-size:.75rem;color:#666;">Call a tool / API</span></div>
+    <div class="rs" style="background:#d1fae5;min-width:110px;">🔧 <strong>Act</strong><br><span style="font-size:.75rem;color:#64748b;">Call a tool / API</span></div>
     <div class="ra">→</div>
-    <div class="rs" style="background:#dbeafe;min-width:110px;">👁️ <strong>Observe</strong><br><span style="font-size:.75rem;color:#666;">See the result</span></div>
+    <div class="rs" style="background:#dbeafe;min-width:110px;">👁️ <strong>Observe</strong><br><span style="font-size:.75rem;color:#64748b;">See the result</span></div>
     <div class="ra">→</div>
-    <div class="rs" style="background:#fce7f3;min-width:110px;">🔁 <strong>Repeat</strong><br><span style="font-size:.75rem;color:#666;">Loop or finish</span></div>
+    <div class="rs" style="background:#fce7f3;min-width:110px;">🔁 <strong>Repeat</strong><br><span style="font-size:.75rem;color:#64748b;">Loop or finish</span></div>
   </div>
   <div style="text-align:center;background:var(--ink);color:var(--yellow);font-family:var(--ft);font-size:1rem;letter-spacing:2px;padding:.6rem;border-radius:8px;border:2px dashed rgba(251,191,36,.4);">🏁 DONE WHEN: Agent decides "I have enough to answer!"</div>
 </div>
@@ -434,7 +508,7 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
   <div class="sbox">
     <div style="font-family:var(--ft);font-size:1.1rem;color:var(--net);letter-spacing:1px;margin-bottom:.6rem;">🆕 ALSO CHECK OUT</div>
     <a href="qa-automation.html" style="display:block;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border:var(--border);border-radius:8px;padding:.8rem 1rem;font-family:var(--ft);font-size:1rem;letter-spacing:1px;text-decoration:none;text-align:center;box-shadow:var(--sh);">🧪 QA Automation Course →</a>
-    <p style="font-size:.85rem;color:#666;margin-top:.5rem;text-align:center;">Playwright · Selenium · AI-driven testing</p>
+    <p style="font-size:.85rem;color:#64748b;margin-top:.5rem;text-align:center;">Playwright · Selenium · AI-driven testing</p>
   </div>
 </div>
 </div><!-- end hw -->
@@ -482,29 +556,78 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
           </div>
         </div>
 
-        <div class="flowdiag">
-          <div class="fd-title">🐍 PYTHON AGENT — FULL FLOW DIAGRAM</div>
-          <div class="fd-row">
-            <div class="fd-node shared-node"><span class="fd-icon">💬</span><span class="fd-label">User Input</span><span class="fd-sub">Question or task</span></div>
-            <div class="fd-arrow">→</div>
-            <div class="fd-node py-node"><span class="fd-icon">🦜</span><span class="fd-label">LangChain</span><span class="fd-sub">Prompt building &amp; chaining</span></div>
-            <div class="fd-arrow">→</div>
-            <div class="fd-node py-node"><span class="fd-icon">🧠</span><span class="fd-label">GPT-4o</span><span class="fd-sub">OpenAI reasoning engine</span></div>
-          </div>
-          <div class="fd-row">
-            <div class="fd-node py-node"><span class="fd-icon">🕸️</span><span class="fd-label">LangGraph</span><span class="fd-sub">Stateful loop control</span></div>
-            <div class="fd-arrow">↔</div>
-            <div class="fd-node hot-node"><span class="fd-icon">🔧</span><span class="fd-label">Tools Layer</span><span class="fd-sub">Search · Code · DB · APIs</span></div>
-            <div class="fd-arrow">↔</div>
-            <div class="fd-node py-node"><span class="fd-icon">💾</span><span class="fd-label">Memory</span><span class="fd-sub">FAISS · MemorySaver</span></div>
-          </div>
-          <div class="fd-row">
-            <div class="fd-node py-node"><span class="fd-icon">🌐</span><span class="fd-label">FastAPI</span><span class="fd-sub">REST endpoint</span></div>
-            <div class="fd-arrow">→</div>
-            <div class="fd-node shared-node"><span class="fd-icon">✅</span><span class="fd-label">Response</span><span class="fd-sub">Final answer to user</span></div>
-          </div>
-          <div class="fd-loop">🔁 LangGraph runs the ReAct loop: Think → Tool Call → Observe → Think again → until done</div>
-        </div>
+<div class="tree-wrap">
+  <div class="tree-title">🐍 PYTHON AGENTIC AI — FULL STACK TREE</div>
+
+  <!-- ROOT -->
+  <div class="tr-root">
+    <div class="tr-node tn-root"><span class="tn-icon">💬</span><span class="tn-label">USER INPUT</span><span class="tn-sub">Question / Task</span></div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <!-- LAYER 1: LangChain -->
+  <div class="tr-root">
+    <div class="tr-node tn-py"><span class="tn-icon">🦜</span><span class="tn-label">LANGCHAIN</span><span class="tn-sub">Orchestration &amp; chaining</span><span class="tn-ch">Ch 2–4</span></div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <!-- LAYER 2: GPT-4o -->
+  <div class="tr-root">
+    <div class="tr-node tn-py"><span class="tn-icon">🧠</span><span class="tn-label">GPT-4o</span><span class="tn-sub">OpenAI reasoning engine</span><span class="tn-ch">Ch 3</span></div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <!-- LAYER 3: LangGraph (branches to 3 children) -->
+  <div class="tr-root">
+    <div class="tr-node tn-py"><span class="tn-icon">🕸️</span><span class="tn-label">LANGGRAPH</span><span class="tn-sub">ReAct loop state machine</span><span class="tn-ch">Ch 7–8</span></div>
+  </div>
+  <div class="tr-vline"></div>
+  <div class="tr-hbar-wrap">
+    <div class="tr-children">
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-hot"><span class="tn-icon">🔧</span><span class="tn-label">TOOLS</span><span class="tn-sub">Search · Calc · APIs · DB</span><span class="tn-ch">Ch 4</span></div>
+      </div>
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-py"><span class="tn-icon">💾</span><span class="tn-label">MEMORY</span><span class="tn-sub">FAISS · MemorySaver</span><span class="tn-ch">Ch 5</span></div>
+      </div>
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-cyan"><span class="tn-icon">📚</span><span class="tn-label">RAG</span><span class="tn-sub">ChromaDB · Embeddings</span><span class="tn-ch">Ch 6</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <!-- LAYER 4: FastAPI -->
+  <div class="tr-root">
+    <div class="tr-node tn-green"><span class="tn-icon">🌐</span><span class="tn-label">FASTAPI</span><span class="tn-sub">REST API gateway</span><span class="tn-ch">Ch 9</span></div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <!-- LAYER 5: Deploy (branches to 2) -->
+  <div class="tr-hbar-wrap">
+    <div class="tr-children">
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-hot"><span class="tn-icon">🐳</span><span class="tn-label">DOCKER</span><span class="tn-sub">Container packaging</span><span class="tn-ch">Ch 10</span></div>
+      </div>
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-green"><span class="tn-icon">☁️</span><span class="tn-label">CLOUD</span><span class="tn-sub">Azure · Railway · GCP</span><span class="tn-ch">Ch 10</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <!-- OUTPUT -->
+  <div class="tr-root">
+    <div class="tr-node tn-root"><span class="tn-icon">✅</span><span class="tn-label">RESPONSE</span><span class="tn-sub">Final answer to user</span></div>
+  </div>
+
+  <div class="tr-loop">🔁 LangGraph ReAct Loop — Think → Pick Tool → Execute → Observe → Think again → until task is done</div>
+</div>
 
         <div class="fw-detail-grid">
           <div class="fwd-card pycard">
@@ -856,29 +979,36 @@ CMD ["uvicorn","api:app","--host","0.0.0.0","--port","8000"]</div></div></div>
           <p>C# developers — great news! Semantic Kernel mirrors every concept from the Python side. LangChain = Kernel. @tool = [KernelFunction]. LangGraph = StepwisePlanner. Same ideas, familiar C# patterns!</p>
         </div>
 
-        <div class="flowdiag">
-          <div class="fd-title">🟣 .NET AGENT — FULL FLOW DIAGRAM</div>
-          <div class="fd-row">
-            <div class="fd-node shared-node"><span class="fd-icon">💬</span><span class="fd-label">User Input</span><span class="fd-sub">HTTP request / UI</span></div>
-            <div class="fd-arrow">→</div>
-            <div class="fd-node net-node"><span class="fd-icon">⚙️</span><span class="fd-label">Semantic Kernel</span><span class="fd-sub">Orchestration engine</span></div>
-            <div class="fd-arrow">→</div>
-            <div class="fd-node net-node"><span class="fd-icon">🧠</span><span class="fd-label">Azure OpenAI</span><span class="fd-sub">GPT-4o reasoning</span></div>
-          </div>
-          <div class="fd-row">
-            <div class="fd-node net-node"><span class="fd-icon">📋</span><span class="fd-label">Planner</span><span class="fd-sub">StepwisePlanner loop</span></div>
-            <div class="fd-arrow">↔</div>
-            <div class="fd-node hot-node"><span class="fd-icon">🔌</span><span class="fd-label">Plugins</span><span class="fd-sub">[KernelFunction] tools</span></div>
-            <div class="fd-arrow">↔</div>
-            <div class="fd-node net-node"><span class="fd-icon">🗃️</span><span class="fd-label">Memory</span><span class="fd-sub">Qdrant · Azure AI Search</span></div>
-          </div>
-          <div class="fd-row">
-            <div class="fd-node net-node"><span class="fd-icon">🌐</span><span class="fd-label">ASP.NET Core</span><span class="fd-sub">Web API controller</span></div>
-            <div class="fd-arrow">→</div>
-            <div class="fd-node shared-node"><span class="fd-icon">✅</span><span class="fd-label">Response</span><span class="fd-sub">JSON to caller</span></div>
-          </div>
-          <div class="fd-loop">🔁 StepwisePlanner: Think → Execute Plugin → Observe → Think again → Final answer</div>
-        </div>
+        <div class="tree-wrap">
+  <div class="tree-title">🟣 .NET AGENTIC AI — FULL STACK TREE</div>
+  <div class="tr-root"><div class="tr-node tn-root"><span class="tn-icon">💬</span><span class="tn-label">USER INPUT</span><span class="tn-sub">HTTP request / UI</span></div></div>
+  <div class="tr-vline"></div>
+  <div class="tr-root"><div class="tr-node tn-net"><span class="tn-icon">⚙️</span><span class="tn-label">SEMANTIC KERNEL</span><span class="tn-sub">Core orchestration SDK</span><span class="tn-ch">Ch 2–4</span></div></div>
+  <div class="tr-vline"></div>
+  <div class="tr-root"><div class="tr-node tn-net"><span class="tn-icon">🧠</span><span class="tn-label">GPT-4o / AZURE OAI</span><span class="tn-sub">Reasoning engine</span><span class="tn-ch">Ch 3</span></div></div>
+  <div class="tr-vline"></div>
+  <div class="tr-root"><div class="tr-node tn-net"><span class="tn-icon">🧭</span><span class="tn-label">SK PLANNER</span><span class="tn-sub">FunctionCallingStepwisePlanner</span><span class="tn-ch">Ch 7–8</span></div></div>
+  <div class="tr-vline"></div>
+  <div class="tr-hbar-wrap">
+    <div class="tr-children">
+      <div class="tr-child"><div class="tr-child-stub"></div><div class="tr-node tn-hot"><span class="tn-icon">🔌</span><span class="tn-label">PLUGINS</span><span class="tn-sub">[KernelFunction] tools</span><span class="tn-ch">Ch 4</span></div></div>
+      <div class="tr-child"><div class="tr-child-stub"></div><div class="tr-node tn-net"><span class="tn-icon">🗃️</span><span class="tn-label">QDRANT</span><span class="tn-sub">Vector memory store</span><span class="tn-ch">Ch 5</span></div></div>
+      <div class="tr-child"><div class="tr-child-stub"></div><div class="tr-node tn-cyan"><span class="tn-icon">📚</span><span class="tn-label">RAG</span><span class="tn-sub">Azure AI Search · Embeds</span><span class="tn-ch">Ch 6</span></div></div>
+    </div>
+  </div>
+  <div class="tr-vline"></div>
+  <div class="tr-root"><div class="tr-node tn-green"><span class="tn-icon">🌐</span><span class="tn-label">ASP.NET CORE</span><span class="tn-sub">Web API endpoint</span><span class="tn-ch">Ch 9</span></div></div>
+  <div class="tr-vline"></div>
+  <div class="tr-hbar-wrap">
+    <div class="tr-children">
+      <div class="tr-child"><div class="tr-child-stub"></div><div class="tr-node tn-hot"><span class="tn-icon">🐳</span><span class="tn-label">DOCKER</span><span class="tn-sub">Container packaging</span><span class="tn-ch">Ch 10</span></div></div>
+      <div class="tr-child"><div class="tr-child-stub"></div><div class="tr-node tn-net"><span class="tn-icon">☁️</span><span class="tn-label">AZURE</span><span class="tn-sub">Container Apps · AKS</span><span class="tn-ch">Ch 10</span></div></div>
+    </div>
+  </div>
+  <div class="tr-vline"></div>
+  <div class="tr-root"><div class="tr-node tn-root"><span class="tn-icon">✅</span><span class="tn-label">RESPONSE</span><span class="tn-sub">Final answer to user</span></div></div>
+  <div class="tr-loop">🔁 SK Planner Loop — Decompose Goal → Call Plugin → Observe → Next Step → until complete</div>
+</div>
 
         <div class="tip-box info">
           <div class="tip-title">📦 .NET Library Map (compare with Python)</div>
@@ -1113,7 +1243,7 @@ ENTRYPOINT ["dotnet","AgentApi.dll"]</div></div></div>
 <footer>
   <span>AI Cycle</span> · Built with 🧠 by Ashish Sinha · AI Developer ·
   <a href="mailto:startvsnotes@gmail.com" style="color:var(--yellow);">startvsnotes@gmail.com</a><br>
-  <span style="font-size:.78rem;color:#888;font-family:var(--fb);">Educational content · All rights reserved · 2025 · <a href="qa-automation.html" style="color:#666;">QA Automation Course →</a></span>
+  <span style="font-size:.78rem;color:#888;font-family:var(--fb);">Educational content · All rights reserved · 2025 · <a href="qa-automation.html" style="color:#64748b;">QA Automation Course →</a></span>
 </footer>
 
 <script>
