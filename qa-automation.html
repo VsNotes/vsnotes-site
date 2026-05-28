@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +42,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 
 /* MAIN TAB BAR */
 .mtbar{background:var(--ink);border-bottom:5px solid var(--yellow);display:flex;align-items:flex-end;padding:.8rem 2rem 0;gap:.6rem;overflow-x:auto;}
-.mt{font-family:var(--ft);font-size:1.25rem;letter-spacing:2px;padding:.65rem 2rem .8rem;border:3px solid rgba(255,255,255,.15);border-bottom:none;border-radius:12px 12px 0 0;cursor:pointer;transition:all .2s cubic-bezier(.34,1.56,.64,1);color:#666;background:rgba(255,255,255,.05);position:relative;top:4px;white-space:nowrap;outline:none;}
+.mt{font-family:var(--ft);font-size:1.25rem;letter-spacing:2px;padding:.65rem 2rem .8rem;border:3px solid rgba(255,255,255,.15);border-bottom:none;border-radius:12px 12px 0 0;cursor:pointer;transition:all .2s cubic-bezier(.34,1.56,.64,1);color:#64748b;background:rgba(255,255,255,.05);position:relative;top:4px;white-space:nowrap;outline:none;}
 .mt:hover{background:rgba(255,255,255,.12);color:#ddd;top:2px;}
 .mt.ah{background:var(--yellow);color:var(--ink);top:0;border-color:var(--yellow);box-shadow:0 -3px 0 var(--yellow),3px 0 0 var(--yellow),-3px 0 0 var(--yellow),inset 0 2px 0 rgba(255,255,255,.4);transform:scale(1.05);}
 .mt.ap{background:var(--teal);color:#fff;top:0;border-color:var(--teal);box-shadow:0 -3px 0 var(--teal),3px 0 0 var(--teal),-3px 0 0 var(--teal),inset 0 2px 0 rgba(255,255,255,.3);transform:scale(1.05);}
@@ -58,13 +59,13 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .cp{background:#fffef5;border:var(--border);border-radius:8px;box-shadow:var(--sh);padding:1.2rem;position:relative;}
 .cpn{position:absolute;top:-13px;left:10px;background:var(--teal);color:#fff;font-family:var(--ft);font-size:1.05rem;width:28px;height:28px;border-radius:50%;border:2.5px solid var(--ink);display:flex;align-items:center;justify-content:center;}
 .cp h3{font-family:var(--ft);font-size:1.15rem;letter-spacing:1px;margin-bottom:.4rem;margin-top:.5rem;}
-.cp p{font-size:.95rem;line-height:1.65;color:#333;}
+.cp p{font-size:.95rem;line-height:1.65;color:#1e293b;}
 .cpi{font-size:2.2rem;margin-bottom:.3rem;}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1rem;}
 .fc{background:#fffef5;border:var(--border);border-radius:8px;box-shadow:var(--sh);overflow:hidden;transition:transform .15s,box-shadow .15s;}
 .fc:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--ink);}
 .fch{padding:.9rem 1.1rem;font-family:var(--ft);font-size:1.2rem;letter-spacing:1px;display:flex;align-items:center;gap:.5rem;}
-.fcb{padding:0 1.1rem 1.1rem;font-size:.95rem;line-height:1.65;color:#333;}
+.fcb{padding:0 1.1rem 1.1rem;font-size:.95rem;line-height:1.65;color:#1e293b;}
 .ftags{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.6rem;}
 .ftag{font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:20px;border:2px solid var(--ink);text-transform:uppercase;}
 .cmp{width:100%;border-collapse:collapse;font-size:.95rem;background:#fffef5;border:var(--border);box-shadow:var(--sh);}
@@ -84,7 +85,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .persona{flex:1;min-width:120px;background:#fff;border:var(--border);border-radius:10px;box-shadow:4px 4px 0 var(--ink);padding:.8rem;text-align:center;}
 .persona .p-icon{font-size:1.8rem;margin-bottom:.3rem;}
 .persona .p-role{font-family:var(--ft);font-size:.9rem;letter-spacing:1px;color:var(--ink);margin-bottom:.2rem;}
-.persona .p-say{font-size:.83rem;color:#555;line-height:1.5;font-style:italic;}
+.persona .p-say{font-size:.83rem;color:#475569;line-height:1.5;font-style:italic;}
 
 /* SPEECH BUBBLE */
 .bubble{position:relative;background:#fffde7;border:var(--border);border-radius:18px;padding:1rem 1.2rem;box-shadow:4px 4px 0 var(--ink);margin:.2rem 0;}
@@ -105,14 +106,14 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .tip-box .tip-title{font-family:var(--ft);font-size:1.05rem;letter-spacing:1px;margin-bottom:.4rem;}
 .tip-box.tip .tip-title{color:var(--green);}.tip-box.warn .tip-title{color:#d97706;}
 .tip-box.info .tip-title{color:var(--py);}.tip-box.wow .tip-title{color:var(--teal);}
-.tip-box p,.tip-box ul{font-size:.97rem;line-height:1.75;color:#2a2a2a;}
+.tip-box p,.tip-box ul{font-size:.97rem;line-height:1.75;color:#1e293b;}
 .tip-box ul{padding-left:1.2rem;}
 
 /* CONCEPT BOX */
 .con{background:#fff;border:var(--border);border-left:6px solid var(--teal);border-radius:8px;box-shadow:5px 5px 0 var(--ink);padding:1.2rem 1.3rem;}
 .con h4{font-family:var(--ft);font-size:1.15rem;letter-spacing:1px;margin-bottom:.55rem;color:var(--teal);}
-.con p{font-size:1rem;line-height:1.75;color:#2a2a2a;}
-.con ul{font-size:.97rem;line-height:1.85;padding-left:1.3rem;color:#2a2a2a;}
+.con p{font-size:1rem;line-height:1.75;color:#1e293b;}
+.con ul{font-size:.97rem;line-height:1.85;padding-left:1.3rem;color:#1e293b;}
 .con ul li{margin-bottom:.25rem;}
 
 /* FLOW DIAGRAM */
@@ -141,7 +142,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .ps-card .ps-emoji{font-size:1.5rem;}
 .ps-card strong{font-size:.92rem;font-family:var(--ft);letter-spacing:.5px;}
 .ps-tag{font-size:.68rem;font-weight:800;padding:2px 8px;border-radius:20px;display:inline-block;width:fit-content;}
-.ps-card p{font-size:.82rem;line-height:1.5;color:#555;}
+.ps-card p{font-size:.82rem;line-height:1.5;color:#475569;}
 
 /* FW DETAIL GRID */
 .fw-detail-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:.8rem;margin:.2rem 0;}
@@ -156,7 +157,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .qacard .fwd-role{background:#ccfbf1;color:#0f766e;}
 .pycard .fwd-role{background:var(--pyl);color:var(--pyd);}
 .netcard .fwd-role{background:var(--netl);color:var(--netd);}
-.fwd-desc{font-size:.84rem;line-height:1.6;color:#333;}
+.fwd-desc{font-size:.84rem;line-height:1.6;color:#1e293b;}
 .fwd-use{font-size:.75rem;color:#888;font-style:italic;margin-top:.1rem;border-top:1px solid #eee;padding-top:.3rem;}
 
 /* COMIC NOTE */
@@ -171,7 +172,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 /* CHAPTER TAB NAV */
 .chnav{background:linear-gradient(180deg,#0d0d1a,#1a1a2e);border-bottom:4px solid var(--yellow);display:flex;align-items:flex-end;padding:.7rem 1.5rem 0;gap:.4rem;overflow-x:auto;flex-shrink:0;scrollbar-width:thin;scrollbar-color:var(--teal) #111;}
 .chnav::-webkit-scrollbar{height:4px;}.chnav::-webkit-scrollbar-track{background:#111;}.chnav::-webkit-scrollbar-thumb{background:var(--teal);border-radius:2px;}
-.cnb{font-family:var(--ft);font-size:.95rem;letter-spacing:1.5px;padding:.55rem 1.05rem .7rem;border:2.5px solid rgba(255,255,255,.12);border-bottom:none;border-radius:10px 10px 0 0;cursor:pointer;color:#666;background:rgba(255,255,255,.04);transition:all .18s cubic-bezier(.34,1.56,.64,1);white-space:nowrap;position:relative;top:4px;outline:none;}
+.cnb{font-family:var(--ft);font-size:.95rem;letter-spacing:1.5px;padding:.55rem 1.05rem .7rem;border:2.5px solid rgba(255,255,255,.12);border-bottom:none;border-radius:10px 10px 0 0;cursor:pointer;color:#64748b;background:rgba(255,255,255,.04);transition:all .18s cubic-bezier(.34,1.56,.64,1);white-space:nowrap;position:relative;top:4px;outline:none;}
 .cnb:hover{background:rgba(255,255,255,.1);color:#bbb;top:2px;}
 .cnb.act-ch{background:var(--yellow);color:var(--ink);border-color:var(--yellow);top:0;font-size:1rem;box-shadow:0 -3px 0 var(--yellow),3px 0 0 var(--yellow),-3px 0 0 var(--yellow),inset 0 2px 0 rgba(255,255,255,.4);transform:scale(1.06);}
 
@@ -187,7 +188,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .spl::after{content:'⋮⋮';color:rgba(255,255,255,.3);font-size:1rem;letter-spacing:-4px;}
 
 /* LANG BADGE */
-.lbadge{display:flex;align-items:center;gap:.8rem;padding:.7rem 1.1rem;border-radius:10px;border:var(--border);box-shadow:var(--sh);position:sticky;top:0;z-index:10;margin-bottom:.4rem;}
+.lbadge{display:flex;align-items:center;gap:.8rem;padding:.7rem 1.1rem;border-radius:10px;border:var(--border);box-shadow:var(--sh);margin-bottom:.8rem;}
 .lbadge.pyb{background:linear-gradient(135deg,#1e40af,#2563eb);color:#fff;}
 .lbadge.qab{background:linear-gradient(135deg,#0f766e,#0d9488);color:#fff;}
 .lbadge .lbi{font-size:1.7rem;}
@@ -244,13 +245,87 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .srow:last-child .scont{border-bottom:none;}
 .sl{font-family:var(--ft);font-size:1rem;letter-spacing:1px;}
 .sl.qal{color:var(--teal);}.sl.pyl2{color:var(--pyd);}
-.sd{font-size:.95rem;color:#444;line-height:1.6;margin-top:.2rem;}
+.sd{font-size:.95rem;color:#334155;line-height:1.6;margin-top:.2rem;}
 
 /* Footer */
 .zz{height:18px;background:linear-gradient(135deg,var(--ink) 25%,transparent 25%) -10px 0,linear-gradient(225deg,var(--ink) 25%,transparent 25%) -10px 0,linear-gradient(315deg,var(--ink) 25%,transparent 25%),linear-gradient(45deg,var(--ink) 25%,transparent 25%);background-size:18px 18px;background-color:var(--teal);margin-top:2rem;}
 footer{background:var(--ink);color:#ccc;text-align:center;padding:1.5rem;font-size:.88rem;}
 footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-spacing:1px;}
 @media(max-width:900px){.hero h1{font-size:2.4rem;}.hw{grid-template-columns:1fr;}.sv{flex-direction:column;}.spl{width:100%;height:10px;cursor:row-resize;}.sp{min-height:400px;}.mt{font-size:.95rem;padding:.5rem 1rem .65rem;}}
+
+/* ── TREE DIAGRAM ────────────────────────────────────────────────── */
+.tree-wrap{background:var(--ink);border:var(--border);border-radius:14px;box-shadow:var(--sh);padding:1.6rem 1rem 1.4rem;position:relative;overflow:hidden;}
+.tree-wrap::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.035) 1px,transparent 1px);background-size:14px 14px;pointer-events:none;}
+.tree-title{font-family:var(--ft);font-size:1.25rem;letter-spacing:2px;color:var(--yellow);text-align:center;margin-bottom:1.4rem;}
+/* root node */
+.tr-root{display:flex;justify-content:center;margin-bottom:0;}
+.tr-node{display:inline-flex;flex-direction:column;align-items:center;gap:.22rem;background:rgba(255,255,255,.07);border:2.5px solid rgba(255,255,255,.28);border-radius:12px;padding:.65rem 1rem;min-width:110px;text-align:center;position:relative;transition:transform .15s;}
+.tr-node:hover{transform:translateY(-2px);}
+.tr-node .tn-icon{font-size:1.55rem;}
+.tr-node .tn-label{font-family:var(--ft);font-size:.9rem;letter-spacing:1.5px;color:#fff;}
+.tr-node .tn-sub{font-size:.72rem;color:rgba(255,255,255,.55);line-height:1.3;}
+/* colour variants */
+.tn-root{background:rgba(251,191,36,.12);border-color:rgba(251,191,36,.6);}
+.tn-py{background:rgba(37,99,235,.2);border-color:rgba(96,165,250,.7);}
+.tn-net{background:rgba(124,58,237,.2);border-color:rgba(167,139,250,.7);}
+.tn-hot{background:rgba(247,37,133,.15);border-color:rgba(247,37,133,.6);}
+.tn-green{background:rgba(16,185,129,.15);border-color:rgba(52,211,153,.6);}
+.tn-cyan{background:rgba(6,182,212,.15);border-color:rgba(34,211,238,.6);}
+.tn-qa{background:rgba(13,148,136,.2);border-color:rgba(45,212,191,.7);}
+/* vertical connector from parent to children row */
+.tr-vline{width:2px;height:22px;background:rgba(255,255,255,.2);margin:0 auto;}
+/* horizontal bar spanning children */
+.tr-hbar-wrap{display:flex;flex-direction:column;align-items:center;}
+.tr-children{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;position:relative;}
+/* top horizontal line connecting siblings */
+.tr-children::before{content:'';position:absolute;top:0;left:10%;right:10%;height:2px;background:rgba(255,255,255,.18);}
+/* each child has a short vertical stub at top */
+.tr-child{display:flex;flex-direction:column;align-items:center;}
+.tr-child-stub{width:2px;height:14px;background:rgba(255,255,255,.18);}
+/* loop badge */
+.tr-loop{margin-top:1rem;border:2px dashed rgba(251,191,36,.35);border-radius:10px;padding:.5rem 1rem;text-align:center;font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.5;}
+/* chapter badge on node */
+.tn-ch{display:inline-block;font-size:.58rem;font-weight:800;font-family:var(--fb);background:rgba(251,191,36,.25);color:var(--yellow);padding:1px 6px;border-radius:20px;margin-top:2px;letter-spacing:.5px;}
+
+/* ── READABLE TEXT INSIDE LIGHT PANELS ──────────────────────── */
+/* con box */
+.con h4{color:#b91c6c !important;}
+.con p,.con ul,.con li{color:#1e293b !important;}
+/* tip boxes */
+.tip-box p,.tip-box ul,.tip-box li{color:#1e293b !important;}
+.tip-box.tip .tip-title{color:#065f46 !important;}
+.tip-box.warn .tip-title{color:#92400e !important;}
+.tip-box.info .tip-title{color:#1e40af !important;}
+.tip-box.wow .tip-title{color:#0f766e !important;}
+/* steps */
+.sd{color:#374151 !important;}
+/* persona strip */
+.ps-card p{color:#374151 !important;}
+.ps-card strong{color:#1e293b !important;}
+/* fw detail grid */
+.fwd-desc{color:#1e293b !important;}
+.fwd-use{color:#475569 !important;}
+/* comic note */
+.cn-text{color:#1e293b !important;}
+/* bubble */
+.bubble p{color:#1e293b !important;}
+/* package table */
+.pt td{color:#1e293b !important;}
+/* compare table */
+.cmp td{color:#1e293b !important;}
+/* framework cards */
+.fcb{color:#1e293b !important;}
+/* cp cards */
+.cp p{color:#1e293b !important;}
+/* summary list */
+.csum ul li{color:rgba(255,255,255,.95) !important;}
+/* sidebar */
+.sbox,.sbox *{color:inherit;}
+/* steps description */
+.scont .sd{color:#374151 !important;}
+/* step title */
+.sl.pyl2{color:#1e40af !important;}
+.sl.netl2{color:#5b21b6 !important;}
 </style>
 </head>
 <body>
@@ -259,7 +334,7 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
 <nav>
   <div class="nb">
     <div class="nl">AI<span>Cycle</span></div>
-    <div class="nm">Built with 🧠 by <strong>Ashish Sinha</strong> · AI Developer · <a href="mailto:startvsnotes@gmail.com">✉️ startvsnotes@gmail.com</a> · <span style="color:#666;">© 2025</span></div>
+    <div class="nm">Built with 🧠 by <strong>Ashish Sinha</strong> · AI Developer · <a href="mailto:startvsnotes@gmail.com">✉️ startvsnotes@gmail.com</a> · <span style="color:#64748b;">© 2025</span></div>
   </div>
   <div class="nls">
     <a href="index.html">🏠 Home</a><a href="intro.html">Intro</a><a href="ml.html">ML</a>
@@ -415,7 +490,7 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
   <div class="sbox">
     <div style="font-family:var(--ft);font-size:1.1rem;color:var(--hot);letter-spacing:1px;margin-bottom:.6rem;">🔗 ALSO CHECK OUT</div>
     <a href="agentic.html" style="display:block;background:linear-gradient(135deg,#f72585,#7c3aed);color:#fff;border:var(--border);border-radius:8px;padding:.8rem 1rem;font-family:var(--ft);font-size:1rem;letter-spacing:1px;text-decoration:none;text-align:center;box-shadow:var(--sh);">⚡ Agentic AI Course →</a>
-    <p style="font-size:.85rem;color:#666;margin-top:.5rem;text-align:center;">LangChain · LangGraph · Semantic Kernel</p>
+    <p style="font-size:.85rem;color:#64748b;margin-top:.5rem;text-align:center;">LangChain · LangGraph · Semantic Kernel</p>
   </div>
 </div>
 </div><!-- end hw -->
@@ -455,24 +530,65 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
             <div class="ps-card" style="border-color:#f59e0b;"><span class="ps-emoji">📊</span><strong>Manager</strong><span class="ps-tag" style="background:#fef3c7;color:#92400e;">Visibility</span><p>Allure dashboards give you real coverage metrics and trends</p></div>
           </div>
         </div>
-        <div class="flowdiag">
-          <div class="fd-title">🐍 PYTHON QA AGENT — COMPLETE FLOW</div>
-          <div class="fd-row">
-            <div class="fd-node shared-node"><span class="fd-icon">📋</span><span class="fd-label">Requirements</span><span class="fd-sub">User story / spec</span></div>
-            <div class="fd-arrow">→</div>
-            <div class="fd-node py-node"><span class="fd-icon">🤖</span><span class="fd-label">LangChain AI</span><span class="fd-sub">Generates test cases from docs</span></div>
-            <div class="fd-arrow">→</div>
-            <div class="fd-node qa-node"><span class="fd-icon">🎭</span><span class="fd-label">Playwright</span><span class="fd-sub">Runs browser tests</span></div>
-          </div>
-          <div class="fd-row">
-            <div class="fd-node qa-node"><span class="fd-icon">🔧</span><span class="fd-label">AI Healer</span><span class="fd-sub">Fixes broken selectors</span></div>
-            <div class="fd-arrow">→</div>
-            <div class="fd-node py-node"><span class="fd-icon">📊</span><span class="fd-label">Allure Report</span><span class="fd-sub">HTML + screenshots</span></div>
-            <div class="fd-arrow">→</div>
-            <div class="fd-node shared-node"><span class="fd-icon">🔄</span><span class="fd-label">GitHub Actions</span><span class="fd-sub">Runs on every PR</span></div>
-          </div>
-          <div class="fd-loop">🔁 AI analyzes failures → suggests fixes → updates tests → re-runs — your tests get smarter over time!</div>
-        </div>
+<div class="tree-wrap">
+  <div class="tree-title">🐍 PYTHON QA AUTOMATION — FULL STACK TREE</div>
+
+  <div class="tr-root">
+    <div class="tr-node tn-root"><span class="tn-icon">📋</span><span class="tn-label">REQUIREMENTS</span><span class="tn-sub">User stories / Jira</span></div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <div class="tr-root">
+    <div class="tr-node tn-py"><span class="tn-icon">🤖</span><span class="tn-label">LANGCHAIN + GPT-4o</span><span class="tn-sub">AI test generation</span><span class="tn-ch">Ch 4</span></div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <div class="tr-root">
+    <div class="tr-node tn-qa"><span class="tn-icon">🎭</span><span class="tn-label">PLAYWRIGHT</span><span class="tn-sub">Browser automation engine</span><span class="tn-ch">Ch 2–3</span></div>
+  </div>
+  <div class="tr-vline"></div>
+  <div class="tr-hbar-wrap">
+    <div class="tr-children">
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-py"><span class="tn-icon">🧪</span><span class="tn-label">PYTEST</span><span class="tn-sub">Test runner &amp; fixtures</span><span class="tn-ch">Ch 2</span></div>
+      </div>
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-qa"><span class="tn-icon">📄</span><span class="tn-label">PAGE OBJECTS</span><span class="tn-sub">POM pattern classes</span><span class="tn-ch">Ch 3</span></div>
+      </div>
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-hot"><span class="tn-icon">🔧</span><span class="tn-label">AI HEALER</span><span class="tn-sub">GPT-4o Vision fix</span><span class="tn-ch">Ch 5</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <div class="tr-root">
+    <div class="tr-node tn-qa"><span class="tn-icon">📊</span><span class="tn-label">ALLURE REPORTS</span><span class="tn-sub">HTML dashboards + screenshots</span><span class="tn-ch">Ch 6</span></div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <div class="tr-hbar-wrap">
+    <div class="tr-children">
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-green"><span class="tn-icon">🔄</span><span class="tn-label">GITHUB ACTIONS</span><span class="tn-sub">CI/CD pipeline</span><span class="tn-ch">Ch 7</span></div>
+      </div>
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-hot"><span class="tn-icon">🚀</span><span class="tn-label">QA AGENT</span><span class="tn-sub">Autonomous 24/7 testing</span><span class="tn-ch">Ch 8</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <div class="tr-root">
+    <div class="tr-node tn-root"><span class="tn-icon">✅</span><span class="tn-label">SHIP WITH CONFIDENCE</span><span class="tn-sub">Bugs caught before production</span></div>
+  </div>
+  <div class="tr-loop">🔁 AI QA Loop — Generate → Execute → Heal failures → Report → Improve coverage → repeat</div>
+</div>
         <div class="fw-detail-grid">
           <div class="fwd-card pycard"><div class="fwd-icon">🎭</div><div class="fwd-name">Playwright</div><div class="fwd-role">BROWSER AUTOMATION</div><div class="fwd-desc">Microsoft's modern testing tool. Runs Chromium, Firefox, and WebKit with one API. Much faster and more stable than Selenium for modern SPAs.</div><div class="fwd-use">Ch2 setup → Ch3 first tests → Ch5 healing</div></div>
           <div class="fwd-card pycard"><div class="fwd-icon">🧪</div><div class="fwd-name">pytest</div><div class="fwd-role">TEST RUNNER</div><div class="fwd-desc">Python's most popular test framework. Fixtures, parametrize, markers, plugins — incredibly powerful for organizing large test suites.</div><div class="fwd-use">Ch2 setup → All chapters</div></div>
@@ -675,24 +791,65 @@ jobs:
             <div class="ps-card" style="border-color:#f59e0b;"><span class="ps-emoji">🚀</span><strong>DevOps Team</strong><span class="ps-tag" style="background:#fef3c7;color:#92400e;">CI/CD</span><p>dotnet test integrates with every .NET CI/CD workflow natively</p></div>
           </div>
         </div>
-        <div class="flowdiag">
-          <div class="fd-title">🟣 .NET QA AGENT — COMPLETE FLOW</div>
-          <div class="fd-row">
-            <div class="fd-node shared-node"><span class="fd-icon">📋</span><span class="fd-label">Requirements</span><span class="fd-sub">Azure Boards / Jira</span></div>
-            <div class="fd-arrow">→</div>
-            <div class="fd-node net-node"><span class="fd-icon">🤖</span><span class="fd-label">SK AI Gen</span><span class="fd-sub">Writes NUnit + Playwright tests</span></div>
-            <div class="fd-arrow">→</div>
-            <div class="fd-node qa-node"><span class="fd-icon">🎭</span><span class="fd-label">Playwright .NET</span><span class="fd-sub">Runs browser tests</span></div>
-          </div>
-          <div class="fd-row">
-            <div class="fd-node net-node"><span class="fd-icon">🔧</span><span class="fd-label">AI Healer</span><span class="fd-sub">Fixes selectors via SK</span></div>
-            <div class="fd-arrow">→</div>
-            <div class="fd-node qa-node"><span class="fd-icon">📊</span><span class="fd-label">Allure / ADO</span><span class="fd-sub">Reports + dashboards</span></div>
-            <div class="fd-arrow">→</div>
-            <div class="fd-node shared-node"><span class="fd-icon">🔄</span><span class="fd-label">Azure Pipelines</span><span class="fd-sub">Runs on every PR</span></div>
-          </div>
-          <div class="fd-loop">🔁 SK Planner orchestrates: crawl → generate → run → heal → report — fully automated!</div>
-        </div>
+<div class="tree-wrap">
+  <div class="tree-title">🟣 .NET QA AUTOMATION — FULL STACK TREE</div>
+
+  <div class="tr-root">
+    <div class="tr-node tn-root"><span class="tn-icon">📋</span><span class="tn-label">REQUIREMENTS</span><span class="tn-sub">Azure Boards / Jira</span></div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <div class="tr-root">
+    <div class="tr-node tn-net"><span class="tn-icon">⚙️</span><span class="tn-label">SEMANTIC KERNEL</span><span class="tn-sub">AI test code generation</span><span class="tn-ch">Ch 4</span></div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <div class="tr-root">
+    <div class="tr-node tn-qa"><span class="tn-icon">🎭</span><span class="tn-label">PLAYWRIGHT .NET</span><span class="tn-sub">Browser automation (async C#)</span><span class="tn-ch">Ch 2–3</span></div>
+  </div>
+  <div class="tr-vline"></div>
+  <div class="tr-hbar-wrap">
+    <div class="tr-children">
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-net"><span class="tn-icon">🧪</span><span class="tn-label">NUNIT</span><span class="tn-sub">Test framework &amp; runner</span><span class="tn-ch">Ch 2</span></div>
+      </div>
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-qa"><span class="tn-icon">📄</span><span class="tn-label">PAGE OBJECTS</span><span class="tn-sub">C# POM classes</span><span class="tn-ch">Ch 3</span></div>
+      </div>
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-hot"><span class="tn-icon">🔧</span><span class="tn-label">AI HEALER</span><span class="tn-sub">SK + Vision API fix</span><span class="tn-ch">Ch 5</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <div class="tr-hbar-wrap">
+    <div class="tr-children">
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-qa"><span class="tn-icon">📊</span><span class="tn-label">ALLURE</span><span class="tn-sub">HTML reports</span><span class="tn-ch">Ch 6</span></div>
+      </div>
+      <div class="tr-child">
+        <div class="tr-child-stub"></div>
+        <div class="tr-node tn-net"><span class="tn-icon">📈</span><span class="tn-label">AZURE TEST PLANS</span><span class="tn-sub">Enterprise audit trail</span><span class="tn-ch">Ch 6</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <div class="tr-root">
+    <div class="tr-node tn-green"><span class="tn-icon">🔄</span><span class="tn-label">AZURE PIPELINES</span><span class="tn-sub">CI/CD quality gate</span><span class="tn-ch">Ch 7</span></div>
+  </div>
+  <div class="tr-vline"></div>
+
+  <div class="tr-root">
+    <div class="tr-node tn-root"><span class="tn-icon">✅</span><span class="tn-label">SHIP WITH CONFIDENCE</span><span class="tn-sub">Bugs caught before production</span></div>
+  </div>
+  <div class="tr-loop">🔁 SK Planner QA Loop — Generate C# tests → Execute → Heal → Report to ADO → improve</div>
+</div>
         <div class="fw-detail-grid">
           <div class="fwd-card netcard"><div class="fwd-icon">🎭</div><div class="fwd-name">Playwright .NET</div><div class="fwd-role">BROWSER AUTOMATION</div><div class="fwd-desc">Same Playwright power, native C# async/await API. Microsoft.Playwright NuGet package. Perfect for ASP.NET apps with Azure AD auth flows.</div><div class="fwd-use">Ch2 setup → Ch3 first tests → Ch5 healing</div></div>
           <div class="fwd-card netcard"><div class="fwd-icon">🧪</div><div class="fwd-name">NUnit</div><div class="fwd-role">TEST FRAMEWORK</div><div class="fwd-desc">The .NET standard for test organization. [Test], [TestCase], [SetUp], [TearDown] attributes. First-class support in Visual Studio and Azure DevOps Test Plans.</div><div class="fwd-use">Ch2 setup → All chapters</div></div>
