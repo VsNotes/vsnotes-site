@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,19 +16,19 @@
   --ft:'Bangers',cursive;--fb:'Nunito',sans-serif;--fc:'Fira Code',monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
-body{background:var(--bg);background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,#e2d9b8 39px,#e2d9b8 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,#e2d9b8 39px,#e2d9b8 40px);font-family:var(--fb);font-size:16px;color:var(--ink);min-height:100vh;}
+body{background:var(--bg);background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,#e2d9b8 39px,#e2d9b8 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,#e2d9b8 39px,#e2d9b8 40px);font-family:var(--fb);font-size:16px;color:#1e293b;min-height:100vh;}
 
 /* NAV */
-nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;position:sticky;top:0;z-index:200;border-bottom:3px solid var(--teal);}
-.nb{display:flex;flex-direction:column;gap:.05rem;padding:.4rem 0;}
-.nl{font-family:var(--ft);font-size:2rem;color:var(--yellow);letter-spacing:2px;line-height:1;}
+
+
+
 .nl span{color:var(--cyan);}
-.nm{font-size:.72rem;color:#aaa;line-height:1.4;}
+
 .nm strong{color:#ddd;}.nm a{color:var(--yellow);text-decoration:none;}
-.nls{display:flex;gap:.2rem;flex-wrap:wrap;padding:.4rem 0;}
-.nls a{color:#fff;text-decoration:none;font-size:.78rem;font-weight:700;padding:.3rem .7rem;border-radius:20px;border:2px solid transparent;transition:all .2s;text-transform:uppercase;}
-.nls a:hover,.nls a.act{background:var(--teal);color:#fff;}
-.nls a.nw::after{content:'NEW';background:var(--green);color:var(--ink);font-size:.55rem;padding:1px 4px;border-radius:3px;margin-left:3px;vertical-align:top;}
+
+
+
+
 
 /* HERO */
 .hero{background:var(--ink);padding:2.5rem 2rem;text-align:center;position:relative;overflow:hidden;border-bottom:5px solid var(--teal);}
@@ -40,12 +41,11 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .hpill{display:flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.25);border-radius:20px;padding:.35rem 1rem;font-size:.88rem;color:#eee;font-weight:600;}
 
 /* MAIN TAB BAR */
-.mtbar{background:var(--ink);border-bottom:5px solid var(--yellow);display:flex;align-items:flex-end;padding:.8rem 2rem 0;gap:.6rem;overflow-x:auto;}
-.mt{font-family:var(--ft);font-size:1.25rem;letter-spacing:2px;padding:.65rem 2rem .8rem;border:3px solid rgba(255,255,255,.15);border-bottom:none;border-radius:12px 12px 0 0;cursor:pointer;transition:all .2s cubic-bezier(.34,1.56,.64,1);color:#64748b;background:rgba(255,255,255,.05);position:relative;top:4px;white-space:nowrap;outline:none;}
-.mt:hover{background:rgba(255,255,255,.12);color:#ddd;top:2px;}
-.mt.ah{background:var(--yellow);color:var(--ink);top:0;border-color:var(--yellow);box-shadow:0 -3px 0 var(--yellow),3px 0 0 var(--yellow),-3px 0 0 var(--yellow),inset 0 2px 0 rgba(255,255,255,.4);transform:scale(1.05);}
-.mt.ap{background:var(--teal);color:#fff;top:0;border-color:var(--teal);box-shadow:0 -3px 0 var(--teal),3px 0 0 var(--teal),-3px 0 0 var(--teal),inset 0 2px 0 rgba(255,255,255,.3);transform:scale(1.05);}
-.mt .tnew{display:inline-block;background:var(--hot);color:#fff;font-size:.58rem;padding:2px 7px;border-radius:20px;font-family:var(--fb);font-weight:800;margin-left:6px;vertical-align:middle;border:1.5px solid #fff;animation:pulse-badge 2s ease-in-out infinite;}
+
+
+
+
+
 @keyframes pulse-badge{0%,100%{transform:scale(1);}50%{transform:scale(1.2);}}
 
 /* HOME TAB */
@@ -58,13 +58,13 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .cp{background:#fffef5;border:var(--border);border-radius:8px;box-shadow:var(--sh);padding:1.2rem;position:relative;}
 .cpn{position:absolute;top:-13px;left:10px;background:var(--teal);color:#fff;font-family:var(--ft);font-size:1.05rem;width:28px;height:28px;border-radius:50%;border:2.5px solid var(--ink);display:flex;align-items:center;justify-content:center;}
 .cp h3{font-family:var(--ft);font-size:1.15rem;letter-spacing:1px;margin-bottom:.4rem;margin-top:.5rem;}
-.cp p{font-size:.95rem;line-height:1.65;color:#1e293b;}
+.cp p{font-size:.95rem;line-height:1.65;color:#334155;}
 .cpi{font-size:2.2rem;margin-bottom:.3rem;}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1rem;}
 .fc{background:#fffef5;border:var(--border);border-radius:8px;box-shadow:var(--sh);overflow:hidden;transition:transform .15s,box-shadow .15s;}
 .fc:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--ink);}
 .fch{padding:.9rem 1.1rem;font-family:var(--ft);font-size:1.2rem;letter-spacing:1px;display:flex;align-items:center;gap:.5rem;}
-.fcb{padding:0 1.1rem 1.1rem;font-size:.95rem;line-height:1.65;color:#1e293b;}
+.fcb{padding:0 1.1rem 1.1rem;font-size:.95rem;line-height:1.65;color:#334155;}
 .ftags{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.6rem;}
 .ftag{font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:20px;border:2px solid var(--ink);text-transform:uppercase;}
 .cmp{width:100%;border-collapse:collapse;font-size:.95rem;background:#fffef5;border:var(--border);box-shadow:var(--sh);}
@@ -83,14 +83,14 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .personas{display:flex;gap:.6rem;flex-wrap:wrap;margin:.2rem 0;}
 .persona{flex:1;min-width:120px;background:#fff;border:var(--border);border-radius:10px;box-shadow:4px 4px 0 var(--ink);padding:.8rem;text-align:center;}
 .persona .p-icon{font-size:1.8rem;margin-bottom:.3rem;}
-.persona .p-role{font-family:var(--ft);font-size:.9rem;letter-spacing:1px;color:var(--ink);margin-bottom:.2rem;}
+.persona .p-role{font-family:var(--ft);font-size:.9rem;letter-spacing:1px;color:#e2e8f0;margin-bottom:.2rem;}
 .persona .p-say{font-size:.83rem;color:#475569;line-height:1.5;font-style:italic;}
 
 /* SPEECH BUBBLE */
 .bubble{position:relative;background:#fffde7;border:var(--border);border-radius:18px;padding:1rem 1.2rem;box-shadow:4px 4px 0 var(--ink);margin:.2rem 0;}
-.bubble::after{content:'';position:absolute;bottom:-18px;left:24px;border-width:10px 8px 0;border-style:solid;border-color:var(--ink) transparent transparent;}
+.bubble::after{content:'';position:absolute;bottom:-18px;left:24px;border-width:10px 8px 0;border-style:solid;border-color:#e2e8f0 transparent transparent;}
 .bubble::before{content:'';position:absolute;bottom:-14px;left:26px;border-width:9px 7px 0;border-style:solid;border-color:#fffde7 transparent transparent;z-index:1;}
-.bubble p{font-size:.97rem;line-height:1.7;color:#1a1a2e;}
+.bubble p{font-size:.97rem;line-height:1.7;color:#1e293b;}
 .bubble.right::after{left:auto;right:24px;}.bubble.right::before{left:auto;right:26px;}
 .bubble-who{display:flex;align-items:center;gap:.6rem;margin-bottom:.3rem;}
 .bubble-who .bwho{font-family:var(--ft);font-size:1rem;letter-spacing:1px;color:var(--teal);}
@@ -105,14 +105,14 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .tip-box .tip-title{font-family:var(--ft);font-size:1.05rem;letter-spacing:1px;margin-bottom:.4rem;}
 .tip-box.tip .tip-title{color:var(--green);}.tip-box.warn .tip-title{color:#d97706;}
 .tip-box.info .tip-title{color:var(--py);}.tip-box.wow .tip-title{color:var(--teal);}
-.tip-box p,.tip-box ul{font-size:.97rem;line-height:1.75;color:#1e293b;}
+.tip-box p,.tip-box ul{font-size:.97rem;line-height:1.75;color:#334155;}
 .tip-box ul{padding-left:1.2rem;}
 
 /* CONCEPT BOX */
 .con{background:#fff;border:var(--border);border-left:6px solid var(--teal);border-radius:8px;box-shadow:5px 5px 0 var(--ink);padding:1.2rem 1.3rem;}
 .con h4{font-family:var(--ft);font-size:1.15rem;letter-spacing:1px;margin-bottom:.55rem;color:var(--teal);}
-.con p{font-size:1rem;line-height:1.75;color:#1e293b;}
-.con ul{font-size:.97rem;line-height:1.85;padding-left:1.3rem;color:#1e293b;}
+.con p{font-size:1rem;line-height:1.75;color:#334155;}
+.con ul{font-size:.97rem;line-height:1.85;padding-left:1.3rem;color:#334155;}
 .con ul li{margin-bottom:.25rem;}
 
 /* FLOW DIAGRAM */
@@ -123,7 +123,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .fd-node{border-radius:10px;padding:.65rem .9rem;text-align:center;min-width:85px;border:2.5px solid rgba(255,255,255,.25);position:relative;}
 .fd-node .fd-icon{font-size:1.5rem;display:block;margin-bottom:.2rem;}
 .fd-node .fd-label{font-family:var(--ft);font-size:.85rem;letter-spacing:1px;display:block;}
-.fd-node .fd-sub{font-size:.72rem;color:rgba(255,255,255,.6);margin-top:.15rem;display:block;line-height:1.3;}
+.fd-node .fd-sub{font-size:.72rem;color:rgba(255,255,255,.75);margin-top:.15rem;display:block;line-height:1.3;}
 .fd-node.qa-node{background:rgba(13,148,136,.2);border-color:rgba(20,184,166,.6);}
 .fd-node.py-node{background:rgba(37,99,235,.2);border-color:rgba(59,130,246,.6);}
 .fd-node.net-node{background:rgba(124,58,237,.2);border-color:rgba(139,92,246,.6);}
@@ -134,7 +134,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 
 /* PERSONA STRIP */
 .persona-strip{background:linear-gradient(135deg,#f0fdfa,#fff);border:var(--border);border-radius:12px;box-shadow:5px 5px 0 var(--ink);padding:1.2rem 1.3rem;margin:.2rem 0;}
-.ps-title{font-family:var(--ft);font-size:1.05rem;letter-spacing:2px;color:var(--ink);margin-bottom:.9rem;}
+.ps-title{font-family:var(--ft);font-size:1.05rem;letter-spacing:2px;color:#e2e8f0;margin-bottom:.9rem;}
 .ps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.7rem;}
 .ps-card{background:#fff;border:2.5px solid #ddd;border-radius:10px;padding:.75rem;display:flex;flex-direction:column;gap:.25rem;transition:transform .15s,box-shadow .15s;}
 .ps-card:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink);}
@@ -151,29 +151,29 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .fwd-card.pycard{background:linear-gradient(160deg,#eff6ff,#fff);border-color:#93c5fd;}
 .fwd-card.netcard{background:linear-gradient(160deg,#f5f3ff,#fff);border-color:#c4b5fd;}
 .fwd-icon{font-size:1.6rem;}
-.fwd-name{font-family:var(--ft);font-size:1.05rem;letter-spacing:1px;color:var(--ink);}
+.fwd-name{font-family:var(--ft);font-size:1.05rem;letter-spacing:1px;color:#1e293b;}
 .fwd-role{font-size:.68rem;font-weight:800;letter-spacing:1px;padding:2px 8px;border-radius:20px;width:fit-content;}
 .qacard .fwd-role{background:#ccfbf1;color:#0f766e;}
 .pycard .fwd-role{background:var(--pyl);color:var(--pyd);}
 .netcard .fwd-role{background:var(--netl);color:var(--netd);}
-.fwd-desc{font-size:.84rem;line-height:1.6;color:#1e293b;}
+.fwd-desc{font-size:.84rem;line-height:1.6;color:#334155;}
 .fwd-use{font-size:.75rem;color:#888;font-style:italic;margin-top:.1rem;border-top:1px solid #eee;padding-top:.3rem;}
 
 /* COMIC NOTE */
 .comic-note{display:flex;gap:.8rem;align-items:flex-start;background:#fffde7;border:2.5px solid var(--ink);border-radius:12px;padding:.9rem 1rem;box-shadow:3px 3px 0 var(--ink);}
 .cn-emoji{font-size:1.8rem;flex-shrink:0;margin-top:.1rem;}
-.cn-text{font-size:.95rem;line-height:1.7;color:#1a1a2e;}
+.cn-text{font-size:.95rem;line-height:1.7;color:#1e293b;}
 .cn-text strong{color:var(--teal);}
 
 /* COURSE WRAPPER */
 .cwrap{display:flex;flex-direction:column;height:calc(100vh - 152px);min-height:600px;}
 
 /* CHAPTER TAB NAV */
-.chnav{background:linear-gradient(180deg,#0d0d1a,#1a1a2e);border-bottom:4px solid var(--yellow);display:flex;align-items:flex-end;padding:.7rem 1.5rem 0;gap:.4rem;overflow-x:auto;flex-shrink:0;scrollbar-width:thin;scrollbar-color:var(--teal) #111;}
+.ch
 .chnav::-webkit-scrollbar{height:4px;}.chnav::-webkit-scrollbar-track{background:#111;}.chnav::-webkit-scrollbar-thumb{background:var(--teal);border-radius:2px;}
 .cnb{font-family:var(--ft);font-size:.95rem;letter-spacing:1.5px;padding:.55rem 1.05rem .7rem;border:2.5px solid rgba(255,255,255,.12);border-bottom:none;border-radius:10px 10px 0 0;cursor:pointer;color:#64748b;background:rgba(255,255,255,.04);transition:all .18s cubic-bezier(.34,1.56,.64,1);white-space:nowrap;position:relative;top:4px;outline:none;}
 .cnb:hover{background:rgba(255,255,255,.1);color:#bbb;top:2px;}
-.cnb.act-ch{background:var(--yellow);color:var(--ink);border-color:var(--yellow);top:0;font-size:1rem;box-shadow:0 -3px 0 var(--yellow),3px 0 0 var(--yellow),-3px 0 0 var(--yellow),inset 0 2px 0 rgba(255,255,255,.4);transform:scale(1.06);}
+.cnb.act-ch{background:var(--yellow);color:#e2e8f0;border-color:var(--yellow);top:0;font-size:1rem;box-shadow:0 -3px 0 var(--yellow),3px 0 0 var(--yellow),-3px 0 0 var(--yellow),inset 0 2px 0 rgba(255,255,255,.4);transform:scale(1.06);}
 
 /* SPLIT VIEW */
 .sv{display:flex;flex:1;overflow:hidden;}
@@ -250,10 +250,7 @@ nav{background:var(--ink);padding:0 1.5rem;display:flex;align-items:center;justi
 .zz{height:18px;background:linear-gradient(135deg,var(--ink) 25%,transparent 25%) -10px 0,linear-gradient(225deg,var(--ink) 25%,transparent 25%) -10px 0,linear-gradient(315deg,var(--ink) 25%,transparent 25%),linear-gradient(45deg,var(--ink) 25%,transparent 25%);background-size:18px 18px;background-color:var(--teal);margin-top:2rem;}
 footer{background:var(--ink);color:#ccc;text-align:center;padding:1.5rem;font-size:.88rem;}
 footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-spacing:1px;}
-@media(max-width:900px){.hero h1{font-size:2.4rem;}.hw{grid-template-columns:1fr;}.sv{flex-direction:column;}.spl{width:100%;height:10px;cursor:row-resize;}.sp{min-height:400px;}.mt{font-size:.95rem;padding:.5rem 1rem .65rem;}}
-
-/* ── TREE DIAGRAM ────────────────────────────────────────────────── */
-.tree-wrap{background:var(--ink);border:var(--border);border-radius:14px;box-shadow:var(--sh);padding:1.6rem 1rem 1.4rem;position:relative;overflow:hidden;}
+@media(max-width:900px){.hero h1{font-size:2.4rem;}.hw{grid-template-columns:1fr;}.sv{flex-direction:column;}.spl{width:100%;height:10px;cursor:row-resize;}.sp{min-height:400px;}
 .tree-wrap::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.035) 1px,transparent 1px);background-size:14px 14px;pointer-events:none;}
 .tree-title{font-family:var(--ft);font-size:1.25rem;letter-spacing:2px;color:var(--yellow);text-align:center;margin-bottom:1.4rem;}
 /* root node */
@@ -261,8 +258,8 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
 .tr-node{display:inline-flex;flex-direction:column;align-items:center;gap:.22rem;background:rgba(255,255,255,.07);border:2.5px solid rgba(255,255,255,.28);border-radius:12px;padding:.65rem 1rem;min-width:110px;text-align:center;position:relative;transition:transform .15s;}
 .tr-node:hover{transform:translateY(-2px);}
 .tr-node .tn-icon{font-size:1.55rem;}
-.tr-node .tn-label{font-family:var(--ft);font-size:.9rem;letter-spacing:1.5px;color:#fff;}
-.tr-node .tn-sub{font-size:.72rem;color:rgba(255,255,255,.55);line-height:1.3;}
+.tr-node .tn-label{font-family:var(--ft);font-size:.9rem;letter-spacing:1.5px;color:#ffffff;}
+.tr-node .tn-sub{font-size:.72rem;color:rgba(255,255,255,.75);line-height:1.3;}
 /* colour variants */
 .tn-root{background:rgba(251,191,36,.12);border-color:rgba(251,191,36,.6);}
 .tn-py{background:rgba(37,99,235,.2);border-color:rgba(96,165,250,.7);}
@@ -286,12 +283,12 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
 /* chapter badge on node */
 .tn-ch{display:inline-block;font-size:.58rem;font-weight:800;font-family:var(--fb);background:rgba(251,191,36,.25);color:var(--yellow);padding:1px 6px;border-radius:20px;margin-top:2px;letter-spacing:.5px;}
 
-/* ── READABLE TEXT INSIDE LIGHT PANELS ──────────────────────── */
+
 /* con box */
 .con h4{color:#b91c6c !important;}
-.con p,.con ul,.con li{color:#1e293b !important;}
+.con p,.con ul,.con li{color:#334155 !important;}
 /* tip boxes */
-.tip-box p,.tip-box ul,.tip-box li{color:#1e293b !important;}
+.tip-box p,.tip-box ul,.tip-box li{color:#334155 !important;}
 .tip-box.tip .tip-title{color:#065f46 !important;}
 .tip-box.warn .tip-title{color:#92400e !important;}
 .tip-box.info .tip-title{color:#1e40af !important;}
@@ -300,22 +297,22 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
 .sd{color:#374151 !important;}
 /* persona strip */
 .ps-card p{color:#374151 !important;}
-.ps-card strong{color:#1e293b !important;}
+.ps-card strong{color:#334155 !important;}
 /* fw detail grid */
-.fwd-desc{color:#1e293b !important;}
+.fwd-desc{color:#334155 !important;}
 .fwd-use{color:#475569 !important;}
 /* comic note */
 .cn-text{color:#1e293b !important;}
 /* bubble */
 .bubble p{color:#1e293b !important;}
 /* package table */
-.pt td{color:#1e293b !important;}
+.pt td{color:#334155 !important;}
 /* compare table */
-.cmp td{color:#1e293b !important;}
+.cmp td{color:#334155 !important;}
 /* framework cards */
-.fcb{color:#1e293b !important;}
+.fcb{color:#334155 !important;}
 /* cp cards */
-.cp p{color:#1e293b !important;}
+.cp p{color:#334155 !important;}
 /* summary list */
 .csum ul li{color:rgba(255,255,255,.95) !important;}
 /* sidebar */
@@ -325,24 +322,316 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
 /* step title */
 .sl.pyl2{color:#1e40af !important;}
 .sl.netl2{color:#5b21b6 !important;}
+
+
+
+
+/* Body base - dark readable on notebook bg */
+body { color: #1e293b !important; }
+
+/* LIGHT BACKGROUND elements → dark readable text */
+.cp p, .cp h3                        { color: #1e293b !important; }
+.fc, .fcb                            { color: #1e293b !important; }
+.fch                                 { color: #1e293b !important; }
+.ibox p, .ibox ul, .ibox li          { color: #1e293b !important; }
+.bubble p                            { color: #1e293b !important; }
+.tip-box p, .tip-box ul, .tip-box li { color: #1e293b !important; }
+.con p, .con ul, .con li             { color: #1e293b !important; }
+.tl-body p                           { color: #334155 !important; }
+.tl-body h4                          { color: #1e293b !important; }
+.myth p                              { color: #334155 !important; }
+.tc p, .tc .eg                       { color: #334155 !important; }
+.tc h3                               { color: #1e293b !important; }
+.cap-label                           { color: #1e293b !important; }
+.cap-note                            { color: #475569 !important; }
+.srow .scont .sd                     { color: #334155 !important; }
+.srow .scont .sl                     { color: #1e293b !important; }
+.ps-card p                           { color: #334155 !important; }
+.ps-card strong                      { color: #1e293b !important; }
+.fwd-desc                            { color: #1e293b !important; }
+.fwd-use                             { color: #475569 !important; }
+.qa-q-text                           { color: #1e293b !important; }
+.qa-a                                { color: #1e293b !important; }
+.qa-a ul li                          { color: #1e293b !important; }
+.poll-q                              { color: #1e293b !important; }
+.poll-opt                            { color: #1e293b !important; }
+.step-desc, .sd                      { color: #334155 !important; }
+.tbl td                              { color: #1e293b !important; }
+.cmp td                              { color: #1e293b !important; }
+.pt td                               { color: #1e293b !important; }
+.sbox ul li, .sbox ul li a           { color: #334155 !important; }
+.ab .ad2                             { color: #334155 !important; }
+.comic-note .cn-text                 { color: #1e293b !important; }
+.tip                                 { color: #065f46 !important; }
+.warn                                { color: #92400e !important; }
+
+/* DARK BACKGROUND elements → light readable text */
+.hero p, .hero-sub                   { color: #e2e8f0 !important; }
+.dbox p, .dbox li, .dbox .desc       { color: #cbd5e1 !important; }
+.flow .floop                         { color: rgba(255,255,255,.65) !important; }
+.ftree .ft-loop                      { color: rgba(255,255,255,.65) !important; }
+.fact p                              { color: #e2e8f0 !important; }
+.sdark p, .sdark dd                  { color: #cbd5e1 !important; }
+.sdark dt                            { color: var(--cyan) !important; }
+.chero .chd                          { color: rgba(255,255,255,.92) !important; }
+.chero .chn                          { color: rgba(255,255,255,.7) !important; }
+.chero .cht                          { color: #fff !important; }
+.lbadge .lbs                         { color: rgba(255,255,255,.9) !important; }
+.csum ul li                          { color: rgba(255,255,255,.95) !important; }
+.bubble-who .bwho                    { color: var(--hot) !important; }
+.dbt                                 { color: var(--yellow) !important; }
+.fn .fs                              { color: rgba(255,255,255,.6) !important; }
+.fn .fl                              { color: #fff !important; }
+.pdb .pdd                            { color: rgba(255,255,255,.7) !important; }
+
+/* pyp panel (blue notebook) - dark text */
+.pyp .con p, .pyp .con ul li        { color: #1e293b !important; }
+.pyp .tip-box p                      { color: #1e293b !important; }
+.pyp .sd                             { color: #334155 !important; }
+
+/* netp panel (purple notebook) - dark text */
+.netp .con p, .netp .con ul li      { color: #1e293b !important; }
+.netp .tip-box p                     { color: #1e293b !important; }
+.netp .sd                            { color: #334155 !important; }
+
+/* Interview specific */
+.qa-a strong                         { color: #1e40af !important; }
+.netp .qa-a strong                   { color: #5b21b6 !important; }
+
+
+
+/* ── BODY DEFAULT ── */
+body { color: #1e293b; }
+
+/* ── LIGHT BACKGROUND → DARK TEXT ── */
+p, li, dd, td, th, span, label,
+.bubble p, .bubble-who,
+.cp p, .cp h3,
+.fcb, .fch,
+.ibox p, .ibox ul, .ibox li, .ibox h4,
+.tip-box p, .tip-box ul, .tip-box li,
+.tip-box.tip .tip-title,
+.tip-box.warn .tip-title,
+.tip-box.info .tip-title,
+.tip-box.wow .tip-title,
+.con p, .con ul, .con li, .con h4,
+.tl-body p, .tl-body h4,
+.myth p, .myth h4,
+.tc p, .tc .eg, .tc h3,
+.cap-label, .cap-note,
+.sd, .sl,
+.ps-card p, .ps-card strong,
+.fwd-desc, .fwd-use,
+.scont .sd, .scont .sl,
+.comic-note .cn-text,
+.cn-text,
+.qa-q-text, .qa-a, .qa-a ul, .qa-a li,
+.poll-q, .poll-opt,
+.tbl td, .tbl th,
+.cmp td, .cmp th,
+.pt td, .pt th,
+.ab .ad2,
+.sbox ul li,
+.guide-item,
+.tip, .warn,
+.fcb, .fc,
+.persona .p-say,
+.lbadge .lbt, .lbadge .lbs
+{ color: #1e293b !important; }
+
+/* secondary/muted on light bg */
+.cap-note, .fwd-use, .tc .eg,
+.persona .p-say, .sd
+{ color: #475569 !important; }
+
+/* ── DARK BACKGROUND → LIGHT TEXT ── */
+.hero p,
+.fact p,
+.dbox p, .dbox li,
+.sdark p, .sdark li, .sdark dd,
+.sdark dt,
+.chero .chd, .chero .chn, .chero .cht,
+.csum ul li,
+.fn .fs, .fn .fl,
+.floop, .ft-loop, .flow .floop,
+.ftree p,
+.dbt,
+.pdb .pdd,
+.nxtch,
+.hbadge,
+.author-info p
+{ color: #e2e8f0 !important; }
+
+/* accents on dark bg stay coloured */
+.sdark dt        { color: #06b6d4 !important; }
+.dbt             { color: #fbbf24 !important; }
+.fn .fl          { color: #ffffff !important; }
+.fn .fs          { color: rgba(255,255,255,.65) !important; }
+.floop, .ft-loop { color: rgba(255,255,255,.7) !important; }
+.chero .chn      { color: rgba(255,255,255,.75) !important; }
+.chero .chd      { color: rgba(255,255,255,.92) !important; }
+
+/* ── SPLIT PANELS (light notebook bg) → dark text ── */
+.pyp p, .pyp li, .pyp h3, .pyp h4,
+.netp p, .netp li, .netp h3, .netp h4,
+.qatp p, .qatp li, .qatp h3, .qatp h4
+{ color: #1e293b !important; }
+
+/* ── lbadge always white text (dark gradient bg) ── */
+.lbadge .lbt, .lbadge .lbs
+{ color: #ffffff !important; }
+.lbadge .lbs { opacity: .9; }
+
+
+
+
+/* Light panel backgrounds → dark text */
+.pyp, .netp, .qatp { color: #1e293b !important; }
+.pyp p, .pyp li, .pyp h3, .pyp h4, .pyp span,
+.netp p, .netp li, .netp h3, .netp h4, .netp span,
+.qatp p, .qatp li, .qatp h3, .qatp h4, .qatp span
+{ color: #1e293b !important; }
+
+/* Chapter hero - dark bg → white text */
+.chero .cht  { color: #ffffff !important; font-family: var(--ft); }
+.chero .chn  { color: rgba(255,255,255,.75) !important; }
+.chero .chd  { color: rgba(255,255,255,.9) !important; }
+
+/* Chapter summary - dark bg → white text */
+.csum        { color: #ffffff !important; }
+.csum .cst   { color: var(--yellow) !important; }
+.csum ul li  { color: rgba(255,255,255,.95) !important; }
+.csum p      { color: rgba(255,255,255,.9) !important; }
+.csum.pys,.csum.nets,.csum.qas { color: #fff !important; }
+
+/* nxtch button */
+.nxtch { color: #fff !important; }
+
+/* Bubble - yellow bg → dark text */
+.bubble p        { color: #1e293b !important; }
+.bubble strong   { color: var(--hot) !important; }
+.bwho            { color: var(--hot) !important; }
+
+/* tip / warn */
+.tip  { color: #065f46 !important; background:#ecfdf5 !important; }
+.warn { color: #92400e !important; background:#fffbeb !important; }
+
+/* con/concept box on white bg */
+.con p, .con li, .con h4 { color: #1e293b !important; }
+
+/* code block - always dark bg */
+.code-content { color: #cdd6f4 !important; }
+.cbh          { color: #93c5fd !important; }
+.cbh.net      { color: #c4b5fd !important; }
+
+/* step desc */
+.sd   { color: #334155 !important; }
+.sl   { color: #1e293b !important; }
+
+/* Tree nodes - dark tree-wrap bg → white */
+.tree-wrap .tn-label { color: #ffffff !important; }
+.tree-wrap .tn-sub   { color: rgba(255,255,255,.8) !important; }
+.tree-wrap .tn-ch    { color: var(--yellow) !important; }
+.tree-title          { color: var(--yellow) !important; }
+
+/* Tree nodes in light panels - dark text */
+.pyp .tr-node .tn-label,
+.netp .tr-node .tn-label,
+.qatp .tr-node .tn-label { color: #1e293b !important; }
+.pyp .tr-node .tn-sub,
+.netp .tr-node .tn-sub,
+.qatp .tr-node .tn-sub   { color: #475569 !important; }
+.pyp .tr-node .tn-ch,
+.netp .tr-node .tn-ch,
+.qatp .tr-node .tn-ch    { color: #1e293b !important; background:rgba(0,0,0,.1) !important; }
+
+/* fw detail cards - white bg */
+.fwd-name { color: #1e293b !important; }
+.fwd-desc { color: #334155 !important; }
+.fwd-use  { color: #64748b !important; }
+
+/* persona cards - white bg */
+.persona        { background: #fff !important; }
+.persona .p-role { color: #1e293b !important; }
+.persona .p-say  { color: #334155 !important; }
+
+/* ps-card - light bg */
+.ps-card         { background: #fff !important; }
+.ps-card strong  { color: #1e293b !important; }
+.ps-card p       { color: #334155 !important; }
+.ps-card .ps-tag { color: #1e293b !important; }
+
+/* lbadge - dark gradient bg */
+.lbadge .lbt { color: #ffffff !important; }
+.lbadge .lbs { color: rgba(255,255,255,.9) !important; }
+
+/* flow nodes - dark bg */
+.fd-node .fd-label { color: #ffffff !important; }
+.fd-node .fd-sub   { color: rgba(255,255,255,.8) !important; }
+.fn .fl            { color: #ffffff !important; }
+.fn .fs            { color: rgba(255,255,255,.65) !important; }
+
+
+/* ══ FONT: LIGHT TEXT ON DARK BG | DARK TEXT ON LIGHT BG ══ */
+
+/* --- ALWAYS WHITE on dark bg --- */
+.tree-wrap .tn-label,
+.tree-wrap .tn-sub,
+.tree-wrap .tn-ch,
+.tree-wrap .tn-icon,
+.tree-wrap .tree-title,
+.tree-wrap *:not(.tip):not(.warn) { color:#ffffff !important; }
+.tree-wrap .tn-sub   { color:rgba(255,255,255,.75) !important; }
+.tree-wrap .tn-ch    { color:var(--yellow) !important; }
+.tree-wrap .tree-title { color:var(--yellow) !important; }
+.tree-wrap .tr-loop  { color:rgba(255,255,255,.7) !important; }
+
+.chero *             { color:#ffffff !important; }
+.chero .chn          { color:rgba(255,255,255,.7) !important; }
+.chero .chd          { color:rgba(255,255,255,.9) !important; }
+
+.csum *              { color:#ffffff !important; }
+.csum .cst           { color:var(--yellow) !important; }
+
+.dbox *              { color:#e2e8f0 !important; }
+.dbox .dbt           { color:var(--yellow) !important; }
+.fact *              { color:#e2e8f0 !important; }
+.fact h4             { color:var(--yellow) !important; }
+.hero p, .hero-sub   { color:#e2e8f0 !important; }
+.sdark *             { color:#e2e8f0 !important; }
+.sdark dt            { color:var(--cyan) !important; }
+.lbadge .lbt,
+.lbadge .lbs         { color:#ffffff !important; }
+.fn .fl              { color:#ffffff !important; }
+.fn .fs              { color:rgba(255,255,255,.65) !important; }
+.nxtch               { color:#ffffff !important; }
+
+/* --- ALWAYS DARK on light bg --- */
+.bubble p            { color:#1e293b !important; }
+.con p,.con li       { color:#1e293b !important; }
+.tip-box p,.tip-box li { color:#1e293b !important; }
+.cp p,.cp h3         { color:#1e293b !important; }
+.fcb                 { color:#1e293b !important; }
+.fwd-name            { color:#1e293b !important; }
+.fwd-desc            { color:#334155 !important; }
+.cn-text             { color:#1e293b !important; }
+.ps-card p,.ps-card strong { color:#1e293b !important; }
+.persona .p-role,
+.persona .p-say      { color:#1e293b !important; }
+.tbl td,.cmp td,.pt td { color:#1e293b !important; }
+.sd                  { color:#334155 !important; }
+
+/* --- PANELS: pyp/netp/qatp are LIGHT bg → dark text
+   BUT tree-wrap inside them is dark → handled above --- */
+.pyp *:not(.tree-wrap):not(.tree-wrap *):not(.cb):not(.cb *):not(.chero):not(.chero *):not(.csum):not(.csum *) { color:#1e293b !important; }
+.netp *:not(.tree-wrap):not(.tree-wrap *):not(.cb):not(.cb *):not(.chero):not(.chero *):not(.csum):not(.csum *) { color:#1e293b !important; }
+.qatp *:not(.tree-wrap):not(.tree-wrap *):not(.cb):not(.cb *):not(.chero):not(.chero *):not(.csum):not(.csum *) { color:#1e293b !important; }
+
 </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <div class="nb">
-    <div class="nl">AI<span>Cycle</span></div>
-    <div class="nm">Built with 🧠 by <strong>Ashish Sinha</strong> · AI Developer · <a href="mailto:startvsnotes@gmail.com">✉️ startvsnotes@gmail.com</a> · <span style="color:#64748b;">© 2025</span></div>
-  </div>
-  <div class="nls">
-    <a href="index.html">🏠 Home</a><a href="intro.html">Intro</a><a href="ml.html">ML</a>
-    <a href="deeplearning.html">DL</a><a href="llms.html">LLMs</a><a href="rag.html">RAG</a>
-    <a href="agentic.html">⚡ Agentic AI</a>
-    <a href="qa-automation.html" class="act nw">🧪 QA Auto</a>
-    <a href="tools.html">Tools</a><a href="career.html">Career</a>
-  </div>
-</nav>
+
 
 <!-- HERO -->
 <div class="hero">
@@ -359,11 +648,7 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
   </div>
 </div>
 
-<!-- MAIN TAB BAR -->
-<div class="mtbar">
-  <button class="mt ah" onclick="switchMain('h',this)">🧪 WHAT IS QA AUTOMATION?</button>
-  <button class="mt" onclick="switchMain('p',this)">📚 COURSE <span class="tnew">8 CH</span></button>
-</div>
+
 
 <!-- ════════════════════════════ HOME TAB ════════════════════════════ -->
 <div id="th">
@@ -395,7 +680,7 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
   <div class="cp"><span class="cpn">1</span><div class="cpi">🖱️</div><h3>Manual Testing</h3><p>Human clicks through app. Slow, inconsistent, doesn't scale. Can't run 500 test cases in 5 minutes.</p></div>
   <div class="cp"><span class="cpn">2</span><div class="cpi">🤖</div><h3>Script Tests</h3><p>Playwright/Selenium scripts. Fast but brittle — one CSS change breaks 50 tests. High maintenance.</p></div>
   <div class="cp"><span class="cpn">3</span><div class="cpi">🧠</div><h3>AI-Assisted</h3><p>AI generates test cases from requirements. Still human-reviewed but 10x faster to write.</p></div>
-  <div class="cp" style="border-color:var(--teal);box-shadow:5px 5px 0 var(--teal);"><span class="cpn" style="background:var(--yellow);color:var(--ink);">★</span><div class="cpi">⚡</div><h3>Agentic QA</h3><p>Agent explores the app, generates tests, runs them, diagnoses failures, and self-heals broken selectors. Fully autonomous!</p></div>
+  <div class="cp" style="border-color:var(--teal);box-shadow:5px 5px 0 var(--teal);"><span class="cpn" style="background:var(--yellow);color:#e2e8f0;">★</span><div class="cpi">⚡</div><h3>Agentic QA</h3><p>Agent explores the app, generates tests, runs them, diagnoses failures, and self-heals broken selectors. Fully autonomous!</p></div>
 </div>
 </div>
 
@@ -457,231 +742,7 @@ footer span{color:var(--yellow);font-family:var(--ft);font-size:1.05rem;letter-s
 <div class="cta">
   <div style="font-family:var(--ft);font-size:1.5rem;color:var(--yellow);letter-spacing:2px;margin-bottom:.5rem;">🚀 READY TO BUILD SMARTER TESTS?</div>
   <p style="color:#ccc;font-size:1rem;margin-bottom:1rem;">8 chapters. Python pytest + .NET NUnit. Side by side. AI-generated tests, self-healing selectors, CI/CD pipelines!</p>
-  <button onclick="switchMain('p',document.querySelectorAll('.mt')[1])" class="ctabtn" style="background:var(--yellow);color:var(--ink);">📚 Start Chapter 1 →</button>
-</div>
-
-</div><!-- end hm -->
-
-<!-- SIDEBAR -->
-<div class="hs">
-  <div class="sbox">
-    <div style="font-family:var(--ft);font-size:1.2rem;letter-spacing:1px;margin-bottom:.7rem;color:var(--teal);">📋 COURSE MAP</div>
-    <ul style="list-style:none;font-size:.96rem;display:flex;flex-direction:column;gap:.5rem;">
-      <li>🌱 Ch1 — QA Flow &amp; Frameworks</li>
-      <li>⚙️ Ch2 — Setup Playwright + pytest</li>
-      <li>🎭 Ch3 — First Automated Tests</li>
-      <li>🤖 Ch4 — AI Test Generation</li>
-      <li>🔧 Ch5 — Self-Healing Selectors</li>
-      <li>📊 Ch6 — Reports &amp; Screenshots</li>
-      <li>🔄 Ch7 — CI/CD Integration</li>
-      <li>🚀 Ch8 — Advanced AI Agents</li>
-    </ul>
-  </div>
-  <div class="sdark">
-    <div style="font-family:var(--ft);font-size:1.1rem;color:var(--yellow);letter-spacing:1px;margin-bottom:.7rem;">🔑 KEY TERMS</div>
-    <dl style="font-size:.92rem;display:flex;flex-direction:column;gap:.6rem;">
-      <div><dt style="color:var(--cyan);font-weight:700;">Page Object Model</dt><dd style="color:#ccc;line-height:1.5;">Design pattern. Each page = a class. Keeps tests clean and maintainable.</dd></div>
-      <div><dt style="color:var(--cyan);font-weight:700;">Selector Healing</dt><dd style="color:#ccc;line-height:1.5;">AI finds an element even when its CSS selector/ID changes. No more brittle tests!</dd></div>
-      <div><dt style="color:var(--cyan);font-weight:700;">Flaky Test</dt><dd style="color:#ccc;line-height:1.5;">A test that sometimes passes, sometimes fails — the enemy of CI/CD confidence.</dd></div>
-      <div><dt style="color:var(--cyan);font-weight:700;">Allure Report</dt><dd style="color:#ccc;line-height:1.5;">Beautiful HTML test report with trends, screenshots, and failure analysis.</dd></div>
-    </dl>
-  </div>
-  <div class="sbox">
-    <div style="font-family:var(--ft);font-size:1.1rem;color:var(--hot);letter-spacing:1px;margin-bottom:.6rem;">🔗 ALSO CHECK OUT</div>
-    <a href="agentic.html" style="display:block;background:linear-gradient(135deg,#f72585,#7c3aed);color:#fff;border:var(--border);border-radius:8px;padding:.8rem 1rem;font-family:var(--ft);font-size:1rem;letter-spacing:1px;text-decoration:none;text-align:center;box-shadow:var(--sh);">⚡ Agentic AI Course →</a>
-    <p style="font-size:.85rem;color:#64748b;margin-top:.5rem;text-align:center;">LangChain · LangGraph · Semantic Kernel</p>
-  </div>
-</div>
-</div><!-- end hw -->
-</div><!-- end th -->
-
-<!-- ════════════════════════════ COURSE TAB ════════════════════════════ -->
-<div id="tp">
-<div class="cwrap">
-  <div class="chnav" id="qanav">
-    <button class="cnb act-ch" onclick="showCh(0,this)">🌱 CH1 FOUNDATIONS</button>
-    <button class="cnb" onclick="showCh(1,this)">⚙️ CH2 SETUP</button>
-    <button class="cnb" onclick="showCh(2,this)">🎭 CH3 FIRST TESTS</button>
-    <button class="cnb" onclick="showCh(3,this)">🤖 CH4 AI GENERATION</button>
-    <button class="cnb" onclick="showCh(4,this)">🔧 CH5 SELF-HEAL</button>
-    <button class="cnb" onclick="showCh(5,this)">📊 CH6 REPORTS</button>
-    <button class="cnb" onclick="showCh(6,this)">🔄 CH7 CI/CD</button>
-    <button class="cnb" onclick="showCh(7,this)">🚀 CH8 AI AGENTS</button>
-  </div>
-  <div class="sv">
-
-    <!-- ═══════════════ LEFT: PYTHON (pytest + Playwright) ═══════════════ -->
-    <div class="sp pyp" id="pyleft">
-      <div class="lbadge pyb"><div class="lbi">🐍</div><div><div class="lbt">Python</div><div class="lbs">pytest · Playwright · LangChain AI</div></div></div>
-
-      <!-- CH1 PYTHON -->
-      <div class="cc act" id="pyc0">
-        <div class="chero pyh"><div class="chn">CH 1 · PYTHON</div><div class="cht">🌱 FOUNDATIONS & FLOW</div><div class="chd">Understand the full QA pipeline — from requirements to CI/CD — and which Python tool does what at each stage.</div></div>
-        <div class="bubble"><div class="bubble-who"><span class="bicon">🐍</span><span class="bwho">Python QA Mascot:</span></div>
-          <p>Before running a single test, let's map out the <strong>entire QA journey</strong>. Think of it like a factory line — requirements come in, tests are generated, executed, analyzed, and reported. AI supercharges every single step!</p>
-        </div>
-        <div class="persona-strip">
-          <div class="ps-title">👥 WHO BENEFITS FROM EACH LAYER?</div>
-          <div class="ps-grid">
-            <div class="ps-card" style="border-color:#0d9488;"><span class="ps-emoji">🧪</span><strong>QA Engineer</strong><span class="ps-tag" style="background:#ccfbf1;color:#0f766e;">Core User</span><p>You'll own this whole pipeline — from test design to CI/CD</p></div>
-            <div class="ps-card" style="border-color:#2563eb;"><span class="ps-emoji">👨‍💻</span><strong>Developer</strong><span class="ps-tag" style="background:#dbeafe;color:#1e40af;">Shift Left</span><p>Write tests alongside features — AI generates the boring ones</p></div>
-            <div class="ps-card" style="border-color:#10b981;"><span class="ps-emoji">🚀</span><strong>DevOps</strong><span class="ps-tag" style="background:#d1fae5;color:#065f46;">CI/CD</span><p>Integrate the full test suite into pipelines in Chapter 7</p></div>
-            <div class="ps-card" style="border-color:#f59e0b;"><span class="ps-emoji">📊</span><strong>Manager</strong><span class="ps-tag" style="background:#fef3c7;color:#92400e;">Visibility</span><p>Allure dashboards give you real coverage metrics and trends</p></div>
-          </div>
-        </div>
-<div class="tree-wrap">
-  <div class="tree-title">🐍 PYTHON QA AUTOMATION — FULL STACK TREE</div>
-
-  <div class="tr-root">
-    <div class="tr-node tn-root"><span class="tn-icon">📋</span><span class="tn-label">REQUIREMENTS</span><span class="tn-sub">User stories / Jira</span></div>
-  </div>
-  <div class="tr-vline"></div>
-
-  <div class="tr-root">
-    <div class="tr-node tn-py"><span class="tn-icon">🤖</span><span class="tn-label">LANGCHAIN + GPT-4o</span><span class="tn-sub">AI test generation</span><span class="tn-ch">Ch 4</span></div>
-  </div>
-  <div class="tr-vline"></div>
-
-  <div class="tr-root">
-    <div class="tr-node tn-qa"><span class="tn-icon">🎭</span><span class="tn-label">PLAYWRIGHT</span><span class="tn-sub">Browser automation engine</span><span class="tn-ch">Ch 2–3</span></div>
-  </div>
-  <div class="tr-vline"></div>
-  <div class="tr-hbar-wrap">
-    <div class="tr-children">
-      <div class="tr-child">
-        <div class="tr-child-stub"></div>
-        <div class="tr-node tn-py"><span class="tn-icon">🧪</span><span class="tn-label">PYTEST</span><span class="tn-sub">Test runner &amp; fixtures</span><span class="tn-ch">Ch 2</span></div>
-      </div>
-      <div class="tr-child">
-        <div class="tr-child-stub"></div>
-        <div class="tr-node tn-qa"><span class="tn-icon">📄</span><span class="tn-label">PAGE OBJECTS</span><span class="tn-sub">POM pattern classes</span><span class="tn-ch">Ch 3</span></div>
-      </div>
-      <div class="tr-child">
-        <div class="tr-child-stub"></div>
-        <div class="tr-node tn-hot"><span class="tn-icon">🔧</span><span class="tn-label">AI HEALER</span><span class="tn-sub">GPT-4o Vision fix</span><span class="tn-ch">Ch 5</span></div>
-      </div>
-    </div>
-  </div>
-  <div class="tr-vline"></div>
-
-  <div class="tr-root">
-    <div class="tr-node tn-qa"><span class="tn-icon">📊</span><span class="tn-label">ALLURE REPORTS</span><span class="tn-sub">HTML dashboards + screenshots</span><span class="tn-ch">Ch 6</span></div>
-  </div>
-  <div class="tr-vline"></div>
-
-  <div class="tr-hbar-wrap">
-    <div class="tr-children">
-      <div class="tr-child">
-        <div class="tr-child-stub"></div>
-        <div class="tr-node tn-green"><span class="tn-icon">🔄</span><span class="tn-label">GITHUB ACTIONS</span><span class="tn-sub">CI/CD pipeline</span><span class="tn-ch">Ch 7</span></div>
-      </div>
-      <div class="tr-child">
-        <div class="tr-child-stub"></div>
-        <div class="tr-node tn-hot"><span class="tn-icon">🚀</span><span class="tn-label">QA AGENT</span><span class="tn-sub">Autonomous 24/7 testing</span><span class="tn-ch">Ch 8</span></div>
-      </div>
-    </div>
-  </div>
-  <div class="tr-vline"></div>
-
-  <div class="tr-root">
-    <div class="tr-node tn-root"><span class="tn-icon">✅</span><span class="tn-label">SHIP WITH CONFIDENCE</span><span class="tn-sub">Bugs caught before production</span></div>
-  </div>
-  <div class="tr-loop">🔁 AI QA Loop — Generate → Execute → Heal failures → Report → Improve coverage → repeat</div>
-</div>
-        <div class="fw-detail-grid">
-          <div class="fwd-card pycard"><div class="fwd-icon">🎭</div><div class="fwd-name">Playwright</div><div class="fwd-role">BROWSER AUTOMATION</div><div class="fwd-desc">Microsoft's modern testing tool. Runs Chromium, Firefox, and WebKit with one API. Much faster and more stable than Selenium for modern SPAs.</div><div class="fwd-use">Ch2 setup → Ch3 first tests → Ch5 healing</div></div>
-          <div class="fwd-card pycard"><div class="fwd-icon">🧪</div><div class="fwd-name">pytest</div><div class="fwd-role">TEST RUNNER</div><div class="fwd-desc">Python's most popular test framework. Fixtures, parametrize, markers, plugins — incredibly powerful for organizing large test suites.</div><div class="fwd-use">Ch2 setup → All chapters</div></div>
-          <div class="fwd-card pycard"><div class="fwd-icon">🤖</div><div class="fwd-name">LangChain + GPT-4o</div><div class="fwd-role">AI TEST GENERATOR</div><div class="fwd-desc">Give it a user story — it writes Playwright test code. Feed it a failure log — it diagnoses and suggests the fix. Your AI pair programmer for QA.</div><div class="fwd-use">Ch4 AI gen → Ch8 agents</div></div>
-          <div class="fwd-card pycard"><div class="fwd-icon">📊</div><div class="fwd-name">Allure</div><div class="fwd-role">REPORTING</div><div class="fwd-desc">Beautiful HTML reports with trend charts, screenshots, videos, and test history. Stakeholders can finally understand test results without reading logs.</div><div class="fwd-use">Ch6 reports → Ch7 CI/CD</div></div>
-        </div>
-        <div class="csum pys"><div class="cst">✅ CH 1 DONE — You know the WHY!</div><ul><li>QA pipeline: Requirements → AI Gen → Playwright → Heal → Report → CI/CD</li><li>Playwright for modern apps, AI for generation & self-healing</li><li>Each chapter adds one layer to the full automated pipeline</li></ul><button class="nxtch" onclick="showCh(1,document.querySelectorAll('#qanav .cnb')[1])">Next: Ch 2 — Setup →</button></div>
-      </div>
-
-      <!-- CH2 PYTHON -->
-      <div class="cc" id="pyc1">
-        <div class="chero pyh"><div class="chn">CH 2 · PYTHON</div><div class="cht">⚙️ SETUP PLAYWRIGHT + PYTEST</div><div class="chd">Install everything, configure VS Code, write your project structure, set up the Page Object Model pattern.</div></div>
-        <div class="bubble"><div class="bubble-who"><span class="bicon">🐍</span><span class="bwho">Python Mascot:</span></div><p>We set up with VS Code (not the terminal!). The Playwright extension gives you <strong>test recording, debugging, and selector highlighting</strong> directly in your editor. Let's get comfy before writing tests!</p></div>
-        <div class="tip-box info"><div class="tip-title">🖥️ Open in VS Code</div><p>Install the <strong>Playwright Test for VSCode</strong> extension. It adds a Testing panel where you can run, debug, and record tests with one click — no terminal needed to get started!</p></div>
-        <div class="cb"><div class="ch pyh2"><span class="dot" style="background:#ff5f57;"></span><span class="dot" style="background:#febc2e;"></span><span class="dot" style="background:#28c840;"></span><span class="vsc-tab">⚡ VS Code Terminal</span></div><div class="cbody"><div class="lnums"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div></div><div class="code-content"><span class="pc"># Create project folder with virtual environment</span>
-mkdir qa-project &amp;&amp; cd qa-project
-python -m venv venv &amp;&amp; source venv/bin/activate
-
-<span class="pc"># Install Playwright + pytest + AI packages</span>
-pip install pytest playwright pytest-playwright
-pip install allure-pytest langchain langchain-openai
-pip install python-dotenv
-
-<span class="pc"># Install browsers (Chromium, Firefox, WebKit)</span>
-playwright install</div></div></div>
-        <div class="comic-note"><div class="cn-emoji">💡</div><div class="cn-text">After <code style="background:#1e1e2e;color:#a6e3a1;padding:1px 5px;border-radius:3px;">playwright install</code>, open VS Code and press <kbd style="background:#eee;padding:2px 6px;border-radius:3px;">Ctrl+Shift+P</kbd> → "Playwright: Record new" to record your first test by simply clicking through your app. <strong>No coding required for basic tests!</strong></div></div>
-        <div class="cb"><div class="ch pyh2"><span class="dot" style="background:#ff5f57;"></span><span class="dot" style="background:#febc2e;"></span><span class="dot" style="background:#28c840;"></span><span class="vsc-tab">🐍 conftest.py</span></div><div class="cbody"><div class="lnums"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div></div><div class="code-content"><span class="pk">import</span> pytest
-<span class="pk">from</span> <span class="pcl">playwright.sync_api</span> <span class="pk">import</span> Page
-
-<span class="pc"># conftest.py = pytest setup file — runs before every test</span>
-
-<span class="pf">@pytest.fixture</span>(scope=<span class="ps">"session"</span>)
-<span class="pk">def</span> <span class="pf">base_url</span>():
-    <span class="pk">return</span> <span class="ps">"https://your-app.com"</span>
-
-<span class="pc"># Playwright's 'page' fixture is auto-provided — no setup needed!</span>
-<span class="pc"># Just add 'page: Page' as a test parameter and it works.</span></div></div></div>
-        <div class="csum pys"><div class="cst">✅ CH 2 DONE</div><ul><li>Playwright installed + browsers ready in VS Code</li><li>pytest + allure configured for beautiful reports</li><li>conftest.py = shared fixtures for all tests</li></ul><button class="nxtch" onclick="showCh(2,document.querySelectorAll('#qanav .cnb')[2])">Next: Ch 3 — First Tests →</button></div>
-      </div>
-
-      <!-- CH3 PYTHON -->
-      <div class="cc" id="pyc2">
-        <div class="chero pyh"><div class="chn">CH 3 · PYTHON</div><div class="cht">🎭 YOUR FIRST PLAYWRIGHT TESTS</div><div class="chd">Page Object Model pattern, writing clean tests, assertions, screenshots on failure.</div></div>
-        <div class="bubble"><div class="bubble-who"><span class="bicon">🎭</span><span class="bwho">Playwright says:</span></div><p>The <strong>Page Object Model (POM)</strong> keeps your tests clean. Each page of your app = one Python class. Tests call the class methods, never raw selectors. When the UI changes, you update <em>one class</em>, not 50 tests!</p></div>
-        <div class="flowdiag"><div class="fd-title">🏗️ PAGE OBJECT MODEL PATTERN</div><div class="fd-row"><div class="fd-node shared-node"><span class="fd-icon">🧪</span><span class="fd-label">Test File</span><span class="fd-sub">test_login.py</span></div><div class="fd-arrow">→</div><div class="fd-node py-node"><span class="fd-icon">📄</span><span class="fd-label">Page Object</span><span class="fd-sub">LoginPage class</span></div><div class="fd-arrow">→</div><div class="fd-node qa-node"><span class="fd-icon">🎭</span><span class="fd-label">Playwright</span><span class="fd-sub">Browser actions</span></div><div class="fd-arrow">→</div><div class="fd-node shared-node"><span class="fd-icon">🌐</span><span class="fd-label">Browser</span><span class="fd-sub">Real interaction</span></div></div><div class="fd-loop">✅ If UI changes → update LoginPage class only → all tests still pass!</div></div>
-        <div class="cb"><div class="ch pyh2"><span class="dot" style="background:#ff5f57;"></span><span class="dot" style="background:#febc2e;"></span><span class="dot" style="background:#28c840;"></span><span class="vsc-tab">🐍 pages/login_page.py</span></div><div class="cbody"><div class="lnums"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div></div><div class="code-content"><span class="pk">from</span> <span class="pcl">playwright.sync_api</span> <span class="pk">import</span> Page
-
-<span class="pk">class</span> <span class="pcl">LoginPage</span>:
-    <span class="pk">def</span> <span class="pf">__init__</span>(self, page: Page):
-        self.page      = page
-        self.username  = page.<span class="pf">get_by_label</span>(<span class="ps">"Username"</span>)   <span class="pc"># semantic selector!</span>
-        self.password  = page.<span class="pf">get_by_label</span>(<span class="ps">"Password"</span>)
-        self.btn_login = page.<span class="pf">get_by_role</span>(<span class="ps">"button"</span>, name=<span class="ps">"Login"</span>)
-
-    <span class="pk">def</span> <span class="pf">login</span>(self, user: str, pwd: str):
-        self.page.<span class="pf">goto</span>(<span class="ps">"/login"</span>)
-        self.username.<span class="pf">fill</span>(user)
-        self.password.<span class="pf">fill</span>(pwd)
-        self.btn_login.<span class="pf">click</span>()
-
-    <span class="pk">def</span> <span class="pf">is_logged_in</span>(self) -> bool:
-        <span class="pk">return</span> self.page.<span class="pf">url</span>.<span class="pf">endswith</span>(<span class="ps">"/dashboard"</span>)</div></div></div>
-        <div class="comic-note"><div class="cn-emoji">🌟</div><div class="cn-text">Use <code style="background:#1e1e2e;color:#a6e3a1;padding:1px 5px;border-radius:3px;">get_by_role</code>, <code style="background:#1e1e2e;color:#a6e3a1;padding:1px 5px;border-radius:3px;">get_by_label</code>, <code style="background:#1e1e2e;color:#a6e3a1;padding:1px 5px;border-radius:3px;">get_by_text</code> instead of CSS selectors like <code style="background:#1e1e2e;color:#f38ba8;padding:1px 5px;border-radius:3px;">#submit-btn</code>. Semantic selectors are <strong>self-healing</strong> — they find the element by what it does, not where it is in the DOM!</div></div>
-        <div class="cb"><div class="ch pyh2"><span class="dot" style="background:#ff5f57;"></span><span class="dot" style="background:#febc2e;"></span><span class="dot" style="background:#28c840;"></span><span class="vsc-tab">🐍 tests/test_login.py</span></div><div class="cbody"><div class="lnums"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div></div><div class="code-content"><span class="pk">import</span> pytest
-<span class="pk">from</span> <span class="pcl">pages.login_page</span> <span class="pk">import</span> <span class="pcl">LoginPage</span>
-
-<span class="pf">@pytest.mark.parametrize</span>(<span class="ps">"user,pwd,expected"</span>, [
-    (<span class="ps">"admin"</span>, <span class="ps">"correct"</span>, <span class="pk">True</span>),   <span class="pc"># valid login</span>
-    (<span class="ps">"admin"</span>, <span class="ps">"wrong"</span>,   <span class="pk">False</span>),  <span class="pc"># wrong password</span>
-    (<span class="ps">""</span>,      <span class="ps">""</span>,        <span class="pk">False</span>),  <span class="pc"># empty fields</span>
-])
-<span class="pk">def</span> <span class="pf">test_login</span>(page, user, pwd, expected):
-    login = <span class="pcl">LoginPage</span>(page)
-    login.<span class="pf">login</span>(user, pwd)
-    <span class="pk">assert</span> login.<span class="pf">is_logged_in</span>() == expected
-<span class="pc"># pytest runs all 3 cases automatically! 🎉</span></div></div></div>
-        <div class="csum pys"><div class="cst">✅ CH 3 DONE</div><ul><li>Page Object Model = one class per page, tests call methods not selectors</li><li>Semantic selectors (get_by_role, get_by_label) are naturally self-healing</li><li>parametrize = run same test with multiple data sets — no copy-paste!</li></ul><button class="nxtch" onclick="showCh(3,document.querySelectorAll('#qanav .cnb')[3])">Next: Ch 4 — AI Test Gen →</button></div>
-      </div>
-
-      <!-- CH4 PYTHON -->
-      <div class="cc" id="pyc3">
-        <div class="chero pyh"><div class="chn">CH 4 · PYTHON</div><div class="cht">🤖 AI TEST GENERATION</div><div class="chd">Use GPT-4o + LangChain to generate Playwright test code from user stories and requirements docs.</div></div>
-        <div class="bubble"><div class="bubble-who"><span class="bicon">🤖</span><span class="bwho">AI Test Bot:</span></div><p>Give me a user story — I'll write the Playwright test. Give me a failing test log — I'll diagnose the root cause. This isn't magic, it's <strong>prompting the LLM with the right context</strong> about your app and your testing patterns!</p></div>
-        <div class="cb"><div class="ch pyh2"><span class="dot" style="background:#ff5f57;"></span><span class="dot" style="background:#febc2e;"></span><span class="dot" style="background:#28c840;"></span><span class="vsc-tab">🐍 ai_test_generator.py</span></div><div class="cbody"><div class="lnums"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div></div><div class="code-content"><span class="pk">from</span> <span class="pcl">langchain_openai</span> <span class="pk">import</span> <span class="pf">ChatOpenAI</span>
-<span class="pk">from</span> <span class="pcl">langchain_core.messages</span> <span class="pk">import</span> <span class="pf">HumanMessage</span>, <span class="pf">SystemMessage</span>
-
-<span class="pv">llm</span> = <span class="pf">ChatOpenAI</span>(model=<span class="ps">"gpt-4o"</span>, temperature=<span class="pn">0</span>)
-
-<span class="pk">def</span> <span class="pf">generate_test_from_story</span>(user_story: str) -> str:
-    <span class="pv">msgs</span> = [
-        <span class="pf">SystemMessage</span>(<span class="ps">"""You are a QA engineer. Write pytest + Playwright tests.
-Use Page Object Model. Use get_by_role/get_by_label selectors.
-Return ONLY Python code, no explanation."""</span>),
-        <span class="pf">HumanMessage</span>(<span class="ps">f"Write a Playwright test for this story:\n{user_story}"</span>)
+  <button onclick="switchMain('p',document.querySelectorAll('"</span>)
     ]
     <span class="pk">return</span> <span class="pv">llm</span>.<span class="pf">invoke</span>(<span class="pv">msgs</span>).content
 
@@ -1051,19 +1112,7 @@ function switchMain(t,btn){
   document.getElementById('th').style.display='none';
   document.getElementById('tp').style.display='none';
   document.getElementById('t'+t).style.display='block';
-  document.querySelectorAll('.mt').forEach(b=>b.classList.remove('ah','ap'));
-  btn.classList.add(t==='h'?'ah':'ap');
-}
-
-function showCh(idx,btn){
-  document.querySelectorAll('#qanav .cnb').forEach(b=>b.classList.remove('act-ch'));
-  if(btn) btn.classList.add('act-ch');
-  for(let i=0;i<8;i++){
-    const py=document.getElementById('pyc'+i);
-    const nt=document.getElementById('netc'+i);
-    if(py) py.classList.toggle('act',i===idx);
-    if(nt) nt.classList.toggle('act',i===idx);
-  }
+  document.querySelectorAll('
   ['pyleft','netright'].forEach(id=>{
     const el=document.getElementById(id);
     if(el) el.scrollTop=0;
@@ -1121,5 +1170,7 @@ if(spl){
   document.addEventListener('touchend',()=>{drag=false;});
 }
 </script>
+<script src="analytics.js"></script>
+<script src="widgets.js"></script>
 </body>
 </html>
