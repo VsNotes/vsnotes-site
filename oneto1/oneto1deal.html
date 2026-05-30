@@ -5,7 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OneTo1Deal – Direct Owner Property Listings in Bangalore | No Broker</title>
-<!-- SEO Meta Tags -->
 <meta name="description" content="OneTo1Deal – Buy, rent or sell property directly with owners in Bangalore. Zero brokerage. Indiranagar, Koramangala, Whitefield, HSR Layout and all areas covered.">
 <meta name="keywords" content="property in bangalore, flat for rent bangalore, house for sale bangalore, no broker bangalore, direct owner property, koramangala flats, indiranagar house, whitefield apartment">
 <meta name="author" content="OneTo1Deal">
@@ -13,557 +12,256 @@
 <meta property="og:description" content="Connect directly with property owners in Bangalore. Zero brokerage, real photos, real deals.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://oneto1deal.in">
-
-<!-- Structured Data for Google -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  "name": "OneTo1Deal",
-  "description": "Direct owner property listings in Bangalore. No broker, no commission.",
-  "url": "https://oneto1deal.in",
-  "areaServed": "Bangalore, Karnataka, India",
-  "serviceType": "Property Listings - No Broker"
-}
-</script>
-
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","name":"OneTo1Deal","description":"Direct owner property listings in Bangalore. No broker, no commission.","url":"https://oneto1deal.in","areaServed":"Bangalore, Karnataka, India","serviceType":"Property Listings - No Broker"}</script>
 <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --ink: #0f0f1a;
-  --deep: #1a1a2e;
-  --mid: #16213e;
+  --ink: #0a0a14;
+  --deep: #0f0f1e;
+  --mid: #141428;
   --accent: #e94560;
   --gold: #f5a623;
   --teal: #00d4aa;
-  --panel: #1e2140;
-  --panel2: #252848;
-  --white: #f0f4ff;
-  --muted: #8892b0;
-  --shadow: 4px 4px 0px var(--ink);
-  --shadow-lg: 6px 6px 0px var(--ink);
+  --panel: #1a1a32;
+  --panel2: #20203c;
+  --white: #eef2ff;
+  --muted: #7a86a8;
+  --shadow: 4px 4px 0px #0a0a14;
+  --shadow-lg: 6px 6px 0px #0a0a14;
 }
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito',sans-serif;background:var(--deep);background-image:radial-gradient(ellipse at 15% 40%,rgba(233,69,96,.07) 0%,transparent 55%),radial-gradient(ellipse at 85% 15%,rgba(0,212,170,.05) 0%,transparent 45%),linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:auto,auto,40px 40px,40px 40px;color:var(--white);min-height:100vh}
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+/* ─── HERO ─── */
+.hero{background:linear-gradient(135deg,#080814 0%,#12122a 60%,#101028 100%);border-bottom:3px solid var(--accent);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 60px,rgba(233,69,96,.025) 60px,rgba(233,69,96,.025) 61px)}
+.hero-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:26px 24px 22px;gap:20px;position:relative;z-index:1}
+.logo-wrap{display:flex;flex-direction:column;gap:5px}
+.logo-title{font-family:'Bangers',cursive;font-size:clamp(2.6rem,7vw,5.2rem);color:var(--white);letter-spacing:4px;line-height:1;text-shadow:3px 3px 0 var(--accent),-1px -1px 0 var(--teal);transform:rotate(-1.5deg);display:inline-block}
+.logo-title span{color:var(--accent)}
+.logo-sub{font-family:'Space Mono',monospace;color:var(--teal);font-size:.78rem;letter-spacing:2px;text-transform:uppercase}
+.no-broker-tag{background:var(--teal);color:var(--ink);font-family:'Bangers',cursive;font-size:1.05rem;letter-spacing:2px;padding:4px 16px;border:2px solid var(--ink);border-radius:4px;box-shadow:3px 3px 0 var(--ink);display:inline-block;margin-top:7px;transform:rotate(-1deg)}
+.hero-badge{background:linear-gradient(135deg,var(--accent),#b5102a);border:3px solid var(--ink);border-radius:50%;width:105px;height:105px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:var(--shadow-lg);transform:rotate(10deg);flex-shrink:0}
+.hero-badge span:first-child{font-family:'Bangers',cursive;font-size:.85rem;color:rgba(255,255,255,.8);letter-spacing:1px}
+.hero-badge .badge-count{font-family:'Bangers',cursive;font-size:2.4rem;color:#fff;line-height:1}
+.hero-badge span:last-child{font-family:'Nunito',sans-serif;font-size:.6rem;font-weight:800;color:rgba(255,255,255,.65);text-transform:uppercase;letter-spacing:1px}
 
-body {
-  font-family: 'Nunito', sans-serif;
-  background-color: var(--deep);
-  background-image:
-    radial-gradient(ellipse at 20% 50%, rgba(233,69,96,0.08) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(0,212,170,0.06) 0%, transparent 40%),
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-  background-size: auto, auto, 40px 40px, 40px 40px;
-  color: var(--white);
-  min-height: 100vh;
-}
+/* ─── SEARCH ─── */
+.search-section{background:var(--mid);border-bottom:3px solid var(--ink);padding:14px 24px;position:sticky;top:0;z-index:100;box-shadow:0 4px 24px rgba(0,0,0,.5)}
+.search-inner{max-width:1180px;margin:0 auto;display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.search-inner input,.search-inner select{font-family:'Nunito',sans-serif;font-size:.88rem;font-weight:700;border:2px solid rgba(255,255,255,.1);border-radius:8px;padding:8px 12px;background:var(--panel);color:var(--white);box-shadow:2px 2px 0 var(--ink);outline:none;transition:border-color .2s}
+.search-inner input:focus,.search-inner select:focus{border-color:var(--teal)}
+.search-inner input{flex:1 1 180px;min-width:140px}
+.search-inner select{min-width:115px}
+.search-inner select option{background:var(--panel);color:var(--white)}
+#areaFilter{min-width:165px}
+.btn{font-family:'Bangers',cursive;letter-spacing:2px;font-size:1rem;border:2px solid var(--ink);border-radius:8px;padding:8px 18px;cursor:pointer;box-shadow:3px 3px 0 var(--ink);transition:transform .1s,box-shadow .1s;white-space:nowrap}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-teal{background:var(--teal);color:var(--ink)}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-ghost{background:var(--panel);color:var(--white);border-color:rgba(255,255,255,.15)}
 
-/* HERO */
-.hero {
-  background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 60%, #16213e 100%);
-  border-bottom: 3px solid var(--accent);
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-}
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    45deg, transparent, transparent 60px,
-    rgba(233,69,96,0.03) 60px, rgba(233,69,96,0.03) 61px
-  );
-}
-.hero-inner {
-  max-width: 1160px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 28px 24px 24px;
-  gap: 24px;
-  position: relative;
-  z-index: 1;
-}
-.logo-wrap { display: flex; flex-direction: column; gap: 6px; }
-.logo-title {
-  font-family: 'Bangers', cursive;
-  font-size: clamp(2.8rem, 7vw, 5.5rem);
-  color: var(--white);
-  letter-spacing: 4px;
-  line-height: 1;
-  text-shadow: 3px 3px 0 var(--accent), -1px -1px 0 var(--teal);
-  transform: rotate(-1.5deg);
-  display: inline-block;
-}
-.logo-title span { color: var(--accent); }
-.logo-sub {
-  font-family: 'Space Mono', monospace;
-  color: var(--teal);
-  font-size: 0.82rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.hero-badge {
-  background: linear-gradient(135deg, var(--accent), #c1121f);
-  border: 3px solid var(--ink);
-  border-radius: 50%;
-  width: 110px; height: 110px;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  box-shadow: var(--shadow-lg);
-  transform: rotate(10deg);
-  flex-shrink: 0;
-}
-.hero-badge span:first-child { font-family: 'Bangers', cursive; font-size: 0.9rem; color: rgba(255,255,255,0.85); letter-spacing: 1px; }
-.hero-badge span.badge-count { font-family: 'Bangers', cursive; font-size: 2.4rem; color: #fff; line-height: 1; }
-.hero-badge span:last-child { font-family: 'Nunito', sans-serif; font-size: 0.65rem; font-weight: 800; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 1px; }
-.no-broker-tag {
-  background: var(--teal);
-  color: var(--ink);
-  font-family: 'Bangers', cursive;
-  font-size: 1.1rem;
-  letter-spacing: 2px;
-  padding: 5px 18px;
-  border: 2px solid var(--ink);
-  border-radius: 4px;
-  box-shadow: 3px 3px 0 var(--ink);
-  display: inline-block;
-  margin-top: 8px;
-  transform: rotate(-1deg);
-}
+/* ─── MAIN ─── */
+.main-wrap{max-width:1180px;margin:0 auto;padding:26px 16px}
 
-/* SEARCH BAR */
-.search-section {
-  background: var(--mid);
-  border-bottom: 3px solid var(--ink);
-  padding: 16px 24px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-}
-.search-inner {
-  max-width: 1160px;
-  margin: 0 auto;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.search-inner input, .search-inner select {
-  font-family: 'Nunito', sans-serif;
-  font-size: 0.92rem;
-  font-weight: 700;
-  border: 2px solid rgba(255,255,255,0.12);
-  border-radius: 8px;
-  padding: 8px 14px;
-  background: var(--panel);
-  color: var(--white);
-  box-shadow: 2px 2px 0 var(--ink);
-  outline: none;
-  transition: border-color 0.2s;
-}
-.search-inner input:focus, .search-inner select:focus { border-color: var(--teal); }
-.search-inner input { flex: 1 1 180px; min-width: 140px; }
-.search-inner select { min-width: 110px; }
-.search-inner select option { background: var(--panel); color: var(--white); }
+/* ─── STATS ─── */
+.stats-strip{display:flex;gap:13px;margin-bottom:26px;flex-wrap:wrap}
+.stat-card{background:var(--panel);border:2px solid rgba(255,255,255,.07);border-radius:10px;padding:12px 18px;box-shadow:var(--shadow);text-align:center;flex:1 1 90px}
+.stat-card .stat-num{font-family:'Bangers',cursive;font-size:2rem;color:var(--accent);letter-spacing:1px}
+.stat-card .stat-label{font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
 
-/* Area filter */
-#areaFilter { min-width: 160px; }
+/* ─── SECTION TITLE ─── */
+.section-title{font-family:'Bangers',cursive;font-size:1.9rem;letter-spacing:3px;color:var(--white);background:var(--accent);display:inline-block;padding:4px 18px;border-radius:6px;margin-bottom:20px;box-shadow:4px 4px 0 var(--ink);transform:rotate(-.8deg)}
 
-.btn {
-  font-family: 'Bangers', cursive;
-  letter-spacing: 2px;
-  font-size: 1.05rem;
-  border: 2px solid var(--ink);
-  border-radius: 8px;
-  padding: 8px 20px;
-  cursor: pointer;
-  box-shadow: 3px 3px 0 var(--ink);
-  transition: transform 0.1s, box-shadow 0.1s;
-  white-space: nowrap;
-}
-.btn:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--ink); }
-.btn-accent { background: var(--accent); color: #fff; }
-.btn-teal { background: var(--teal); color: var(--ink); }
-.btn-gold { background: var(--gold); color: var(--ink); }
-.btn-ghost { background: var(--panel); color: var(--white); border-color: rgba(255,255,255,0.2); }
+/* ─── PROPERTY GRID ─── */
+.property-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
 
-/* MAIN */
-.main-wrap { max-width: 1160px; margin: 0 auto; padding: 28px 16px; }
+/* ─── PROPERTY CARD ─── */
+.prop-card{background:var(--panel);border:2px solid rgba(255,255,255,.07);border-radius:14px;box-shadow:var(--shadow-lg);overflow:hidden;transition:transform .15s,box-shadow .15s,border-color .15s;position:relative;cursor:pointer}
+.prop-card:hover{transform:translate(-3px,-4px);box-shadow:9px 10px 0 var(--ink);border-color:var(--teal)}
 
-/* STATS */
-.stats-strip { display: flex; gap: 14px; margin-bottom: 28px; flex-wrap: wrap; }
-.stat-card {
-  background: var(--panel);
-  border: 2px solid rgba(255,255,255,0.08);
-  border-radius: 10px;
-  padding: 12px 20px;
-  box-shadow: var(--shadow);
-  text-align: center;
-  flex: 1 1 100px;
-}
-.stat-card .stat-num { font-family: 'Bangers', cursive; font-size: 2rem; color: var(--accent); letter-spacing: 1px; }
-.stat-card .stat-label { font-size: 0.75rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
-
-/* SECTION TITLE */
-.section-title {
-  font-family: 'Bangers', cursive;
-  font-size: 2rem;
-  letter-spacing: 3px;
-  color: var(--white);
-  background: var(--accent);
-  display: inline-block;
-  padding: 4px 18px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  box-shadow: 4px 4px 0 var(--ink);
-  transform: rotate(-0.8deg);
-}
-
-/* PROPERTY GRID */
-.property-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 26px; }
-
-/* PROPERTY CARD */
-.prop-card {
-  background: var(--panel);
-  border: 2px solid rgba(255,255,255,0.08);
-  border-radius: 14px;
-  box-shadow: var(--shadow-lg);
-  overflow: hidden;
-  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
-  position: relative;
-  cursor: pointer;
-}
-.prop-card:hover {
-  transform: translate(-3px,-4px);
-  box-shadow: 9px 10px 0px var(--ink);
-  border-color: var(--teal);
-}
-.prop-img-wrap {
-  position: relative;
-  height: 210px;
-  background: var(--panel2);
-  overflow: hidden;
-  border-bottom: 2px solid rgba(255,255,255,0.08);
-}
-.prop-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.prop-img-placeholder {
-  width: 100%; height: 100%;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  gap: 8px;
-  font-size: 3.5rem;
-  background: linear-gradient(135deg, var(--panel2) 0%, var(--mid) 100%);
-}
-.prop-img-placeholder .ph-label { font-size: 0.82rem; font-weight: 700; color: var(--muted); }
-
-/* Photo gallery strip inside card */
-.card-gallery-strip {
-  display: flex;
-  gap: 4px;
-  padding: 6px 10px;
-  background: var(--panel2);
-  border-bottom: 2px solid rgba(255,255,255,0.06);
-  overflow-x: auto;
-}
-.card-gallery-strip:empty { display: none; }
-.gallery-thumb {
-  flex-shrink: 0;
-  width: 56px; height: 40px;
-  border-radius: 5px;
-  overflow: hidden;
-  border: 2px solid rgba(255,255,255,0.1);
-  position: relative;
-  cursor: pointer;
-}
-.gallery-thumb img { width: 100%; height: 100%; object-fit: cover; }
-.gallery-thumb .thumb-cap {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  background: rgba(0,0,0,0.7);
-  font-size: 0.5rem;
-  color: #fff;
-  text-align: center;
-  padding: 1px 2px;
-  font-weight: 700;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: none;
-}
-.gallery-thumb:hover .thumb-cap { display: block; }
+/* Card image area with nav arrows */
+.prop-img-wrap{position:relative;height:210px;background:var(--panel2);overflow:hidden;border-bottom:2px solid rgba(255,255,255,.07)}
+.prop-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .25s}
+.prop-img-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-size:3.2rem;background:linear-gradient(135deg,var(--panel2),var(--mid))}
+.prop-img-placeholder .ph-label{font-size:.8rem;font-weight:700;color:var(--muted)}
+/* card image nav */
+.card-img-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(10,10,20,.72);border:none;color:#fff;font-size:1.2rem;width:32px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:3;border-radius:6px;opacity:0;transition:opacity .2s;user-select:none}
+.prop-img-wrap:hover .card-img-nav{opacity:1}
+.card-img-nav.prev{left:7px}
+.card-img-nav.next{right:7px}
+.card-img-nav:hover{background:var(--accent)}
+/* image dots */
+.card-img-dots{position:absolute;bottom:44px;left:50%;transform:translateX(-50%);display:flex;gap:5px;z-index:3}
+.img-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.4);transition:background .2s}
+.img-dot.active{background:#fff}
+/* caption bar on card image */
+.card-img-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(10,10,20,.88));padding:20px 10px 8px;font-size:.72rem;font-weight:700;color:rgba(255,255,255,.9);text-align:center;letter-spacing:.5px;min-height:28px;z-index:2}
 
 /* badges */
-.badge-type {
-  position: absolute; top: 10px; left: 10px;
-  font-family: 'Bangers', cursive; letter-spacing: 1px; font-size: 0.95rem;
-  padding: 3px 12px;
-  border: 2px solid var(--ink); border-radius: 6px;
-  box-shadow: 2px 2px 0 var(--ink);
-}
-.badge-for-sale { background: var(--teal); color: var(--ink); }
-.badge-for-rent { background: var(--gold); color: var(--ink); }
-.badge-sold { background: var(--accent); color: #fff; }
-.badge-pics {
-  position: absolute; bottom: 10px; right: 10px;
-  background: rgba(15,15,26,0.85); color: var(--white);
-  font-weight: 700; font-size: 0.78rem;
-  padding: 3px 10px; border-radius: 20px;
-  display: flex; align-items: center; gap: 5px;
-  border: 1.5px solid var(--teal);
-}
-.badge-new {
-  position: absolute; top: 10px; right: 10px;
-  font-family: 'Bangers', cursive; font-size: 0.9rem; letter-spacing: 1px;
-  background: var(--accent); color: #fff;
-  padding: 2px 10px; border: 2px solid var(--ink); border-radius: 4px;
-  transform: rotate(3deg); box-shadow: 2px 2px 0 var(--ink);
-  animation: pulse 1.5s infinite;
-}
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.6} }
-.map-btn-card {
-  position: absolute; bottom: 10px; left: 10px;
-  background: rgba(15,15,26,0.85); color: var(--teal);
-  font-size: 0.78rem; font-weight: 700;
-  padding: 3px 10px; border-radius: 20px;
-  display: flex; align-items: center; gap: 4px;
-  border: 1.5px solid var(--teal);
-  cursor: pointer;
-  z-index: 2;
-}
-.map-btn-card:hover { background: var(--teal); color: var(--ink); }
+.badge-type{position:absolute;top:10px;left:10px;font-family:'Bangers',cursive;letter-spacing:1px;font-size:.9rem;padding:3px 11px;border:2px solid var(--ink);border-radius:6px;box-shadow:2px 2px 0 var(--ink);z-index:2}
+.badge-for-sale{background:var(--teal);color:var(--ink)}
+.badge-for-rent{background:var(--gold);color:var(--ink)}
+.badge-sold{background:var(--accent);color:#fff}
+.badge-pics{position:absolute;top:10px;right:10px;background:rgba(10,10,20,.82);color:var(--white);font-weight:700;font-size:.72rem;padding:3px 9px;border-radius:20px;display:flex;align-items:center;gap:4px;border:1.5px solid var(--teal);z-index:2}
+.badge-new{position:absolute;top:34px;left:10px;font-family:'Bangers',cursive;font-size:.85rem;letter-spacing:1px;background:var(--accent);color:#fff;padding:2px 9px;border:2px solid var(--ink);border-radius:4px;transform:rotate(3deg);box-shadow:2px 2px 0 var(--ink);animation:pulse 1.5s infinite;z-index:2}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+.map-btn-card{position:absolute;bottom:36px;right:10px;background:rgba(10,10,20,.82);color:var(--teal);font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:20px;display:flex;align-items:center;gap:3px;border:1.5px solid var(--teal);cursor:pointer;z-index:3}
+.map-btn-card:hover{background:var(--teal);color:var(--ink)}
 
 /* card body */
-.prop-body { padding: 14px 16px 16px; }
-.prop-price { font-family: 'Bangers', cursive; font-size: 1.8rem; color: var(--teal); letter-spacing: 1px; line-height: 1; margin-bottom: 4px; }
-.prop-title { font-weight: 800; font-size: 1rem; color: var(--white); margin-bottom: 4px; line-height: 1.3; }
-.prop-loc { font-size: 0.82rem; color: var(--muted); margin-bottom: 10px; display: flex; align-items: center; gap: 4px; }
-.prop-area-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  background: rgba(0,212,170,0.12);
-  border: 1.5px solid rgba(0,212,170,0.3);
-  border-radius: 4px;
-  padding: 2px 8px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--teal);
-  margin-bottom: 8px;
-}
-.prop-features { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
-.feat-chip {
-  background: rgba(245,166,35,0.15);
-  border: 1.5px solid rgba(245,166,35,0.3);
-  border-radius: 20px; padding: 2px 10px;
-  font-size: 0.78rem; font-weight: 700;
-  color: var(--gold);
-  display: flex; align-items: center; gap: 4px;
-}
-.prop-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.55; margin-bottom: 14px; border-left: 3px solid var(--accent); padding-left: 8px; }
-.prop-actions { display: flex; gap: 8px; }
-.prop-actions .btn { flex: 1; text-align: center; font-size: 0.9rem; padding: 7px 8px; }
-.owner-direct { display: flex; align-items: center; gap: 5px; font-size: 0.7rem; font-weight: 700; color: var(--teal); margin-top: 8px; }
-.owner-direct svg { width: 12px; }
+.prop-body{padding:12px 14px 14px}
+.prop-price{font-family:'Bangers',cursive;font-size:1.75rem;color:var(--teal);letter-spacing:1px;line-height:1;margin-bottom:4px}
+.prop-title{font-weight:800;font-size:.98rem;color:var(--white);margin-bottom:4px;line-height:1.3}
+.prop-area-tag{display:inline-flex;align-items:center;gap:4px;background:rgba(0,212,170,.1);border:1.5px solid rgba(0,212,170,.25);border-radius:4px;padding:2px 8px;font-size:.72rem;font-weight:700;color:var(--teal);margin-bottom:8px}
+.prop-features{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
+.feat-chip{background:rgba(245,166,35,.12);border:1.5px solid rgba(245,166,35,.25);border-radius:20px;padding:2px 9px;font-size:.74rem;font-weight:700;color:var(--gold);display:flex;align-items:center;gap:3px}
+/* amenity pills on card */
+.prop-amenities{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px}
+.amenity-pill{background:rgba(233,69,96,.1);border:1.5px solid rgba(233,69,96,.2);border-radius:20px;padding:2px 8px;font-size:.68rem;font-weight:700;color:var(--accent)}
+.prop-desc{font-size:.82rem;color:var(--muted);line-height:1.55;margin-bottom:12px;border-left:3px solid var(--accent);padding-left:8px}
+.prop-actions{display:flex;gap:7px}
+.prop-actions .btn{flex:1;text-align:center;font-size:.85rem;padding:6px 6px}
+.owner-direct{display:flex;align-items:center;gap:5px;font-size:.68rem;font-weight:700;color:var(--teal);margin-top:7px}
 
-/* ADD PROPERTY FORM */
-.add-section {
-  margin-top: 52px;
-  background: var(--panel);
-  border: 3px solid rgba(255,255,255,0.1);
-  border-radius: 16px;
-  padding: 28px 28px 32px;
-  box-shadow: var(--shadow-lg);
-  position: relative;
-}
-.add-section .section-title { background: var(--teal); color: var(--ink); box-shadow: 4px 4px 0 var(--ink); }
-.form-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-bottom: 18px; }
-.form-group { display: flex; flex-direction: column; gap: 5px; }
-.form-group label { font-weight: 800; font-size: 0.8rem; color: var(--teal); text-transform: uppercase; letter-spacing: 1px; }
-.form-group input, .form-group select, .form-group textarea {
-  font-family: 'Nunito', sans-serif; font-size: 0.92rem; font-weight: 700;
-  border: 2px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 9px 12px;
-  background: var(--panel2); color: var(--white);
-  box-shadow: 2px 2px 0 var(--ink); outline: none;
-  transition: border-color 0.2s;
-}
-.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--teal); }
-.form-group textarea { resize: vertical; min-height: 80px; }
-.form-group.full { grid-column: 1 / -1; }
-.form-group select option { background: var(--panel2); color: var(--white); }
-.form-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+/* ─── AMENITIES SECTION (form) ─── */
+.amenities-section{background:rgba(0,212,170,.04);border:2px solid rgba(0,212,170,.15);border-radius:10px;padding:16px 18px;margin-bottom:4px}
+.amenities-section h4{font-family:'Bangers',cursive;font-size:1.1rem;letter-spacing:2px;color:var(--teal);margin-bottom:12px}
+.amenity-groups{display:flex;flex-wrap:wrap;gap:18px}
+.amenity-group{flex:1 1 200px}
+.amenity-group-title{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:8px;padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.08)}
+.amenity-checks{display:flex;flex-direction:column;gap:6px}
+.amenity-check-item{display:flex;align-items:center;gap:8px;cursor:pointer}
+.amenity-check-item input[type=checkbox]{width:16px;height:16px;accent-color:var(--teal);cursor:pointer;flex-shrink:0}
+.amenity-check-item label{font-size:.8rem;font-weight:700;color:var(--white);cursor:pointer;user-select:none}
+.amenity-check-item label span{font-size:.85rem;margin-right:3px}
 
-/* Photo Upload Section */
-.photo-upload-area {
-  border: 2px dashed rgba(0,212,170,0.4);
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  cursor: pointer;
-  transition: border-color 0.2s, background 0.2s;
-  background: rgba(0,212,170,0.04);
-}
-.photo-upload-area:hover { border-color: var(--teal); background: rgba(0,212,170,0.08); }
-.photo-upload-area input[type=file] { display: none; }
-.photo-preview-grid { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
-.photo-preview-item {
-  position: relative;
-  width: 110px;
-}
-.photo-preview-item img { width: 110px; height: 80px; object-fit: cover; border-radius: 8px; border: 2px solid rgba(255,255,255,0.1); display: block; }
-.photo-caption-input {
-  width: 100%; font-size: 0.7rem; font-weight: 700; border: 1.5px solid rgba(255,255,255,0.1); border-radius: 5px; padding: 3px 6px; background: var(--panel2); color: var(--white); margin-top: 4px; font-family: 'Nunito', sans-serif;
-}
-.photo-remove {
-  position: absolute; top: 3px; right: 3px; background: var(--accent); color: #fff; border: none; border-radius: 50%; width: 20px; height: 20px; font-size: 0.7rem; cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: 900;
-}
+/* ─── ADD PROPERTY FORM ─── */
+.add-section{margin-top:50px;background:var(--panel);border:3px solid rgba(255,255,255,.08);border-radius:16px;padding:26px 26px 30px;box-shadow:var(--shadow-lg);position:relative}
+.add-section .section-title{background:var(--teal);color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.form-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:15px;margin-bottom:18px}
+.form-group{display:flex;flex-direction:column;gap:5px}
+.form-group label{font-weight:800;font-size:.76rem;color:var(--teal);text-transform:uppercase;letter-spacing:1px}
+.form-group input,.form-group select,.form-group textarea{font-family:'Nunito',sans-serif;font-size:.9rem;font-weight:700;border:2px solid rgba(255,255,255,.09);border-radius:8px;padding:8px 11px;background:var(--panel2);color:var(--white);box-shadow:2px 2px 0 var(--ink);outline:none;transition:border-color .2s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--teal)}
+.form-group textarea{resize:vertical;min-height:75px}
+.form-group.full{grid-column:1 / -1}
+.form-group select option{background:var(--panel2);color:var(--white)}
+.form-actions{display:flex;gap:11px;flex-wrap:wrap}
 
-/* AI CHAT */
-.ai-section {
-  margin-top: 52px;
-  background: var(--panel);
-  border: 3px solid rgba(255,255,255,0.08);
-  border-radius: 16px;
-  padding: 24px 24px 28px;
-  box-shadow: var(--shadow-lg);
-}
-.ai-section .section-title { background: var(--accent); color: #fff; }
-.ai-bubble-label { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-.ai-avatar {
-  width: 48px; height: 48px;
-  background: linear-gradient(135deg, var(--accent), var(--gold));
-  border: 2px solid var(--ink);
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.6rem; box-shadow: 3px 3px 0 var(--ink); flex-shrink: 0;
-}
-.ai-name { font-family: 'Bangers', cursive; font-size: 1.3rem; letter-spacing: 2px; color: var(--gold); }
-.ai-name small { font-family: 'Nunito', sans-serif; font-size: 0.72rem; font-weight: 700; color: var(--muted); display: block; letter-spacing: 0; }
-.chat-window {
-  background: var(--mid);
-  border: 2px solid rgba(255,255,255,0.08);
-  border-radius: 10px;
-  min-height: 180px; max-height: 340px;
-  overflow-y: auto; padding: 14px 16px; margin-bottom: 14px;
-  display: flex; flex-direction: column; gap: 10px;
-}
-.chat-msg { display: flex; gap: 8px; align-items: flex-start; animation: msgIn 0.25s ease; }
-@keyframes msgIn { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:none} }
-.chat-msg.user { flex-direction: row-reverse; }
-.msg-avatar {
-  width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--ink);
-  display: flex; align-items: center; justify-content: center; font-size: 0.9rem;
-  flex-shrink: 0; background: var(--gold);
-}
-.chat-msg.user .msg-avatar { background: var(--teal); }
-.msg-bubble {
-  max-width: 75%; background: var(--panel2); border: 2px solid rgba(255,255,255,0.08);
-  border-radius: 12px 12px 12px 2px; padding: 8px 12px;
-  font-size: 0.88rem; line-height: 1.5; color: var(--white);
-}
-.chat-msg.user .msg-bubble { background: var(--accent); color: #fff; border-radius: 12px 12px 2px 12px; }
-.msg-bubble.thinking { color: var(--muted); font-style: italic; }
-.msg-bubble.thinking::after { content: ' ●●●'; animation: dots 1s infinite; letter-spacing: 2px; }
-@keyframes dots { 0%,100%{opacity:1} 50%{opacity:0.3} }
-.chat-input-row { display: flex; gap: 10px; }
-.chat-input-row input {
-  flex: 1; font-family: 'Nunito', sans-serif; font-size: 0.92rem; font-weight: 700;
-  border: 2px solid rgba(255,255,255,0.12); border-radius: 8px; padding: 9px 14px;
-  background: var(--panel2); color: var(--white); box-shadow: 2px 2px 0 var(--ink); outline: none;
-}
-.chat-input-row input:focus { border-color: var(--accent); }
+/* Photo upload */
+.photo-upload-area{border:2px dashed rgba(0,212,170,.35);border-radius:10px;padding:18px;text-align:center;cursor:pointer;transition:border-color .2s,background .2s;background:rgba(0,212,170,.03)}
+.photo-upload-area:hover{border-color:var(--teal);background:rgba(0,212,170,.07)}
+.photo-upload-area input[type=file]{display:none}
+.photo-preview-grid{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.photo-preview-item{position:relative;width:110px}
+.photo-preview-item img{width:110px;height:78px;object-fit:cover;border-radius:8px;border:2px solid rgba(255,255,255,.1);display:block}
+/* preview nav overlay */
+.preview-nav-wrap{position:relative;width:110px;height:78px;border-radius:8px;overflow:hidden;border:2px solid rgba(255,255,255,.1)}
+.preview-nav-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.pnav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.6);border:none;color:#fff;font-size:.85rem;width:22px;height:26px;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2;border-radius:4px;opacity:0;transition:opacity .15s}
+.preview-nav-wrap:hover .pnav{opacity:1}
+.pnav.pprev{left:2px}.pnav.pnext{right:2px}
+.preview-num{position:absolute;bottom:3px;right:4px;font-size:.58rem;font-weight:800;background:rgba(0,0,0,.7);color:#fff;border-radius:3px;padding:1px 4px;z-index:2}
+.photo-caption-input{width:100%;font-size:.68rem;font-weight:700;border:1.5px solid rgba(255,255,255,.1);border-radius:5px;padding:3px 6px;background:var(--panel2);color:var(--white);margin-top:4px;font-family:'Nunito',sans-serif;outline:none}
+.photo-caption-input:focus{border-color:var(--teal)}
+.photo-remove{position:absolute;top:-6px;right:-6px;background:var(--accent);color:#fff;border:none;border-radius:50%;width:20px;height:20px;font-size:.65rem;cursor:pointer;display:flex;align-items:center;justify-content:center;font-weight:900;z-index:3;box-shadow:1px 1px 0 var(--ink)}
 
-/* LIGHTBOX */
-.lightbox {
-  position: fixed; inset: 0; background: rgba(10,10,20,0.92);
-  z-index: 9999; display: none; align-items: center; justify-content: center; padding: 16px;
-}
-.lightbox.open { display: flex; }
-.lightbox-inner {
-  background: var(--panel); border: 3px solid rgba(255,255,255,0.12);
-  border-radius: 16px; max-width: 760px; width: 100%;
-  box-shadow: 8px 8px 0 var(--accent); overflow: hidden;
-  animation: popIn 0.2s ease; max-height: 92vh; overflow-y: auto;
-}
-@keyframes popIn { from{transform:scale(0.85) rotate(-1deg)} to{transform:none} }
-.lightbox-header {
-  background: var(--accent); padding: 14px 20px;
-  display: flex; justify-content: space-between; align-items: center;
-  border-bottom: 2px solid var(--ink); position: sticky; top: 0; z-index: 2;
-}
-.lightbox-title { font-family: 'Bangers', cursive; font-size: 1.5rem; letter-spacing: 2px; color: #fff; }
-.lightbox-close {
-  background: var(--white); color: var(--ink);
-  border: 2px solid var(--ink); border-radius: 50%;
-  width: 30px; height: 30px; font-size: 1rem; font-weight: 900;
-  cursor: pointer; box-shadow: 2px 2px 0 var(--ink);
-  display: flex; align-items: center; justify-content: center;
-}
-.lightbox-body { padding: 20px; }
-.lightbox-price { font-family: 'Bangers', cursive; font-size: 2.2rem; color: var(--teal); letter-spacing: 2px; margin-bottom: 8px; }
-.detail-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px,1fr)); gap: 10px; margin: 14px 0; }
-.detail-chip {
-  background: var(--panel2); border: 2px solid rgba(255,255,255,0.1);
-  border-radius: 8px; padding: 8px 10px; text-align: center; box-shadow: 2px 2px 0 var(--ink);
-}
-.detail-chip .dc-val { font-family: 'Bangers', cursive; font-size: 1.4rem; color: var(--gold); display: block; }
-.detail-chip .dc-lbl { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); display: block; }
+/* ─── AI CHAT ─── */
+.ai-section{margin-top:50px;background:var(--panel);border:3px solid rgba(255,255,255,.07);border-radius:16px;padding:22px 22px 26px;box-shadow:var(--shadow-lg)}
+.ai-section .section-title{background:var(--accent);color:#fff}
+.ai-bubble-label{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.ai-avatar{width:46px;height:46px;background:linear-gradient(135deg,var(--accent),var(--gold));border:2px solid var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:3px 3px 0 var(--ink);flex-shrink:0}
+.ai-name{font-family:'Bangers',cursive;font-size:1.25rem;letter-spacing:2px;color:var(--gold)}
+.ai-name small{font-family:'Nunito',sans-serif;font-size:.7rem;font-weight:700;color:var(--muted);display:block;letter-spacing:0}
+.chat-window{background:var(--mid);border:2px solid rgba(255,255,255,.07);border-radius:10px;min-height:170px;max-height:330px;overflow-y:auto;padding:13px 15px;margin-bottom:13px;display:flex;flex-direction:column;gap:10px}
+.chat-msg{display:flex;gap:8px;align-items:flex-start;animation:msgIn .25s ease}
+@keyframes msgIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.chat-msg.user{flex-direction:row-reverse}
+.msg-avatar{width:28px;height:28px;border-radius:50%;border:2px solid var(--ink);display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0;background:var(--gold)}
+.chat-msg.user .msg-avatar{background:var(--teal)}
+.msg-bubble{max-width:75%;background:var(--panel2);border:2px solid rgba(255,255,255,.07);border-radius:12px 12px 12px 2px;padding:8px 11px;font-size:.86rem;line-height:1.5;color:var(--white)}
+.chat-msg.user .msg-bubble{background:var(--accent);color:#fff;border-radius:12px 12px 2px 12px}
+.msg-bubble.thinking{color:var(--muted);font-style:italic}
+.msg-bubble.thinking::after{content:' ●●●';animation:dots 1s infinite;letter-spacing:2px}
+@keyframes dots{0%,100%{opacity:1}50%{opacity:.3}}
+.chat-input-row{display:flex;gap:9px}
+.chat-input-row input{flex:1;font-family:'Nunito',sans-serif;font-size:.9rem;font-weight:700;border:2px solid rgba(255,255,255,.1);border-radius:8px;padding:9px 13px;background:var(--panel2);color:var(--white);box-shadow:2px 2px 0 var(--ink);outline:none}
+.chat-input-row input:focus{border-color:var(--accent)}
 
-/* Gallery in lightbox */
-.lb-gallery { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
-.lb-gallery-item { position: relative; }
-.lb-gallery-item img {
-  width: 100px; height: 70px; object-fit: cover;
-  border-radius: 6px; border: 2px solid rgba(255,255,255,0.1);
-  cursor: pointer;
-  transition: border-color 0.2s;
-}
-.lb-gallery-item img:hover { border-color: var(--teal); }
-.lb-gallery-item .lb-caption {
-  font-size: 0.65rem; color: var(--muted); text-align: center;
-  margin-top: 3px; font-weight: 700;
-}
+/* ─── LIGHTBOX (property detail) ─── */
+.lightbox{position:fixed;inset:0;background:rgba(5,5,15,.95);z-index:9998;display:none;align-items:center;justify-content:center;padding:12px}
+.lightbox.open{display:flex}
+.lightbox-inner{background:var(--panel);border:3px solid rgba(255,255,255,.1);border-radius:16px;max-width:820px;width:100%;box-shadow:8px 8px 0 var(--accent);overflow:hidden;animation:popIn .22s ease;max-height:94vh;overflow-y:auto;display:flex;flex-direction:column}
+@keyframes popIn{from{transform:scale(.85) rotate(-1deg)}to{transform:none}}
+.lightbox-header{background:var(--accent);padding:13px 18px;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--ink);position:sticky;top:0;z-index:2;flex-shrink:0}
+.lightbox-title{font-family:'Bangers',cursive;font-size:1.45rem;letter-spacing:2px;color:#fff}
+.lightbox-close{background:var(--white);color:var(--ink);border:2px solid var(--ink);border-radius:50%;width:30px;height:30px;font-size:1rem;font-weight:900;cursor:pointer;box-shadow:2px 2px 0 var(--ink);display:flex;align-items:center;justify-content:center}
+.lightbox-body{padding:18px;flex:1}
 
-/* Map in lightbox */
-.map-frame {
-  width: 100%; height: 220px;
-  border: 2px solid rgba(255,255,255,0.1);
-  border-radius: 10px; overflow: hidden;
-  margin-top: 14px;
-}
-.map-frame iframe { width: 100%; height: 100%; border: none; }
+/* ─── BIG PHOTO VIEWER (lightbox) ─── */
+.photo-viewer{position:relative;background:var(--ink);border-radius:10px;overflow:hidden;border:2px solid rgba(255,255,255,.1);user-select:none;margin-bottom:14px}
+.photo-viewer-main{position:relative;height:340px}
+.photo-viewer-main img{width:100%;height:100%;object-fit:contain;display:block;background:var(--ink);transition:opacity .2s}
+.photo-viewer-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(5,5,15,.92));padding:28px 16px 12px;display:flex;align-items:flex-end;justify-content:space-between}
+.pv-caption-text{font-size:.82rem;font-weight:700;color:#fff;letter-spacing:.5px}
+.pv-counter{font-family:'Space Mono',monospace;font-size:.72rem;color:rgba(255,255,255,.6);white-space:nowrap;margin-left:10px}
+.pv-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(5,5,15,.7);border:2px solid rgba(255,255,255,.15);color:#fff;font-size:1.4rem;width:42px;height:52px;display:flex;align-items:center;justify-content:center;cursor:pointer;border-radius:8px;transition:background .15s,border-color .15s;z-index:3;user-select:none}
+.pv-nav:hover{background:var(--accent);border-color:var(--accent)}
+.pv-nav.prev{left:10px}
+.pv-nav.next{right:10px}
+/* thumbnail strip */
+.photo-viewer-thumbs{display:flex;gap:7px;padding:10px 12px;overflow-x:auto;background:rgba(5,5,15,.5)}
+.pv-thumb{flex-shrink:0;width:68px;height:50px;border-radius:6px;overflow:hidden;border:2px solid rgba(255,255,255,.1);cursor:pointer;transition:border-color .2s;opacity:.65;transition:opacity .2s,border-color .2s}
+.pv-thumb.active{border-color:var(--teal);opacity:1}
+.pv-thumb img{width:100%;height:100%;object-fit:cover}
+.pv-thumb-cap{font-size:.55rem;font-weight:700;color:var(--muted);text-align:center;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:68px}
 
-/* FOOTER */
-.footer {
-  background: var(--ink);
-  color: var(--muted);
-  text-align: center;
-  padding: 24px 16px;
-  font-family: 'Space Mono', monospace;
-  font-size: 0.78rem;
-  border-top: 3px solid var(--accent);
-  margin-top: 60px;
-}
-.footer .footer-logo { font-family: 'Bangers', cursive; font-size: 1.8rem; letter-spacing: 3px; color: var(--white); margin-bottom: 6px; }
-.footer .footer-logo span { color: var(--accent); }
+/* lightbox detail */
+.lb-price{font-family:'Bangers',cursive;font-size:2.2rem;color:var(--teal);letter-spacing:2px;margin-bottom:6px}
+.detail-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:9px;margin:12px 0}
+.detail-chip{background:var(--panel2);border:2px solid rgba(255,255,255,.08);border-radius:8px;padding:8px 9px;text-align:center;box-shadow:2px 2px 0 var(--ink)}
+.detail-chip .dc-val{font-family:'Bangers',cursive;font-size:1.35rem;color:var(--gold);display:block}
+.detail-chip .dc-lbl{font-size:.67rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--muted);display:block}
+/* amenities in lightbox */
+.lb-amenities{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 14px}
+.lb-amenity{background:rgba(233,69,96,.12);border:1.5px solid rgba(233,69,96,.25);border-radius:20px;padding:3px 11px;font-size:.76rem;font-weight:700;color:var(--accent)}
+.map-frame{width:100%;height:210px;border:2px solid rgba(255,255,255,.08);border-radius:10px;overflow:hidden;margin-top:12px}
+.map-frame iframe{width:100%;height:100%;border:none}
+.owner-box{background:rgba(0,212,170,.08);border:2px solid rgba(0,212,170,.25);border-radius:10px;padding:13px 16px;margin-top:14px}
+.owner-box-title{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:5px}
+.owner-phone{font-weight:800;font-size:1.1rem;color:var(--white)}
+.owner-note{font-size:.72rem;color:var(--muted);margin-top:4px}
 
-/* Scroll */
-::-webkit-scrollbar { width: 7px; }
-::-webkit-scrollbar-track { background: var(--mid); }
-::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+/* ─── FULL PHOTO LIGHTBOX (standalone) ─── */
+.photo-lb{position:fixed;inset:0;background:rgba(0,0,0,.97);z-index:10000;display:none;flex-direction:column;align-items:center;justify-content:center}
+.photo-lb.open{display:flex}
+.photo-lb-img-wrap{position:relative;width:100%;max-height:80vh;display:flex;align-items:center;justify-content:center}
+.photo-lb-img-wrap img{max-width:96vw;max-height:78vh;object-fit:contain;border-radius:8px;box-shadow:0 0 60px rgba(0,0,0,.8)}
+.photo-lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(20,20,40,.8);border:2px solid rgba(255,255,255,.15);color:#fff;font-size:1.8rem;width:52px;height:64px;display:flex;align-items:center;justify-content:center;cursor:pointer;border-radius:10px;transition:background .15s;z-index:2;user-select:none}
+.photo-lb-nav:hover{background:var(--accent)}
+.photo-lb-nav.prev{left:16px}
+.photo-lb-nav.next{right:16px}
+.photo-lb-bottom{width:100%;max-width:900px;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.photo-lb-caption-area{flex:1}
+.photo-lb-caption-text{font-size:.95rem;font-weight:700;color:#fff;letter-spacing:.5px}
+.photo-lb-prop-info{font-size:.75rem;color:rgba(255,255,255,.5);margin-top:3px}
+.photo-lb-counter{font-family:'Space Mono',monospace;font-size:.8rem;color:rgba(255,255,255,.55);white-space:nowrap}
+.photo-lb-close{position:absolute;top:16px;right:18px;background:rgba(233,69,96,.85);border:none;color:#fff;width:38px;height:38px;border-radius:50%;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;font-weight:900;z-index:3;box-shadow:2px 2px 0 rgba(0,0,0,.5)}
+.photo-lb-thumbs{display:flex;gap:6px;overflow-x:auto;padding:8px 20px;max-width:100%;justify-content:center}
+.photo-lb-thumb{flex-shrink:0;width:60px;height:44px;border-radius:5px;overflow:hidden;border:2px solid rgba(255,255,255,.12);cursor:pointer;opacity:.55;transition:opacity .2s,border-color .2s}
+.photo-lb-thumb.active{border-color:var(--teal);opacity:1}
+.photo-lb-thumb img{width:100%;height:100%;object-fit:cover}
 
-/* Map pin animation */
-@keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
-
-@media (max-width: 600px) {
-  .hero-inner { flex-direction: column; align-items: flex-start; }
-  .hero-badge { width: 85px; height: 85px; }
-  .property-grid { grid-template-columns: 1fr; }
-}
+/* ─── FOOTER ─── */
+.footer{background:var(--ink);color:var(--muted);text-align:center;padding:22px 16px;font-family:'Space Mono',monospace;font-size:.76rem;border-top:3px solid var(--accent);margin-top:56px}
+.footer .footer-logo{font-family:'Bangers',cursive;font-size:1.75rem;letter-spacing:3px;color:var(--white);margin-bottom:5px}
+.footer .footer-logo span{color:var(--accent)}
+::-webkit-scrollbar{width:7px}
+::-webkit-scrollbar-track{background:var(--mid)}
+::-webkit-scrollbar-thumb{background:var(--accent);border-radius:4px}
+@media(max-width:600px){.hero-inner{flex-direction:column;align-items:flex-start}.hero-badge{width:82px;height:82px}.property-grid{grid-template-columns:1fr}.photo-lb-nav{display:none}}
 </style>
 </head>
 <body>
@@ -576,12 +274,10 @@ body {
       <span class="logo-sub">🏠 Direct Owner · Zero Brokerage · Bangalore</span>
       <span class="no-broker-tag">✅ NO BROKER · NO COMMISSION</span>
     </div>
-    <div>
-      <div class="hero-badge">
-        <span>OVER</span>
-        <span class="badge-count" id="totalCount">5</span>
-        <span>LISTINGS!</span>
-      </div>
+    <div class="hero-badge">
+      <span>OVER</span>
+      <span class="badge-count" id="totalCount">5</span>
+      <span>LISTINGS!</span>
     </div>
   </div>
 </header>
@@ -592,57 +288,21 @@ body {
     <input type="text" id="searchInput" placeholder="🔍  Search area, title, description..." oninput="filterProps()">
     <select id="areaFilter" onchange="filterProps()">
       <option value="">All Areas – Bangalore</option>
-      <optgroup label="Central Bangalore">
-        <option>MG Road</option><option>Brigade Road</option><option>Indiranagar</option>
-        <option>Koramangala</option><option>Shivajinagar</option><option>Cubbon Park</option>
-        <option>Richmond Town</option><option>Frazer Town</option><option>Cleveland Town</option>
-      </optgroup>
-      <optgroup label="North Bangalore">
-        <option>Hebbal</option><option>Yelahanka</option><option>Devanahalli</option>
-        <option>Thanisandra</option><option>Jalahalli</option><option>Nagavara</option>
-        <option>Sahakara Nagar</option><option>RT Nagar</option><option>Mathikere</option>
-        <option>HBR Layout</option>
-      </optgroup>
-      <optgroup label="South Bangalore">
-        <option>JP Nagar</option><option>Jayanagar</option><option>BTM Layout</option>
-        <option>Banashankari</option><option>Bannerghatta Road</option><option>Kathriguppe</option>
-        <option>Uttarahalli</option><option>Hulimavu</option><option>Arekere</option>
-        <option>Talaghattapura</option>
-      </optgroup>
-      <optgroup label="East Bangalore">
-        <option>Whitefield</option><option>Marathahalli</option><option>KR Puram</option>
-        <option>Mahadevapura</option><option>Varthur</option><option>Bellandur</option>
-        <option>Domlur</option><option>CV Raman Nagar</option><option>HAL</option>
-        <option>Old Airport Road</option>
-      </optgroup>
-      <optgroup label="West Bangalore">
-        <option>Rajajinagar</option><option>Malleswaram</option><option>Vijayanagar</option>
-        <option>Basaveshwar Nagar</option><option>Nagarbhavi</option><option>Kengeri</option>
-        <option>Mysore Road</option><option>Magadi Road</option>
-      </optgroup>
-      <optgroup label="Tech Corridors">
-        <option>Electronic City</option><option>HSR Layout</option><option>Sarjapur Road</option>
-        <option>Outer Ring Road</option><option>Manyata Tech Park</option>
-        <option>Bagmane Tech Park</option><option>ITPL</option>
-      </optgroup>
+      <optgroup label="Central"><option>MG Road</option><option>Brigade Road</option><option>Indiranagar</option><option>Koramangala</option><option>Shivajinagar</option><option>Richmond Town</option><option>Frazer Town</option></optgroup>
+      <optgroup label="North"><option>Hebbal</option><option>Yelahanka</option><option>Devanahalli</option><option>Thanisandra</option><option>Jalahalli</option><option>Nagavara</option><option>Sahakara Nagar</option><option>RT Nagar</option><option>Mathikere</option><option>HBR Layout</option></optgroup>
+      <optgroup label="South"><option>JP Nagar</option><option>Jayanagar</option><option>BTM Layout</option><option>Banashankari</option><option>Bannerghatta Road</option><option>Uttarahalli</option><option>Hulimavu</option></optgroup>
+      <optgroup label="East"><option>Whitefield</option><option>Marathahalli</option><option>KR Puram</option><option>Mahadevapura</option><option>Varthur</option><option>Bellandur</option><option>Domlur</option><option>CV Raman Nagar</option><option>HAL</option><option>Old Airport Road</option></optgroup>
+      <optgroup label="West"><option>Rajajinagar</option><option>Malleswaram</option><option>Vijayanagar</option><option>Basaveshwar Nagar</option><option>Nagarbhavi</option><option>Kengeri</option><option>Mysore Road</option></optgroup>
+      <optgroup label="Tech Corridors"><option>Electronic City</option><option>HSR Layout</option><option>Sarjapur Road</option><option>Outer Ring Road</option><option>Manyata Tech Park</option><option>ITPL</option></optgroup>
     </select>
     <select id="typeFilter" onchange="filterProps()">
-      <option value="">All Types</option>
-      <option value="for-sale">For Sale</option>
-      <option value="for-rent">For Rent</option>
-      <option value="sold">Sold</option>
+      <option value="">All Types</option><option value="for-sale">For Sale</option><option value="for-rent">For Rent</option><option value="sold">Sold</option>
     </select>
     <select id="bhkFilter" onchange="filterProps()">
-      <option value="">Any BHK</option>
-      <option value="1">1 BHK</option>
-      <option value="2">2 BHK</option>
-      <option value="3">3 BHK</option>
-      <option value="4">4+ BHK</option>
+      <option value="">Any BHK</option><option value="1">1 BHK</option><option value="2">2 BHK</option><option value="3">3 BHK</option><option value="4">4+ BHK</option>
     </select>
     <select id="sortFilter" onchange="filterProps()">
-      <option value="newest">Newest First</option>
-      <option value="price-asc">Price: Low→High</option>
-      <option value="price-desc">Price: High→Low</option>
+      <option value="newest">Newest First</option><option value="price-asc">Price ↑</option><option value="price-desc">Price ↓</option>
     </select>
     <button class="btn btn-teal" onclick="scrollToAdd()">＋ List My Property</button>
   </div>
@@ -650,8 +310,6 @@ body {
 
 <!-- MAIN -->
 <main class="main-wrap">
-
-  <!-- STATS -->
   <div class="stats-strip" id="statsStrip">
     <div class="stat-card"><div class="stat-num" id="sSale">0</div><div class="stat-label">For Sale</div></div>
     <div class="stat-card"><div class="stat-num" id="sRent">0</div><div class="stat-label">For Rent</div></div>
@@ -659,110 +317,145 @@ body {
     <div class="stat-card"><div class="stat-num" id="sPics">0</div><div class="stat-label">Total Photos</div></div>
   </div>
 
-  <!-- LISTINGS -->
   <div class="section-title">🏘 BANGALORE LISTINGS</div>
   <div class="property-grid" id="propertyGrid"></div>
-  <div id="noResults" style="display:none; text-align:center; padding:40px;">
-    <div style="font-family:'Bangers',cursive; font-size:3rem; color:var(--accent); letter-spacing:3px;">NO RESULTS!</div>
-    <div style="font-weight:700; color:var(--muted); margin-top:8px;">Try a different search!</div>
+  <div id="noResults" style="display:none;text-align:center;padding:40px">
+    <div style="font-family:'Bangers',cursive;font-size:3rem;color:var(--accent);letter-spacing:3px">NO RESULTS!</div>
+    <div style="font-weight:700;color:var(--muted);margin-top:8px">Try a different search!</div>
   </div>
 
   <!-- ADD PROPERTY FORM -->
   <div class="add-section" id="addSection">
     <div class="section-title">✚ LIST YOUR PROPERTY</div>
-    <p style="color:var(--muted); font-size:0.85rem; margin-bottom:20px; font-weight:700;">⚡ Direct Owner Listing — No broker fees, no middlemen. Talk directly with buyers/renters!</p>
+    <p style="color:var(--muted);font-size:.82rem;margin-bottom:20px;font-weight:700">⚡ Direct Owner Listing — No broker fees, no middlemen. Buyers &amp; renters contact you directly!</p>
     <div class="form-grid">
-      <div class="form-group">
-        <label>Property Title *</label>
-        <input type="text" id="fTitle" placeholder="e.g. Spacious 2BHK in Koramangala">
-      </div>
-      <div class="form-group">
-        <label>Price (₹) *</label>
-        <input type="text" id="fPrice" placeholder="e.g. 75,00,000 or 30,000/mo">
-      </div>
-      <div class="form-group">
-        <label>Area / Locality * (Bangalore)</label>
+      <div class="form-group"><label>Property Title *</label><input type="text" id="fTitle" placeholder="e.g. Spacious 2BHK in Koramangala"></div>
+      <div class="form-group"><label>Price (₹) *</label><input type="text" id="fPrice" placeholder="e.g. 75,00,000 or 30,000/mo"></div>
+      <div class="form-group"><label>Area / Locality * (Bangalore)</label>
         <select id="fLocation">
           <option value="">-- Select Area --</option>
-          <optgroup label="Central Bangalore">
-            <option>MG Road, Bangalore</option><option>Brigade Road, Bangalore</option>
-            <option>Indiranagar, Bangalore</option><option>Koramangala, Bangalore</option>
-            <option>Shivajinagar, Bangalore</option><option>Cubbon Park Area, Bangalore</option>
-            <option>Richmond Town, Bangalore</option><option>Frazer Town, Bangalore</option>
-          </optgroup>
-          <optgroup label="North Bangalore">
-            <option>Hebbal, Bangalore</option><option>Yelahanka, Bangalore</option>
-            <option>Devanahalli, Bangalore</option><option>Thanisandra, Bangalore</option>
-            <option>Jalahalli, Bangalore</option><option>Nagavara, Bangalore</option>
-            <option>Sahakara Nagar, Bangalore</option><option>RT Nagar, Bangalore</option>
-            <option>Mathikere, Bangalore</option><option>HBR Layout, Bangalore</option>
-          </optgroup>
-          <optgroup label="South Bangalore">
-            <option>JP Nagar, Bangalore</option><option>Jayanagar, Bangalore</option>
-            <option>BTM Layout, Bangalore</option><option>Banashankari, Bangalore</option>
-            <option>Bannerghatta Road, Bangalore</option><option>Kathriguppe, Bangalore</option>
-            <option>Uttarahalli, Bangalore</option><option>Hulimavu, Bangalore</option>
-          </optgroup>
-          <optgroup label="East Bangalore">
-            <option>Whitefield, Bangalore</option><option>Marathahalli, Bangalore</option>
-            <option>KR Puram, Bangalore</option><option>Mahadevapura, Bangalore</option>
-            <option>Varthur, Bangalore</option><option>Bellandur, Bangalore</option>
-            <option>Domlur, Bangalore</option><option>CV Raman Nagar, Bangalore</option>
-            <option>HAL, Bangalore</option><option>Old Airport Road, Bangalore</option>
-          </optgroup>
-          <optgroup label="West Bangalore">
-            <option>Rajajinagar, Bangalore</option><option>Malleswaram, Bangalore</option>
-            <option>Vijayanagar, Bangalore</option><option>Basaveshwar Nagar, Bangalore</option>
-            <option>Nagarbhavi, Bangalore</option><option>Kengeri, Bangalore</option>
-            <option>Mysore Road, Bangalore</option>
-          </optgroup>
-          <optgroup label="Tech Corridors">
-            <option>Electronic City, Bangalore</option><option>HSR Layout, Bangalore</option>
-            <option>Sarjapur Road, Bangalore</option><option>Outer Ring Road, Bangalore</option>
-            <option>Manyata Tech Park Area, Bangalore</option><option>ITPL, Bangalore</option>
-          </optgroup>
+          <optgroup label="Central Bangalore"><option>MG Road, Bangalore</option><option>Brigade Road, Bangalore</option><option>Indiranagar, Bangalore</option><option>Koramangala, Bangalore</option><option>Shivajinagar, Bangalore</option><option>Richmond Town, Bangalore</option><option>Frazer Town, Bangalore</option></optgroup>
+          <optgroup label="North Bangalore"><option>Hebbal, Bangalore</option><option>Yelahanka, Bangalore</option><option>Devanahalli, Bangalore</option><option>Thanisandra, Bangalore</option><option>Jalahalli, Bangalore</option><option>Nagavara, Bangalore</option><option>Sahakara Nagar, Bangalore</option><option>RT Nagar, Bangalore</option><option>Mathikere, Bangalore</option><option>HBR Layout, Bangalore</option></optgroup>
+          <optgroup label="South Bangalore"><option>JP Nagar, Bangalore</option><option>Jayanagar, Bangalore</option><option>BTM Layout, Bangalore</option><option>Banashankari, Bangalore</option><option>Bannerghatta Road, Bangalore</option><option>Uttarahalli, Bangalore</option><option>Hulimavu, Bangalore</option></optgroup>
+          <optgroup label="East Bangalore"><option>Whitefield, Bangalore</option><option>Marathahalli, Bangalore</option><option>KR Puram, Bangalore</option><option>Mahadevapura, Bangalore</option><option>Varthur, Bangalore</option><option>Bellandur, Bangalore</option><option>Domlur, Bangalore</option><option>CV Raman Nagar, Bangalore</option><option>HAL, Bangalore</option><option>Old Airport Road, Bangalore</option></optgroup>
+          <optgroup label="West Bangalore"><option>Rajajinagar, Bangalore</option><option>Malleswaram, Bangalore</option><option>Vijayanagar, Bangalore</option><option>Basaveshwar Nagar, Bangalore</option><option>Nagarbhavi, Bangalore</option><option>Kengeri, Bangalore</option><option>Mysore Road, Bangalore</option></optgroup>
+          <optgroup label="Tech Corridors"><option>Electronic City, Bangalore</option><option>HSR Layout, Bangalore</option><option>Sarjapur Road, Bangalore</option><option>Outer Ring Road, Bangalore</option><option>Manyata Tech Park Area, Bangalore</option><option>ITPL, Bangalore</option></optgroup>
         </select>
       </div>
-      <div class="form-group">
-        <label>Type</label>
-        <select id="fType">
-          <option value="for-sale">For Sale</option>
-          <option value="for-rent">For Rent</option>
-          <option value="sold">Sold</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Bedrooms (BHK)</label>
-        <input type="number" id="fBhk" min="1" max="20" placeholder="e.g. 2">
-      </div>
-      <div class="form-group">
-        <label>Bathrooms</label>
-        <input type="number" id="fBath" min="1" max="20" placeholder="e.g. 2">
-      </div>
-      <div class="form-group">
-        <label>Area (sq.ft)</label>
-        <input type="number" id="fArea" placeholder="e.g. 1200">
-      </div>
-      <div class="form-group">
-        <label>Owner Contact</label>
-        <input type="text" id="fContact" placeholder="+91 98765 XXXXX">
-      </div>
-      <div class="form-group">
-        <label>Mark as New?</label>
-        <select id="fNew"><option value="yes">Yes! 🆕</option><option value="no">No</option></select>
-      </div>
+      <div class="form-group"><label>Type</label><select id="fType"><option value="for-sale">For Sale</option><option value="for-rent">For Rent</option><option value="sold">Sold</option></select></div>
+      <div class="form-group"><label>Bedrooms (BHK)</label><input type="number" id="fBhk" min="1" max="20" placeholder="e.g. 2"></div>
+      <div class="form-group"><label>Bathrooms</label><input type="number" id="fBath" min="1" max="20" placeholder="e.g. 2"></div>
+      <div class="form-group"><label>Area (sq.ft)</label><input type="number" id="fArea" placeholder="e.g. 1200"></div>
+      <div class="form-group"><label>Owner Contact</label><input type="text" id="fContact" placeholder="+91 98765 XXXXX"></div>
+      <div class="form-group"><label>Mark as New?</label><select id="fNew"><option value="yes">Yes! 🆕</option><option value="no">No</option></select></div>
+      <div class="form-group full"><label>Description</label><textarea id="fDesc" placeholder="Describe amenities, nearby landmarks, society features, parking, vastu facing, etc."></textarea></div>
+
+      <!-- AMENITIES -->
       <div class="form-group full">
-        <label>Description</label>
-        <textarea id="fDesc" placeholder="Describe amenities, nearby landmarks, society features, parking, etc."></textarea>
+        <div class="amenities-section">
+          <h4>🏊 SELECT AMENITIES</h4>
+          <div class="amenity-groups">
+            <div class="amenity-group">
+              <div class="amenity-group-title">🏊 Water & Wellness</div>
+              <div class="amenity-checks">
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Swimming Pool"><label><span>🏊</span>Swimming Pool</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Kids Pool"><label><span>🐣</span>Kids Pool</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Jacuzzi / Spa"><label><span>♨️</span>Jacuzzi / Spa</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Steam Room"><label><span>🌫️</span>Steam Room</label></label>
+              </div>
+            </div>
+            <div class="amenity-group">
+              <div class="amenity-group-title">🏋️ Sports & Fitness</div>
+              <div class="amenity-checks">
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Gym / Fitness Centre"><label><span>🏋️</span>Gym / Fitness Centre</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Badminton Court"><label><span>🏸</span>Badminton Court</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Tennis Court"><label><span>🎾</span>Tennis Court</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Squash Court"><label><span>🟡</span>Squash Court</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Cricket Net"><label><span>🏏</span>Cricket Net</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Basketball Court"><label><span>🏀</span>Basketball Court</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Volleyball Court"><label><span>🏐</span>Volleyball Court</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Table Tennis"><label><span>🏓</span>Table Tennis</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Jogging Track"><label><span>🏃</span>Jogging Track</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Cycling Track"><label><span>🚴</span>Cycling Track</label></label>
+              </div>
+            </div>
+            <div class="amenity-group">
+              <div class="amenity-group-title">🎉 Community & Leisure</div>
+              <div class="amenity-checks">
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Clubhouse"><label><span>🏛️</span>Clubhouse</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Community Hall"><label><span>🎊</span>Community Hall</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Party Lawn"><label><span>🌿</span>Party Lawn</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Amphitheatre"><label><span>🎭</span>Amphitheatre</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Mini Theatre"><label><span>🎬</span>Mini Theatre</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Rooftop Terrace"><label><span>🌆</span>Rooftop Terrace</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="BBQ Area"><label><span>🔥</span>BBQ Area</label></label>
+              </div>
+            </div>
+            <div class="amenity-group">
+              <div class="amenity-group-title">👶 Kids Zone</div>
+              <div class="amenity-checks">
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Kids Play Area"><label><span>🛝</span>Kids Play Area</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Crèche / Daycare"><label><span>🍼</span>Crèche / Daycare</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Sand Pit"><label><span>🏖️</span>Sand Pit</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Indoor Play Room"><label><span>🎮</span>Indoor Play Room</label></label>
+              </div>
+            </div>
+            <div class="amenity-group">
+              <div class="amenity-group-title">🌳 Nature & Outdoors</div>
+              <div class="amenity-checks">
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Landscaped Garden"><label><span>🌳</span>Landscaped Garden</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Terrace Garden"><label><span>🌻</span>Terrace Garden</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Meditation Lawn"><label><span>🧘</span>Meditation Lawn</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Senior Citizen Area"><label><span>👴</span>Senior Citizen Area</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Organic Garden"><label><span>🥬</span>Organic Garden</label></label>
+              </div>
+            </div>
+            <div class="amenity-group">
+              <div class="amenity-group-title">🔒 Security & Infra</div>
+              <div class="amenity-checks">
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="24/7 Security"><label><span>🔒</span>24/7 Security</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="CCTV Surveillance"><label><span>📹</span>CCTV Surveillance</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Intercom"><label><span>📞</span>Intercom</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Power Backup"><label><span>⚡</span>Power Backup</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Generator"><label><span>🔌</span>Generator</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Solar Power"><label><span>☀️</span>Solar Power</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Water Harvesting"><label><span>💧</span>Water Harvesting</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="EV Charging"><label><span>🚗</span>EV Charging</label></label>
+              </div>
+            </div>
+            <div class="amenity-group">
+              <div class="amenity-group-title">🚗 Parking & Transport</div>
+              <div class="amenity-checks">
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Covered Parking"><label><span>🅿️</span>Covered Parking</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Visitor Parking"><label><span>🚙</span>Visitor Parking</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Bike Parking"><label><span>🏍️</span>Bike Parking</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Shuttle Service"><label><span>🚌</span>Shuttle Service</label></label>
+              </div>
+            </div>
+            <div class="amenity-group">
+              <div class="amenity-group-title">🛒 Convenience</div>
+              <div class="amenity-checks">
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Supermarket"><label><span>🛒</span>Supermarket</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="ATM"><label><span>🏧</span>ATM</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Cafe / Cafeteria"><label><span>☕</span>Cafe / Cafeteria</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Laundry Service"><label><span>👕</span>Laundry Service</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Pet-Friendly"><label><span>🐾</span>Pet-Friendly</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Co-Working Space"><label><span>💻</span>Co-Working Space</label></label>
+                <label class="amenity-check-item"><input type="checkbox" name="amenity" value="Library / Reading Room"><label><span>📚</span>Library / Reading Room</label></label>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Photo Upload -->
+
+      <!-- PHOTO UPLOAD -->
       <div class="form-group full">
         <label>📸 Property Photos (with Captions)</label>
         <div class="photo-upload-area" onclick="document.getElementById('fPhotos').click()">
           <input type="file" id="fPhotos" multiple accept="image/*" onchange="handlePhotos(event)">
-          <div style="font-size:2rem;">📷</div>
-          <div style="font-weight:800; color:var(--teal); margin:6px 0 4px;">Click to Upload Property Photos</div>
-          <div style="font-size:0.8rem; color:var(--muted);">You can select multiple photos. Add a caption to each one.</div>
+          <div style="font-size:2rem;margin-bottom:6px">📷</div>
+          <div style="font-weight:800;color:var(--teal);margin-bottom:4px">Click to Upload Property Photos</div>
+          <div style="font-size:.78rem;color:var(--muted)">Select multiple photos. Use ‹ › arrows to preview. Add a caption to each photo.</div>
         </div>
         <div class="photo-preview-grid" id="photoPreviewGrid"></div>
       </div>
@@ -771,7 +464,7 @@ body {
       <button class="btn btn-teal" onclick="addProperty()">🚀 PUBLISH PROPERTY!</button>
       <button class="btn btn-ghost" onclick="clearForm()">✖ Clear</button>
     </div>
-    <div id="formMsg" style="margin-top:12px; font-weight:700; display:none;"></div>
+    <div id="formMsg" style="margin-top:12px;font-weight:700;display:none"></div>
   </div>
 
   <!-- AI ASSISTANT -->
@@ -786,18 +479,17 @@ body {
     <div class="chat-window" id="chatWindow">
       <div class="chat-msg">
         <div class="msg-avatar">🦸</div>
-        <div class="msg-bubble">BOOM! 👋 I'm Deal Guru, your Bangalore property expert! Ask me about area comparisons, fair pricing, rental yields, upcoming metro connections, vastu tips, loan EMI calculations — anything! What's your property goal today?</div>
+        <div class="msg-bubble">BOOM! 👋 I'm Deal Guru, your Bangalore property expert! Ask me about area comparisons, fair pricing, rental yields, metro connections, vastu tips, loan EMI calculations — anything! What's your property goal today?</div>
       </div>
     </div>
     <div class="chat-input-row">
-      <input type="text" id="chatInput" placeholder="e.g. Is Whitefield good for investment? What's average rent in Koramangala?" onkeydown="if(event.key==='Enter')sendChat()">
+      <input type="text" id="chatInput" placeholder="e.g. Is Whitefield good for investment? What's fair rent in Koramangala?" onkeydown="if(event.key==='Enter')sendChat()">
       <button class="btn btn-accent" onclick="sendChat()">SEND ✉</button>
     </div>
   </div>
-
 </main>
 
-<!-- LIGHTBOX -->
+<!-- PROPERTY DETAIL LIGHTBOX -->
 <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
   <div class="lightbox-inner" id="lightboxInner">
     <div class="lightbox-header">
@@ -808,193 +500,188 @@ body {
   </div>
 </div>
 
+<!-- FULL PHOTO VIEWER LIGHTBOX -->
+<div class="photo-lb" id="photoLb">
+  <button class="photo-lb-close" onclick="closePhotoLb()">✕</button>
+  <div class="photo-lb-img-wrap">
+    <button class="photo-lb-nav prev" onclick="photoLbNav(-1)">&#8249;</button>
+    <img id="photoLbImg" src="" alt="">
+    <button class="photo-lb-nav next" onclick="photoLbNav(1)">&#8250;</button>
+  </div>
+  <div class="photo-lb-thumbs" id="photoLbThumbs"></div>
+  <div class="photo-lb-bottom">
+    <div class="photo-lb-caption-area">
+      <div class="photo-lb-caption-text" id="photoLbCaption"></div>
+      <div class="photo-lb-prop-info" id="photoLbPropInfo"></div>
+    </div>
+    <div class="photo-lb-counter" id="photoLbCounter"></div>
+  </div>
+</div>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-logo">One<span>To</span>1Deal</div>
   <div>Connecting Buyers &amp; Renters directly with Owners in Bangalore</div>
-  <div style="margin-top:6px; color:var(--accent);">✅ ZERO BROKERAGE · 100% DIRECT OWNER DEALS</div>
-  <div style="margin-top:8px; font-size:0.72rem;">© 2025 OneTo1Deal · Bangalore, Karnataka · info@oneto1deal.in</div>
+  <div style="margin-top:5px;color:var(--accent)">✅ ZERO BROKERAGE · 100% DIRECT OWNER DEALS</div>
+  <div style="margin-top:7px;font-size:.7rem">© 2025 OneTo1Deal · Bangalore, Karnataka · info@oneto1deal.in</div>
 </footer>
 
 <script>
-// ---- DATA ----
-// photoFiles stores base64 data URLs for photos added via upload
+// ── AMENITY DEFINITIONS ──
+const AMENITY_ICONS = {
+  'Swimming Pool':'🏊','Kids Pool':'🐣','Jacuzzi / Spa':'♨️','Steam Room':'🌫️',
+  'Gym / Fitness Centre':'🏋️','Badminton Court':'🏸','Tennis Court':'🎾','Squash Court':'🟡',
+  'Cricket Net':'🏏','Basketball Court':'🏀','Volleyball Court':'🏐','Table Tennis':'🏓',
+  'Jogging Track':'🏃','Cycling Track':'🚴','Clubhouse':'🏛️','Community Hall':'🎊',
+  'Party Lawn':'🌿','Amphitheatre':'🎭','Mini Theatre':'🎬','Rooftop Terrace':'🌆',
+  'BBQ Area':'🔥','Kids Play Area':'🛝','Crèche / Daycare':'🍼','Sand Pit':'🏖️',
+  'Indoor Play Room':'🎮','Landscaped Garden':'🌳','Terrace Garden':'🌻',
+  'Meditation Lawn':'🧘','Senior Citizen Area':'👴','Organic Garden':'🥬',
+  '24/7 Security':'🔒','CCTV Surveillance':'📹','Intercom':'📞','Power Backup':'⚡',
+  'Generator':'🔌','Solar Power':'☀️','Water Harvesting':'💧','EV Charging':'🚗',
+  'Covered Parking':'🅿️','Visitor Parking':'🚙','Bike Parking':'🏍️','Shuttle Service':'🚌',
+  'Supermarket':'🛒','ATM':'🏧','Cafe / Cafeteria':'☕','Laundry Service':'👕',
+  'Pet-Friendly':'🐾','Co-Working Space':'💻','Library / Reading Room':'📚'
+};
+
+// ── DATA ──
 let properties = [
-  {
-    id: 1, title: "Luxury 3BHK with Club Amenities", price: "₹1.8 Cr",
-    location: "Koramangala, Bangalore", area: "Koramangala",
-    type: "for-sale", bhk: 3, bath: 3, sqft: 2100, isNew: true,
-    contact: "+91 98450 12345",
-    desc: "Stunning 3BHK in premium gated community. Modular kitchen, vitrified flooring, master bedroom with walk-in wardrobe. 5 min from Koramangala 5th Block restaurants.",
-    photos: [
-      { url: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80", caption: "Living Room" },
-      { url: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&q=80", caption: "Kitchen" },
-      { url: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=300&q=80", caption: "Master Bedroom" }
-    ]
-  },
-  {
-    id: 2, title: "2BHK Near Manyata Tech Park", price: "₹32,000/mo",
-    location: "Thanisandra, Bangalore", area: "Thanisandra",
-    type: "for-rent", bhk: 2, bath: 2, sqft: 1150, isNew: true,
-    contact: "+91 97400 56789",
-    desc: "Fresh painted 2BHK just 10 min walk from Manyata Tech Park. Covered parking, 24/7 security, power backup. Ideal for IT professionals.",
-    photos: [
-      { url: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&q=80", caption: "Living Area" },
-      { url: "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=300&q=80", caption: "Bedroom" }
-    ]
-  },
-  {
-    id: 3, title: "Studio Apartment – Great Investment", price: "₹38 Lakh",
-    location: "Electronic City, Bangalore", area: "Electronic City",
-    type: "for-sale", bhk: 1, bath: 1, sqft: 480, isNew: false,
-    contact: "+91 80934 11223",
-    desc: "Smart studio near Electronic City Phase 1. Great rental yield property. Lift, power backup, and common garden. Walking distance to Infosys.",
-    photos: [
-      { url: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80", caption: "Studio Space" }
-    ]
-  },
-  {
-    id: 4, title: "4BHK Independent Villa with Garden", price: "₹2.4 Cr",
-    location: "Sarjapur Road, Bangalore", area: "Sarjapur Road",
-    type: "sold", bhk: 4, bath: 4, sqft: 3200, isNew: false,
-    contact: "+91 94480 33445",
-    desc: "Spacious east-facing villa on 2800 sqft plot. Lush garden, 3-car parking, solar panels, rainwater harvesting. Quiet residential street.",
-    photos: [
-      { url: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80", caption: "Front View" },
-      { url: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=300&q=80", caption: "Garden" }
-    ]
-  },
-  {
-    id: 5, title: "2BHK Semi-Furnished – Ready to Move", price: "₹24,500/mo",
-    location: "HSR Layout, Bangalore", area: "HSR Layout",
-    type: "for-rent", bhk: 2, bath: 2, sqft: 1050, isNew: true,
-    contact: "+91 99001 77889",
-    desc: "Semi-furnished 2BHK in HSR Layout Sector 1. Wardrobe, fans, geysers included. Near HSR BDA Complex and many restaurants. No brokerage — direct owner.",
-    photos: [
-      { url: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80", caption: "Living Room" },
-      { url: "https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=300&q=80", caption: "Bedroom" },
-      { url: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&q=80", caption: "Kitchen" }
-    ]
-  }
+  {id:1,title:"Luxury 3BHK with Club Amenities",price:"₹1.8 Cr",location:"Koramangala, Bangalore",area:"Koramangala",type:"for-sale",bhk:3,bath:3,sqft:2100,isNew:true,contact:"+91 98450 12345",desc:"Stunning 3BHK in premium gated community. Modular kitchen, vitrified flooring, master bedroom with walk-in wardrobe. 5 min from Koramangala 5th Block.",
+    amenities:["Swimming Pool","Gym / Fitness Centre","Clubhouse","Badminton Court","Kids Play Area","24/7 Security","Covered Parking","CCTV Surveillance","Jogging Track","Power Backup"],
+    photos:[{url:"https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",caption:"Spacious Living Room"},{url:"https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",caption:"Modern Kitchen"},{url:"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&q=80",caption:"Master Bedroom"},{url:"https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80",caption:"Swimming Pool"}]},
+  {id:2,title:"2BHK Near Manyata Tech Park",price:"₹32,000/mo",location:"Thanisandra, Bangalore",area:"Thanisandra",type:"for-rent",bhk:2,bath:2,sqft:1150,isNew:true,contact:"+91 97400 56789",desc:"Fresh painted 2BHK just 10 min walk from Manyata Tech Park. Covered parking, 24/7 security, power backup. Ideal for IT professionals.",
+    amenities:["Gym / Fitness Centre","24/7 Security","Covered Parking","Power Backup","Intercom","Kids Play Area"],
+    photos:[{url:"https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80",caption:"Living Area"},{url:"https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&q=80",caption:"Bedroom"}]},
+  {id:3,title:"Studio Apartment – Great Investment",price:"₹38 Lakh",location:"Electronic City, Bangalore",area:"Electronic City",type:"for-sale",bhk:1,bath:1,sqft:480,isNew:false,contact:"+91 80934 11223",desc:"Smart studio near Electronic City Phase 1. Great rental yield property. Lift, power backup, and common garden. Walking distance to Infosys.",
+    amenities:["Power Backup","Covered Parking","Landscaped Garden","24/7 Security"],
+    photos:[{url:"https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",caption:"Studio Living Space"}]},
+  {id:4,title:"4BHK Independent Villa with Garden",price:"₹2.4 Cr",location:"Sarjapur Road, Bangalore",area:"Sarjapur Road",type:"sold",bhk:4,bath:4,sqft:3200,isNew:false,contact:"+91 94480 33445",desc:"Spacious east-facing villa on 2800 sqft plot. Lush garden, 3-car parking, solar panels, rainwater harvesting. Quiet residential street.",
+    amenities:["Solar Power","Water Harvesting","Covered Parking","Landscaped Garden","CCTV Surveillance","EV Charging","BBQ Area"],
+    photos:[{url:"https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80",caption:"Front Elevation"},{url:"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80",caption:"Garden View"},{url:"https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80",caption:"Interior Living Room"}]},
+  {id:5,title:"2BHK Semi-Furnished – Ready to Move",price:"₹24,500/mo",location:"HSR Layout, Bangalore",area:"HSR Layout",type:"for-rent",bhk:2,bath:2,sqft:1050,isNew:true,contact:"+91 99001 77889",desc:"Semi-furnished 2BHK in HSR Layout Sector 1. Wardrobe, fans, geysers included. Near HSR BDA Complex and restaurants. No brokerage — direct owner.",
+    amenities:["Gym / Fitness Centre","Swimming Pool","Clubhouse","Jogging Track","Kids Play Area","24/7 Security","Covered Parking","Power Backup","Co-Working Space","Pet-Friendly"],
+    photos:[{url:"https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80",caption:"Living Room"},{url:"https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=600&q=80",caption:"Master Bedroom"},{url:"https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",caption:"Kitchen"}]}
 ];
-
 let filtered = [...properties];
-// For new photos uploaded via file input
-let pendingPhotos = []; // {dataUrl, caption}
 
-// ---- PHOTO UPLOAD ----
-function handlePhotos(event) {
-  const files = Array.from(event.target.files);
-  files.forEach(file => {
-    const reader = new FileReader();
-    reader.onload = e => {
-      pendingPhotos.push({ dataUrl: e.target.result, caption: '' });
-      renderPhotoPreview();
-    };
-    reader.readAsDataURL(file);
+// ── CARD IMAGE STATE ──
+const cardImgState = {}; // propId -> currentIndex
+
+// ── PHOTO UPLOAD ──
+let pendingPhotos = []; // {dataUrl, caption}
+function handlePhotos(evt) {
+  Array.from(evt.target.files).forEach(file => {
+    const r = new FileReader();
+    r.onload = e => { pendingPhotos.push({dataUrl:e.target.result,caption:''}); renderPhotoPreview(); };
+    r.readAsDataURL(file);
   });
 }
-
 function renderPhotoPreview() {
   const grid = document.getElementById('photoPreviewGrid');
-  grid.innerHTML = pendingPhotos.map((p, i) => `
+  if (!pendingPhotos.length) { grid.innerHTML=''; return; }
+  grid.innerHTML = pendingPhotos.map((p,i) => `
     <div class="photo-preview-item">
-      <img src="${p.dataUrl}" alt="Photo ${i+1}">
+      <div class="preview-nav-wrap" onclick="openPhotoLb(pendingPhotos.map(x=>({url:x.dataUrl,caption:x.caption})),${i},'Preview')">
+        <img src="${p.dataUrl}" alt="Photo ${i+1}">
+        ${pendingPhotos.length>1?`
+          <button class="pnav pprev" onclick="event.stopPropagation();previewNav(${i},-1)">&#8249;</button>
+          <button class="pnav pnext" onclick="event.stopPropagation();previewNav(${i},1)">&#8250;</button>
+        `:''}
+        <div class="preview-num">${i+1}/${pendingPhotos.length}</div>
+      </div>
       <button class="photo-remove" onclick="removePhoto(${i})">✕</button>
-      <input class="photo-caption-input" type="text" placeholder="Caption (e.g. Living Room)"
-        value="${p.caption}" oninput="pendingPhotos[${i}].caption=this.value">
-    </div>
-  `).join('');
+      <input class="photo-caption-input" type="text" placeholder="Caption (e.g. Living Room)" value="${p.caption}" oninput="pendingPhotos[${i}].caption=this.value">
+    </div>`).join('');
 }
-
-function removePhoto(i) {
-  pendingPhotos.splice(i, 1);
-  renderPhotoPreview();
+function previewNav(i, dir) {
+  const ni = ((i+dir)+pendingPhotos.length)%pendingPhotos.length;
+  openPhotoLb(pendingPhotos.map(x=>({url:x.dataUrl,caption:x.caption})), ni, 'Preview');
 }
+function removePhoto(i) { pendingPhotos.splice(i,1); renderPhotoPreview(); }
 
-// ---- RENDER ----
+// ── RENDER ──
 function renderAll() {
   const grid = document.getElementById('propertyGrid');
   const noRes = document.getElementById('noResults');
-
-  if (filtered.length === 0) {
-    grid.innerHTML = '';
-    noRes.style.display = 'block';
-  } else {
-    noRes.style.display = 'none';
-    grid.innerHTML = filtered.map(p => cardHTML(p)).join('');
-  }
+  if (!filtered.length) { grid.innerHTML=''; noRes.style.display='block'; }
+  else { noRes.style.display='none'; grid.innerHTML=filtered.map(p=>cardHTML(p)).join(''); }
   updateStats();
   document.getElementById('totalCount').textContent = properties.length;
 }
 
 function cardHTML(p) {
-  const typeClass = p.type === 'for-sale' ? 'badge-for-sale' : p.type === 'for-rent' ? 'badge-for-rent' : 'badge-sold';
-  const typeLabel = p.type === 'for-sale' ? 'FOR SALE' : p.type === 'for-rent' ? 'FOR RENT' : 'SOLD';
-  const mainPhoto = p.photos && p.photos.length ? p.photos[0].url : '';
+  const typeClass = p.type==='for-sale'?'badge-for-sale':p.type==='for-rent'?'badge-for-rent':'badge-sold';
+  const typeLabel = p.type==='for-sale'?'FOR SALE':p.type==='for-rent'?'FOR RENT':'SOLD';
+  const photos = p.photos||[];
+  const curIdx = cardImgState[p.id]||0;
+  const curPhoto = photos[curIdx];
+  const mapQuery = encodeURIComponent(p.location+', Bangalore, Karnataka, India');
 
-  const imgHTML = mainPhoto
-    ? `<img src="${mainPhoto}" alt="${p.title}" onerror="this.parentNode.innerHTML='<div class=\\'prop-img-placeholder\\'><span>🏠</span><span class=\\'ph-label\\'>No Image</span></div>'">`
-    : `<div class="prop-img-placeholder"><span>🏠</span><span class="ph-label">No Photo Added</span></div>`;
+  const imgHTML = curPhoto
+    ? `<img src="${curPhoto.url}" alt="${p.title}" id="cardImg_${p.id}" onerror="this.parentNode.querySelector('.prop-img-placeholder') && (this.style.display='none')">`
+    : `<div class="prop-img-placeholder"><span>🏠</span><span class="ph-label">No Photo</span></div>`;
 
-  // Mini gallery strip (up to 4 thumbs excluding first)
-  const extraPhotos = (p.photos || []).slice(1, 5);
-  const galleryStrip = extraPhotos.length ? `
-    <div class="card-gallery-strip">
-      ${extraPhotos.map(ph => `<div class="gallery-thumb" onclick="event.stopPropagation(); openLightbox(${p.id})">
-        <img src="${ph.url}" alt="${ph.caption}">
-        <div class="thumb-cap">${ph.caption || ''}</div>
-      </div>`).join('')}
-      ${(p.photos||[]).length > 5 ? `<div class="gallery-thumb" style="background:rgba(233,69,96,0.2);display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:800;color:var(--accent);">+${(p.photos||[]).length-4}</div>` : ''}
-    </div>
-  ` : '';
+  const navArrows = photos.length>1 ? `
+    <button class="card-img-nav prev" onclick="event.stopPropagation();cardImgNav(${p.id},-1)">&#8249;</button>
+    <button class="card-img-nav next" onclick="event.stopPropagation();cardImgNav(${p.id},1)">&#8250;</button>` : '';
 
-  const mapQuery = encodeURIComponent(p.location + ', Bangalore, Karnataka, India');
+  const dots = photos.length>1 ? `<div class="card-img-dots">${photos.map((_,i)=>`<div class="img-dot${i===curIdx?' active':''}"></div>`).join('')}</div>` : '';
+
+  const caption = curPhoto?.caption ? `<div class="card-img-caption">${curPhoto.caption}</div>` : '';
+
+  // top amenities (max 3) as pills
+  const topAmenities = (p.amenities||[]).slice(0,3).map(a=>`<span class="amenity-pill">${AMENITY_ICONS[a]||''} ${a}</span>`).join('');
+  const moreAmenities = (p.amenities||[]).length>3 ? `<span class="amenity-pill">+${(p.amenities||[]).length-3} more</span>` : '';
 
   return `
   <div class="prop-card" onclick="openLightbox(${p.id})">
     <div class="prop-img-wrap">
       ${imgHTML}
+      ${navArrows}
+      ${dots}
+      ${caption}
       <span class="badge-type ${typeClass}">${typeLabel}</span>
-      <span class="badge-pics">📷 ${(p.photos||[]).length} photos</span>
-      ${p.isNew ? '<span class="badge-new">NEW!</span>' : ''}
-      <span class="map-btn-card" onclick="event.stopPropagation(); openMapWindow('${mapQuery}')">📍 Map</span>
+      <span class="badge-pics">📷 ${photos.length}</span>
+      ${p.isNew?'<span class="badge-new">NEW!</span>':''}
+      <span class="map-btn-card" onclick="event.stopPropagation();openMapWindow('${mapQuery}')">📍 Map</span>
     </div>
-    ${galleryStrip}
     <div class="prop-body">
       <div class="prop-price">${p.price}</div>
       <div class="prop-title">${p.title}</div>
       <div class="prop-area-tag">📍 ${p.location}</div>
       <div class="prop-features">
-        ${p.bhk ? `<span class="feat-chip">🛏 ${p.bhk} BHK</span>` : ''}
-        ${p.bath ? `<span class="feat-chip">🚿 ${p.bath} Bath</span>` : ''}
-        ${p.sqft ? `<span class="feat-chip">📐 ${p.sqft} sqft</span>` : ''}
+        ${p.bhk?`<span class="feat-chip">🛏 ${p.bhk} BHK</span>`:''}
+        ${p.bath?`<span class="feat-chip">🚿 ${p.bath} Bath</span>`:''}
+        ${p.sqft?`<span class="feat-chip">📐 ${p.sqft} sqft</span>`:''}
       </div>
+      ${topAmenities||moreAmenities?`<div class="prop-amenities">${topAmenities}${moreAmenities}</div>`:''}
       <div class="prop-desc">${p.desc}</div>
       <div class="owner-direct">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="12"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         Direct Owner · No Broker
       </div>
-      <div class="prop-actions" style="margin-top:10px;">
-        <button class="btn btn-teal" onclick="event.stopPropagation(); openLightbox(${p.id})">VIEW DETAILS</button>
-        <button class="btn btn-accent" onclick="event.stopPropagation(); askAI(${p.id})">ASK AI 🤖</button>
+      <div class="prop-actions" style="margin-top:9px">
+        <button class="btn btn-teal" onclick="event.stopPropagation();openLightbox(${p.id})">VIEW DETAILS</button>
+        <button class="btn btn-accent" onclick="event.stopPropagation();askAI(${p.id})">ASK AI 🤖</button>
       </div>
     </div>
   </div>`;
 }
 
-function openMapWindow(query) {
-  window.open('https://www.google.com/maps/search/' + query, '_blank');
+function cardImgNav(id, dir) {
+  const p = properties.find(x=>x.id===id);
+  if (!p||!p.photos?.length) return;
+  const cur = cardImgState[id]||0;
+  cardImgState[id] = ((cur+dir)+p.photos.length)%p.photos.length;
+  // Re-render just this card
+  const cards = document.querySelectorAll('#propertyGrid .prop-card');
+  const idx = filtered.findIndex(x=>x.id===id);
+  if (idx>=0 && cards[idx]) cards[idx].outerHTML = cardHTML(p);
+  // replace in DOM
+  document.getElementById('propertyGrid').innerHTML = filtered.map(pp=>cardHTML(pp)).join('');
 }
 
-function updateStats() {
-  document.getElementById('sSale').textContent = properties.filter(p => p.type === 'for-sale').length;
-  document.getElementById('sRent').textContent = properties.filter(p => p.type === 'for-rent').length;
-  document.getElementById('sSold').textContent = properties.filter(p => p.type === 'sold').length;
-  document.getElementById('sPics').textContent = properties.reduce((a, p) => a + (p.photos||[]).length, 0);
-}
-
-// ---- FILTER ----
+// ── FILTER ──
 function filterProps() {
   const q = document.getElementById('searchInput').value.toLowerCase();
   const area = document.getElementById('areaFilter').value.toLowerCase();
@@ -1003,205 +690,249 @@ function filterProps() {
   const sort = document.getElementById('sortFilter').value;
 
   filtered = properties.filter(p => {
-    const matchQ = !q || p.title.toLowerCase().includes(q) || p.location.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q);
-    const matchA = !area || p.location.toLowerCase().includes(area);
-    const matchT = !type || p.type === type;
-    const matchB = !bhk || (bhk === '4' ? p.bhk >= 4 : p.bhk == bhk);
-    return matchQ && matchA && matchT && matchB;
+    const matchQ = !q||p.title.toLowerCase().includes(q)||p.location.toLowerCase().includes(q)||p.desc.toLowerCase().includes(q);
+    const matchA = !area||p.location.toLowerCase().includes(area);
+    const matchT = !type||p.type===type;
+    const matchB = !bhk||(bhk==='4'?p.bhk>=4:p.bhk==bhk);
+    return matchQ&&matchA&&matchT&&matchB;
   });
-
-  if (sort === 'price-asc') filtered.sort((a,b) => rawPrice(a.price) - rawPrice(b.price));
-  else if (sort === 'price-desc') filtered.sort((a,b) => rawPrice(b.price) - rawPrice(a.price));
-  else filtered.sort((a,b) => b.id - a.id);
-
+  if (sort==='price-asc') filtered.sort((a,b)=>rawPrice(a.price)-rawPrice(b.price));
+  else if (sort==='price-desc') filtered.sort((a,b)=>rawPrice(b.price)-rawPrice(a.price));
+  else filtered.sort((a,b)=>b.id-a.id);
   renderAll();
 }
 
 function rawPrice(s) {
-  const n = parseFloat(s.replace(/[^0-9.]/g, ''));
-  if (s.includes('Cr')) return n * 10000000;
-  if (s.includes('Lakh') || s.includes('L')) return n * 100000;
+  const n=parseFloat(s.replace(/[^0-9.]/g,''));
+  if(s.includes('Cr')) return n*10000000;
+  if(s.includes('Lakh')||s.includes('L')) return n*100000;
   return n;
 }
+function updateStats() {
+  document.getElementById('sSale').textContent=properties.filter(p=>p.type==='for-sale').length;
+  document.getElementById('sRent').textContent=properties.filter(p=>p.type==='for-rent').length;
+  document.getElementById('sSold').textContent=properties.filter(p=>p.type==='sold').length;
+  document.getElementById('sPics').textContent=properties.reduce((a,p)=>a+(p.photos||[]).length,0);
+}
 
-// ---- LIGHTBOX ----
+// ── LIGHTBOX ──
 function openLightbox(id) {
-  const p = properties.find(x => x.id === id);
+  const p = properties.find(x=>x.id===id);
   if (!p) return;
   document.getElementById('lbTitle').textContent = p.title;
 
-  const mapQuery = encodeURIComponent(p.location + ', Bangalore, Karnataka, India');
+  const photos = p.photos||[];
+  const mapQuery = encodeURIComponent(p.location+', Bangalore, Karnataka, India');
   const mapEmbedUrl = `https://maps.google.com/maps?q=${mapQuery}&output=embed&zoom=15`;
 
-  const galleryHTML = (p.photos || []).map(ph => `
-    <div class="lb-gallery-item">
-      <img src="${ph.url}" alt="${ph.caption}" onclick="window.open('${ph.url}','_blank')">
-      ${ph.caption ? `<div class="lb-caption">📷 ${ph.caption}</div>` : ''}
-    </div>
-  `).join('');
+  // Big photo viewer
+  let photoViewerHTML = '';
+  if (photos.length) {
+    const thumbsHTML = photos.map((ph,i)=>`
+      <div>
+        <div class="pv-thumb${i===0?' active':''}" id="pvThumb_${id}_${i}" onclick="pvGoTo(${id},${i})">
+          <img src="${ph.url}" alt="${ph.caption}">
+        </div>
+        <div class="pv-thumb-cap">${ph.caption||''}</div>
+      </div>`).join('');
+    photoViewerHTML = `
+      <div class="photo-viewer" id="pvWrap_${id}">
+        <div class="photo-viewer-main">
+          <button class="pv-nav prev" onclick="pvNav(${id},-1)">&#8249;</button>
+          <img id="pvImg_${id}" src="${photos[0].url}" alt="${photos[0].caption}" onclick="openPhotoLb(${JSON.stringify(photos).replace(/"/g,'&quot;')},0,'${p.title.replace(/'/g,"\\'")}')">
+          <button class="pv-nav next" onclick="pvNav(${id},1)">&#8250;</button>
+          <div class="photo-viewer-caption">
+            <span class="pv-caption-text" id="pvCap_${id}">${photos[0].caption||'Photo 1'}</span>
+            <span class="pv-counter" id="pvCount_${id}">1 / ${photos.length}</span>
+          </div>
+        </div>
+        ${photos.length>1?`<div class="photo-viewer-thumbs">${thumbsHTML}</div>`:''}
+      </div>`;
+  }
+
+  // Amenities
+  const amenityHTML = (p.amenities||[]).map(a=>`<div class="lb-amenity">${AMENITY_ICONS[a]||''} ${a}</div>`).join('');
 
   document.getElementById('lbBody').innerHTML = `
-    <div class="lightbox-price">${p.price}</div>
-    <div class="prop-area-tag" style="margin-bottom:8px;">📍 ${p.location}</div>
+    ${photoViewerHTML}
+    <div class="lb-price">${p.price}</div>
+    <div class="prop-area-tag" style="margin-bottom:8px">📍 ${p.location}</div>
     <div class="detail-grid">
-      ${p.bhk ? `<div class="detail-chip"><span class="dc-val">${p.bhk}</span><span class="dc-lbl">Bedrooms</span></div>` : ''}
-      ${p.bath ? `<div class="detail-chip"><span class="dc-val">${p.bath}</span><span class="dc-lbl">Bathrooms</span></div>` : ''}
-      ${p.sqft ? `<div class="detail-chip"><span class="dc-val">${p.sqft}</span><span class="dc-lbl">Sq. Feet</span></div>` : ''}
-      <div class="detail-chip"><span class="dc-val">${(p.photos||[]).length}</span><span class="dc-lbl">Photos</span></div>
+      ${p.bhk?`<div class="detail-chip"><span class="dc-val">${p.bhk}</span><span class="dc-lbl">Bedrooms</span></div>`:''}
+      ${p.bath?`<div class="detail-chip"><span class="dc-val">${p.bath}</span><span class="dc-lbl">Bathrooms</span></div>`:''}
+      ${p.sqft?`<div class="detail-chip"><span class="dc-val">${p.sqft}</span><span class="dc-lbl">Sq.ft</span></div>`:''}
+      <div class="detail-chip"><span class="dc-val">${photos.length}</span><span class="dc-lbl">Photos</span></div>
     </div>
-    <p style="font-size:0.88rem; line-height:1.65; color:var(--muted); margin-bottom:14px;">${p.desc}</p>
-    ${galleryHTML ? `<div style="font-size:0.78rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:8px;">📷 PHOTO GALLERY</div><div class="lb-gallery">${galleryHTML}</div>` : ''}
-    <div style="font-size:0.78rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin:16px 0 6px;">📍 LOCATION MAP</div>
-    <div class="map-frame">
-      <iframe src="${mapEmbedUrl}" title="Property Location" allowfullscreen loading="lazy"></iframe>
+    ${amenityHTML?`<div style="font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:7px">🏊 AMENITIES</div><div class="lb-amenities">${amenityHTML}</div>`:''}
+    <p style="font-size:.86rem;line-height:1.65;color:var(--muted);margin-bottom:12px">${p.desc}</p>
+    <div style="font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:6px">📍 LOCATION MAP</div>
+    <div class="map-frame"><iframe src="${mapEmbedUrl}" title="Location" allowfullscreen loading="lazy"></iframe></div>
+    <div class="owner-box">
+      <div class="owner-box-title">👤 DIRECT OWNER CONTACT</div>
+      <div class="owner-phone">${p.contact||'Contact via AI Chat below'}</div>
+      <div class="owner-note">✅ No broker fee. Talk directly with the property owner.</div>
     </div>
-    <div style="background:rgba(0,212,170,0.1);border:2px solid rgba(0,212,170,0.3);border-radius:10px;padding:14px;margin-top:16px;">
-      <div style="font-size:0.78rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--teal);margin-bottom:6px;">👤 DIRECT OWNER CONTACT</div>
-      <div style="font-weight:800;font-size:1.1rem;color:var(--white);">${p.contact || 'Contact via AI Chat below'}</div>
-      <div style="font-size:0.75rem;color:var(--muted);margin-top:4px;">✅ No broker fee. Talk directly with the property owner.</div>
-    </div>
-    <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;">
-      <button class="btn btn-accent" onclick="askAI(${p.id}); closeLightbox()">ASK AI ABOUT THIS 🤖</button>
+    <div style="margin-top:14px;display:flex;gap:9px;flex-wrap:wrap">
+      <button class="btn btn-accent" onclick="askAI(${p.id});closeLightbox()">ASK AI ABOUT THIS 🤖</button>
       <button class="btn btn-teal" onclick="openMapWindow('${mapQuery}')">📍 OPEN IN MAPS</button>
-    </div>
-  `;
+    </div>`;
+
+  // init pv state
+  pvState[id] = 0;
   document.getElementById('lightbox').classList.add('open');
 }
 
 function closeLightbox(e) {
-  if (!e || e.target === document.getElementById('lightbox')) {
-    document.getElementById('lightbox').classList.remove('open');
-  }
+  if (!e||e.target===document.getElementById('lightbox')) document.getElementById('lightbox').classList.remove('open');
 }
 
-// ---- ADD PROPERTY ----
+// ── PHOTO VIEWER STATE (inside lightbox) ──
+const pvState = {};
+function pvNav(id, dir) {
+  const p = properties.find(x=>x.id===id);
+  if (!p||!p.photos?.length) return;
+  pvState[id] = ((pvState[id]||0)+dir+p.photos.length)%p.photos.length;
+  pvGoTo(id, pvState[id]);
+}
+function pvGoTo(id, idx) {
+  const p = properties.find(x=>x.id===id);
+  if (!p||!p.photos) return;
+  pvState[id] = idx;
+  const ph = p.photos[idx];
+  const img = document.getElementById('pvImg_'+id);
+  const cap = document.getElementById('pvCap_'+id);
+  const cnt = document.getElementById('pvCount_'+id);
+  if (img) { img.style.opacity=0; setTimeout(()=>{ img.src=ph.url; img.style.opacity=1; },150); }
+  if (cap) cap.textContent = ph.caption||`Photo ${idx+1}`;
+  if (cnt) cnt.textContent = `${idx+1} / ${p.photos.length}`;
+  // update click handler to open at correct index
+  if (img) img.onclick = ()=>openPhotoLb(p.photos, idx, p.title);
+  // update thumbs
+  document.querySelectorAll(`[id^="pvThumb_${id}_"]`).forEach((el,i)=>el.classList.toggle('active',i===idx));
+}
+
+// ── FULL PHOTO LIGHTBOX ──
+let photoLbPhotos = [], photoLbIdx = 0, photoLbTitle = '';
+function openPhotoLb(photos, startIdx, propTitle) {
+  photoLbPhotos = photos;
+  photoLbIdx = startIdx||0;
+  photoLbTitle = propTitle||'';
+  renderPhotoLb();
+  document.getElementById('photoLb').classList.add('open');
+  document.addEventListener('keydown', photoLbKeyNav);
+}
+function closePhotoLb() {
+  document.getElementById('photoLb').classList.remove('open');
+  document.removeEventListener('keydown', photoLbKeyNav);
+}
+function photoLbKeyNav(e) {
+  if (e.key==='ArrowLeft') photoLbNav(-1);
+  else if (e.key==='ArrowRight') photoLbNav(1);
+  else if (e.key==='Escape') closePhotoLb();
+}
+function photoLbNav(dir) {
+  photoLbIdx = ((photoLbIdx+dir)+photoLbPhotos.length)%photoLbPhotos.length;
+  renderPhotoLb()}
+function renderPhotoLb() {
+  const ph = photoLbPhotos[photoLbIdx];
+  const img = document.getElementById('photoLbImg');
+  img.style.opacity=0;
+  setTimeout(()=>{ img.src=ph.url||ph.dataUrl||''; img.alt=ph.caption||''; img.style.opacity=1; },120);
+  document.getElementById('photoLbCaption').textContent = ph.caption||`Photo ${photoLbIdx+1}`;
+  document.getElementById('photoLbPropInfo').textContent = photoLbTitle;
+  document.getElementById('photoLbCounter').textContent = `${photoLbIdx+1} / ${photoLbPhotos.length}`;
+  const thumbsWrap = document.getElementById('photoLbThumbs');
+  thumbsWrap.innerHTML = photoLbPhotos.map((p,i)=>`
+    <div class="photo-lb-thumb${i===photoLbIdx?' active':''}" onclick="photoLbIdx=${i};renderPhotoLb()">
+      <img src="${p.url||p.dataUrl}" alt="${p.caption||''}">
+    </div>`).join('');
+}
+
+// ── ADD PROPERTY ──
 function addProperty() {
-  const title = document.getElementById('fTitle').value.trim();
-  const price = document.getElementById('fPrice').value.trim();
-  const location = document.getElementById('fLocation').value;
-
-  if (!title || !price || !location) {
-    showFormMsg('⚠ Please fill Title, Price and Location!', 'red');
-    return;
-  }
-
-  // Convert pending photos
-  const photos = pendingPhotos.map(p => ({ url: p.dataUrl, caption: p.caption || '' }));
-
-  const newProp = {
-    id: Date.now(), title,
-    price: price.startsWith('₹') ? price : '₹' + price,
-    location, area: location.split(',')[0],
-    type: document.getElementById('fType').value,
-    bhk: parseInt(document.getElementById('fBhk').value) || null,
-    bath: parseInt(document.getElementById('fBath').value) || null,
-    sqft: parseInt(document.getElementById('fArea').value) || null,
-    contact: document.getElementById('fContact').value.trim() || '',
-    isNew: document.getElementById('fNew').value === 'yes',
-    desc: document.getElementById('fDesc').value.trim() || 'Beautiful property in a prime Bangalore location.',
-    photos
-  };
-
-  properties.unshift(newProp);
+  const title=document.getElementById('fTitle').value.trim();
+  const price=document.getElementById('fPrice').value.trim();
+  const location=document.getElementById('fLocation').value;
+  if (!title||!price||!location) { showFormMsg('⚠ Please fill Title, Price and Location!','red'); return; }
+  const amenities = Array.from(document.querySelectorAll('input[name="amenity"]:checked')).map(c=>c.value);
+  const photos = pendingPhotos.map(p=>({url:p.dataUrl,caption:p.caption||''}));
+  properties.unshift({
+    id:Date.now(), title, price:price.startsWith('₹')?price:'₹'+price,
+    location, area:location.split(',')[0],
+    type:document.getElementById('fType').value,
+    bhk:parseInt(document.getElementById('fBhk').value)||null,
+    bath:parseInt(document.getElementById('fBath').value)||null,
+    sqft:parseInt(document.getElementById('fArea').value)||null,
+    contact:document.getElementById('fContact').value.trim()||'',
+    isNew:document.getElementById('fNew').value==='yes',
+    desc:document.getElementById('fDesc').value.trim()||'Beautiful property in a prime Bangalore location.',
+    amenities, photos
+  });
   filterProps();
-  showFormMsg('🎉 KA-POW! Property published! Buyers can now find you directly!', 'green');
+  showFormMsg('🎉 KA-POW! Property published! Buyers can now find you directly!','green');
   clearForm();
-  window.scrollTo({top: 0, behavior: 'smooth'});
+  window.scrollTo({top:0,behavior:'smooth'});
 }
 
-function showFormMsg(msg, color) {
-  const el = document.getElementById('formMsg');
-  el.textContent = msg;
-  el.style.display = 'block';
-  el.style.color = color === 'red' ? 'var(--accent)' : 'var(--teal)';
-  setTimeout(() => el.style.display = 'none', 3500);
+function showFormMsg(msg,color) {
+  const el=document.getElementById('formMsg');
+  el.textContent=msg; el.style.display='block';
+  el.style.color=color==='red'?'var(--accent)':'var(--teal)';
+  setTimeout(()=>el.style.display='none',3500);
 }
-
 function clearForm() {
-  ['fTitle','fPrice','fBhk','fBath','fArea','fDesc','fContact'].forEach(id => document.getElementById(id).value = '');
-  document.getElementById('fLocation').value = '';
-  document.getElementById('fType').value = 'for-sale';
-  document.getElementById('fNew').value = 'yes';
-  pendingPhotos = [];
-  renderPhotoPreview();
-  document.getElementById('fPhotos').value = '';
+  ['fTitle','fPrice','fBhk','fBath','fArea','fDesc','fContact'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('fLocation').value='';
+  document.getElementById('fType').value='for-sale';
+  document.getElementById('fNew').value='yes';
+  document.querySelectorAll('input[name="amenity"]').forEach(c=>c.checked=false);
+  pendingPhotos=[]; renderPhotoPreview();
+  document.getElementById('fPhotos').value='';
 }
+function scrollToAdd() { document.getElementById('addSection').scrollIntoView({behavior:'smooth'}); }
+function openMapWindow(q) { window.open('https://www.google.com/maps/search/'+q,'_blank'); }
 
-function scrollToAdd() {
-  document.getElementById('addSection').scrollIntoView({behavior:'smooth'});
-}
-
-// ---- AI CHAT ----
+// ── AI CHAT ──
 function askAI(id) {
-  const p = properties.find(x => x.id === id);
+  const p=properties.find(x=>x.id===id);
   if (!p) return;
   document.getElementById('aiSection').scrollIntoView({behavior:'smooth'});
-  const q = `Tell me about this Bangalore property: "${p.title}" in ${p.location}, priced at ${p.price}. It's a ${p.bhk || '?'} BHK, ${p.sqft || '?'} sqft, ${p.type}. ${p.desc}`;
-  document.getElementById('chatInput').value = q;
-  setTimeout(sendChat, 400);
+  const amenStr = (p.amenities||[]).length ? `Amenities: ${p.amenities.join(', ')}.` : '';
+  document.getElementById('chatInput').value=`Tell me about this Bangalore property: "${p.title}" in ${p.location}, priced at ${p.price}. ${p.bhk||'?'} BHK, ${p.sqft||'?'} sqft. ${amenStr} ${p.desc}`;
+  setTimeout(sendChat,350);
 }
-
-function addChatMsg(role, text) {
-  const win = document.getElementById('chatWindow');
-  const div = document.createElement('div');
-  div.className = 'chat-msg' + (role === 'user' ? ' user' : '');
-  div.innerHTML = `<div class="msg-avatar">${role === 'user' ? '👤' : '🦸'}</div><div class="msg-bubble">${text}</div>`;
-  win.appendChild(div);
-  win.scrollTop = win.scrollHeight;
-  return div;
+function addChatMsg(role,text) {
+  const win=document.getElementById('chatWindow');
+  const div=document.createElement('div');
+  div.className='chat-msg'+(role==='user'?' user':'');
+  div.innerHTML=`<div class="msg-avatar">${role==='user'?'👤':'🦸'}</div><div class="msg-bubble">${text}</div>`;
+  win.appendChild(div); win.scrollTop=win.scrollHeight; return div;
 }
-
 function addThinking() {
-  const win = document.getElementById('chatWindow');
-  const div = document.createElement('div');
-  div.className = 'chat-msg';
-  div.innerHTML = `<div class="msg-avatar">🦸</div><div class="msg-bubble thinking">Deal Guru is thinking</div>`;
-  win.appendChild(div);
-  win.scrollTop = win.scrollHeight;
-  return div;
+  const win=document.getElementById('chatWindow');
+  const div=document.createElement('div');
+  div.className='chat-msg';
+  div.innerHTML=`<div class="msg-avatar">🦸</div><div class="msg-bubble thinking">Deal Guru is thinking</div>`;
+  win.appendChild(div); win.scrollTop=win.scrollHeight; return div;
 }
-
-const chatHistory = [];
-
+const chatHistory=[];
 async function sendChat() {
-  const input = document.getElementById('chatInput');
-  const q = input.value.trim();
-  if (!q) return;
-  input.value = '';
-  addChatMsg('user', q);
-  chatHistory.push({ role: 'user', content: q });
-  const thinkingEl = addThinking();
-
+  const input=document.getElementById('chatInput');
+  const q=input.value.trim(); if (!q) return;
+  input.value=''; addChatMsg('user',q); chatHistory.push({role:'user',content:q});
+  const thinkingEl=addThinking();
   try {
-    const listingsSummary = properties.slice(0, 6).map(p =>
-      `• ${p.title} | ${p.price} | ${p.location} | ${p.bhk||'?'}BHK | ${p.sqft||'?'}sqft | ${p.type}`
-    ).join('\n');
-
-    const systemPrompt = `You are Deal Guru — a sharp, enthusiastic real estate expert for OneTo1Deal, a 100% no-broker, direct-owner property platform serving Bangalore, India. You help users with: Bangalore area comparisons, fair market pricing, rental yields, nearby metro/infra developments, vastu tips, home loan EMI calculations, legal documentation guidance (Khata, EC, Sale Deed), and investment advice. You know Bangalore's IT corridors (Whitefield, Marathahalli, Electronic City, Manyata), residential hotspots (Koramangala, Indiranagar, Jayanagar, JP Nagar, HSR Layout), and upcoming areas (Hebbal, Thanisandra, Sarjapur Road). Be concise, genuinely helpful, and occasionally use energetic phrases. OneTo1Deal's mission: zero brokerage, real owners, transparent deals. Current listings:\n${listingsSummary}`;
-
-    const res = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: "claude-sonnet-4-20250514",
-        max_tokens: 1000,
-        system: systemPrompt,
-        messages: chatHistory
-      })
-    });
-
-    const data = await res.json();
-    const reply = data.content?.map(c => c.text || '').join('') || 'My powers need recharging! Try again.';
-    chatHistory.push({ role: 'assistant', content: reply });
-    thinkingEl.remove();
-    addChatMsg('ai', reply);
-  } catch (err) {
-    thinkingEl.remove();
-    addChatMsg('ai', '⚡ Connection disrupted! Check your network and try again.');
-  }
+    const listingsSummary=properties.slice(0,6).map(p=>`• ${p.title} | ${p.price} | ${p.location} | ${p.bhk||'?'}BHK`).join('\n');
+    const sys=`You are Deal Guru — a sharp real estate expert for OneTo1Deal, a no-broker direct-owner property platform in Bangalore. Help with: area comparisons, pricing, rental yields, metro/infra, vastu, loan EMI, legal docs. Current listings:\n${listingsSummary}`;
+    const res=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:1000,system:sys,messages:chatHistory})});
+    const data=await res.json();
+    const reply=data.content?.map(c=>c.text||'').join('')||'My powers need recharging!';
+    chatHistory.push({role:'assistant',content:reply});
+    thinkingEl.remove(); addChatMsg('ai',reply);
+  } catch(err) { thinkingEl.remove(); addChatMsg('ai','⚡ Connection issue! Try again.'); }
 }
 
-// ---- INIT ----
+// ── INIT ──
 renderAll();
 </script>
 </body>
